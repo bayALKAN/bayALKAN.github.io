@@ -40,6 +40,12 @@ Collected information is used for the following purposes:
 - Premium subscription status is managed by Google Play services
 - App settings and preferences remain on your device
 
+### 3.2 Data Deletion by User
+
+You can permanently delete all your personal data stored on the device at any time. This can be done via the “Reset All Data” option in the Profile section of the app. When this option is used, all user data (including profile, goals, meals, statistics, and achievements) will be erased from the device and cannot be recovered. No user data is stored on external servers or shared with third parties. If you uninstall the app, all user data is also removed automatically.
+
+For more information, please contact the developer at the email address provided in the app store listing.
+
 ### 3.2 Data Retention Periods
 - Local data: Until the app is uninstalled
 - Premium subscription information: Managed by Google Play Billing
