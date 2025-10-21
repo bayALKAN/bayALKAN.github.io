@@ -1,0 +1,11 @@
+﻿# Site settings
+title: MyNutrio
+description: MyNutrio - Smart Nutrition Tracking App
+author: Dayzen Studio
+email: info@dayzenstudio.com
+
+# Theme settings
+theme: jekyll-theme-minimal
+
+# Markdown settings
+markdown: kramdown
