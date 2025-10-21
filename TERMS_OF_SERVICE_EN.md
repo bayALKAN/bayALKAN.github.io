@@ -296,7 +296,7 @@ We may suspend or terminate your access to the App immediately if you:
 
 ### 13.2 Informal Resolution
 
-- Before filing a legal claim, please contact us at **support@mynutrio.app** to resolve the issue informally
+- Before filing a legal claim, please contact us at **info@dayzenstudio.com** to resolve the issue informally
 - We will attempt to resolve disputes within 30 days
 
 ---

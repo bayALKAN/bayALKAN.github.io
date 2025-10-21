@@ -294,7 +294,7 @@ Aşağıdaki durumlarda Uygulamaya erişiminizi derhal askıya alabilir veya son
 
 ### 13.2 Gayri Resmi Çözüm
 
-- Yasal bir talepte bulunmadan önce, sorunu gayri resmi olarak çözmek için lütfen **support@mynutrio.app** adresinden bize ulaşın
+- Yasal bir talepte bulunmadan önce, sorunu gayri resmi olarak çözmek için lütfen **info@dayzenstudio.com** adresinden bize ulaşın
 - Uyuşmazlıkları 30 gün içinde çözmeye çalışacağız
 
 ---
