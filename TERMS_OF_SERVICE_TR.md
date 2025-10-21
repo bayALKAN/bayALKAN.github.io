@@ -13,7 +13,7 @@
 
 ## 2. Şartların Kabulü
 
-MyNutrio'ya erişerek veya kullanarak, bu Şartları ve [Gizlilik Politikamızı](https://bayalkan.github.io/PRIVACY_POLICY_EN.html) okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan edersiniz. Kabul etmiyorsanız, lütfen Uygulamayı kullanmayın.
+MyNutrio'ya erişerek veya kullanarak, bu Şartları ve [Gizlilik Politikamızı](https://bayalkan.github.io/PRIVACY_POLICY_TR.html) okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan edersiniz. Kabul etmiyorsanız, lütfen Uygulamayı kullanmayın.
 
 ---
 
@@ -184,7 +184,7 @@ Aşağıdakileri YAPMAMAYACAĞINIZI kabul edersiniz:
 
 ### 8.1 Veri Toplama
 
-- [Gizlilik Politikamızda](https://bayalkan.github.io/PRIVACY_POLICY_EN.html) açıklandığı gibi verileri toplar ve işleriz
+- [Gizlilik Politikamızda](https://bayalkan.github.io/PRIVACY_POLICY_TR.html) açıklandığı gibi verileri toplar ve işleriz
 - Beslenme ve sağlık verileriniz cihazınızda yerel olarak saklanır
 - Yerel veri depolama için **SharedPreferences** ve **Flutter Secure Storage** kullanıyoruz
 - GDPR ve diğer geçerli veri koruma düzenlemelerine uyum sağlıyoruz
