@@ -1,3 +1,8 @@
+---
+title: MyNutrio Hizmet Şartları
+description: MyNutrio uygulaması kullanım şartları ve koşulları
+---
+
 # MyNutrio Hizmet Şartları
 
 **Son Güncelleme:** 21 Ekim 2025  

@@ -1,3 +1,8 @@
+---
+title: MyNutrio Privacy Policy
+description: MyNutrio app privacy and data protection policy
+---
+
 # MyNutrio Privacy Policy
 
 **Last Updated:** October 21, 2025  

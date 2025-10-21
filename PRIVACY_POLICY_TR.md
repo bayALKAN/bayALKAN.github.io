@@ -1,3 +1,8 @@
+---
+title: MyNutrio Gizlilik Politikası
+description: MyNutrio uygulaması gizlilik ve veri koruma politikası
+---
+
 # MyNutrio Gizlilik Politikası
 
 **Son Güncelleme:** 21 Ekim 2025  
