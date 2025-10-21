@@ -305,10 +305,10 @@ We may suspend or terminate your access to the App immediately if you:
 
 For questions, concerns, or support:
 
-- **Email:** support@mynutrio.app
+- **Developer:** Dayzen Studio
+- **Email:** info@dayzenstudio.com
 - **Privacy Policy:** [https://bayalkan.github.io/PRIVACY_POLICY_EN.html](https://bayalkan.github.io/PRIVACY_POLICY_EN.html)
-- **Developer:** Onur ALKAN (bayALKAN)
-- **GitHub:** [https://github.com/bayALKAN](https://github.com/bayALKAN)
+- **Website:** [https://bayalkan.github.io](https://bayalkan.github.io)
 
 ---
 

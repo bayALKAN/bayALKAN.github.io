@@ -9,8 +9,8 @@
 
 Thank you for using the MyNutrio application. Your privacy is extremely important to us. This Privacy Policy explains what information the MyNutrio mobile application ("App") collects, how it uses, stores, and protects that information.
 
-**App Owner:** Onur Alkan (bayALKAN)  
-**Contact:** com.dayzen.nutrioapp  
+**App Owner:** Dayzen Studio  
+**Contact:** info@dayzenstudio.com  
 **Website:** https://bayalkan.github.io
 
 This Privacy Policy applies solely to the MyNutrio mobile application and covers usage of the app downloaded through the Google Play Store.
@@ -312,8 +312,8 @@ This Privacy Policy may be updated from time to time. When changes occur:
 
 If you have questions about our privacy policy or data practices:
 
-**Developer:** Onur Alkan (bayALKAN)  
-**App Package:** com.dayzen.nutrioapp  
+**Developer:** Dayzen Studio  
+**Email:** info@dayzenstudio.com  
 **Website:** https://bayalkan.github.io  
 **Support:** You can open an issue on GitHub
 

@@ -298,10 +298,10 @@ Aşağıdaki durumlarda Uygulamaya erişiminizi derhal askıya alabilir veya son
 
 Sorular, endişeler veya destek için:
 
-- **E-posta:** support@mynutrio.app
-- **Gizlilik Politikası:** [https://bayalkan.github.io/PRIVACY_POLICY_EN.html](https://bayalkan.github.io/PRIVACY_POLICY_EN.html)
-- **Geliştirici:** Onur ALKAN (bayALKAN)
-- **GitHub:** [https://github.com/bayALKAN](https://github.com/bayALKAN)
+- **Geliştirici:** Dayzen Studio
+- **E-posta:** info@dayzenstudio.com
+- **Gizlilik Politikası:** [https://bayalkan.github.io/PRIVACY_POLICY_TR.html](https://bayalkan.github.io/PRIVACY_POLICY_TR.html)
+- **Web Sitesi:** [https://bayalkan.github.io](https://bayalkan.github.io)
 
 ---
 

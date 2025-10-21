@@ -9,8 +9,8 @@
 
 MyNutrio uygulamasını kullandığınız için teşekkür ederiz. Gizliliğiniz bizim için son derece önemlidir. Bu Gizlilik Politikası, MyNutrio mobil uygulamasının ("Uygulama") hangi bilgileri topladığını, nasıl kullandığını, sakladığını ve koruduğunu açıklar.
 
-**Uygulama Sahibi:** Onur Alkan (bayALKAN)  
-**İletişim:** com.dayzen.nutrıoapp  
+**Uygulama Sahibi:** Dayzen Studio  
+**İletişim:** info@dayzenstudio.com  
 **Web Sitesi:** https://bayalkan.github.io
 
 Bu Gizlilik Politikası, yalnızca MyNutrio mobil uygulaması için geçerlidir ve Google Play Store üzerinden indirilen uygulama kullanımını kapsar.
@@ -312,8 +312,8 @@ Bu Gizlilik Politikası zaman zaman güncellenebilir. Değişiklikler olduğunda
 
 Gizlilik politikamız veya veri uygulamalarımız hakkında sorularınız varsa:
 
-**Geliştirici:** Onur Alkan (bayALKAN)  
-**Uygulama Paketi:** com.dayzen.nutrioapp  
+**Geliştirici:** Dayzen Studio  
+**E-posta:** info@dayzenstudio.com  
 **Web Sitesi:** https://bayalkan.github.io  
 **Destek:** GitHub üzerinden issue açabilirsiniz
 
