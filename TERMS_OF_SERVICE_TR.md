@@ -48,7 +48,7 @@ MyNutrio, aşağıdaki özellikleri sunan akıllı bir beslenme takip uygulamas�
 - **Öncelikli Destek:** Müşteri sorularına daha hızlı yanıt
 
 ### Alternatif Erişim Seçenekleri:
-- **Reklam İzleyerek Geçici Premium Erişim:** 2 ödüllü video reklam izleyerek 15 dakika premium özelliklere erişin
+- **Reklam İzleyerek Geçici Premium Erişim:** 2 ödüllü video reklam izleyerek 5 dakika premium özelliklere erişin
 - **Ücretsiz Deneme:** Yeni kullanıcılar premium özellikleri 7 gün ücretsiz deneyebilir
 
 ---
@@ -88,8 +88,8 @@ MyNutrio aşağıdaki abonelik seçeneklerini sunar:
 
 ### 4.5 Reklam Tabanlı Geçici Erişim
 
-- Kullanıcılar **2 ödüllü video reklam** izleyerek 15 dakika premium özellik erişimi kazanabilir
-- Bu geçici erişim devredilemez ve 15 dakika sonra sona erer
+- Kullanıcılar **2 ödüllü video reklam** izleyerek 5 dakika premium özellik erişimi kazanabilir
+- Bu geçici erişim devredilemez ve 5 dakika sonra sona erer
 - Reklam kullanılabilirliği konumunuza ve reklamveren talebine göre değişebilir
 - Reklam sunumu için **Google AdMob** kullanıyoruz
 

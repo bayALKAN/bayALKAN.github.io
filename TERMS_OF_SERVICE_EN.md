@@ -50,7 +50,7 @@ MyNutrio is a smart nutrition tracking application that offers:
 - **Priority Support:** Faster response times for customer inquiries
 
 ### Alternative Access Options:
-- **Watch Ads for Temporary Premium Access:** Watch 2 rewarded video ads to unlock premium features for 15 minutes
+- **Watch Ads for Temporary Premium Access:** Watch 2 rewarded video ads to unlock premium features for 5 minutes
 - **Free Trial:** New users may be eligible for a 7-day free trial of premium features
 
 ---
@@ -90,8 +90,8 @@ MyNutrio offers the following subscription options:
 
 ### 4.5 Ad-Based Temporary Access
 
-- Users can watch **2 rewarded video ads** to gain 15 minutes of premium feature access
-- This temporary access is non-transferable and expires after 15 minutes
+- Users can watch **2 rewarded video ads** to gain 5 minutes of premium feature access
+- This temporary access is non-transferable and expires after 5 minutes
 - Ad availability may vary based on your location and advertiser demand
 - We use **Google AdMob** for ad delivery
 
