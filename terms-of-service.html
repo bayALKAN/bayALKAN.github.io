@@ -9,176 +9,306 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background: #f8f9fa;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: #333;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
             background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        .content {
+            padding: 2rem;
         }
         h1 {
-            color: #136775;
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2.2em;
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
         }
         h2 {
-            color: #136775;
-            border-bottom: 2px solid #e0e0e0;
-            padding-bottom: 10px;
-            margin-top: 30px;
+            color: #5a6fd8;
+            margin-top: 2rem;
         }
-        .date {
-            text-align: center;
-            color: #666;
-            font-style: italic;
-            margin-bottom: 30px;
+        h3 {
+            color: #6366f1;
         }
         .highlight {
-            background: #e3f2fd;
-            padding: 15px;
-            border-radius: 8px;
-            border-left: 4px solid #136775;
-            margin: 20px 0;
+            background: #f0f4ff;
+            padding: 1rem;
+            border-left: 4px solid #667eea;
+            margin: 1rem 0;
         }
         .warning {
             background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
+            border: 1px solid #ffc107;
+            border-radius: 5px;
+            padding: 1rem;
+            margin: 1rem 0;
         }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
+        .footer {
+            background: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #e9ecef;
         }
         .contact {
-            background: #f5f5f5;
-            padding: 20px;
+            background: #667eea;
+            color: white;
+            padding: 1.5rem;
             border-radius: 8px;
-            text-align: center;
-            margin-top: 30px;
+            margin: 2rem 0;
         }
-        a {
-            color: #136775;
-            text-decoration: none;
+        .contact h3 {
+            color: white;
+            margin-top: 0;
         }
-        a:hover {
-            text-decoration: underline;
+        ul, ol {
+            padding-left: 1.5rem;
         }
-        .section {
-            margin-bottom: 25px;
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .summary {
+            background: #e7f3ff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        @media (max-width: 768px) {
+            .header, .content {
+                padding: 1rem;
+            }
+            .logo {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📋 MyNutrio Kullanım Şartları</h1>
-        <div class="date">Son Güncellenme: 23 Ekim 2025</div>
+        <div class="header">
+            <div class="logo">🥗 MyNutrio</div>
+            <div class="subtitle">Akıllı Beslenme Takip Uygulaması - Kullanım Şartları</div>
+        </div>
         
-        <div class="highlight">
-            <strong>Hoş Geldiniz!</strong> MyNutrio uygulamasını kullanarak bu şartları kabul etmiş sayılırsınız. 
-            Lütfen dikkatle okuyunuz.
-        </div>
+        <div class="content">
+            <h1>Kullanım Şartları</h1>
+            
+            <div class="highlight">
+                <strong>Son Güncellenme: 24 Ekim 2025</strong><br>
+                <strong>Yürürlük Tarihi: 24 Ekim 2025</strong>
+            </div>
 
-        <h2>✅ Kabul ve Onay</h2>
-        <div class="section">
-            <p>MyNutrio mobil uygulamasını indirerek, yükleyerek veya kullanarak, bu Kullanım Şartlarını kabul etmiş olursunuz. Şartları kabul etmiyorsanız, lütfen uygulamayı kullanmayınız.</p>
-        </div>
+            <div class="warning">
+                <strong>⚠️ Önemli Sağlık Uyarısı:</strong> MyNutrio bir beslenme takip ve wellness uygulamasıdır. Profesyonel tıbbi tavsiye, teşhis veya tedavi yerine geçmez. Beslenme ve sağlıkla ilgili kararlar almadan önce mutlaka nitelikli sağlık uzmanlarına danışın.
+            </div>
 
-        <h2>📱 Uygulama Hizmetleri</h2>
-        <div class="section">
+            <h2>1. Geliştirici ve Uygulama Bilgileri</h2>
+            <p><strong>Geliştirici:</strong> Dayzen Studio (Bireysel geliştirici)</p>
+            <p><strong>İletişim:</strong> info@dayzenstudio.com</p>
+            <p><strong>Uygulama:</strong> MyNutrio - Google Play Store'da mevcut beslenme takip uygulaması</p>
+            <p>MyNutrio'yu indirerek, yükleyerek veya kullanarak bu Kullanım Şartlarını kabul etmiş olursunuz.</p>
+
+            <h2>2. Hizmet Açıklaması</h2>
+            
+            <h3>Ücretsiz Özellikler:</h3>
             <ul>
-                <li><strong>Beslenme Takibi:</strong> Günlük kalori ve besin öğesi takibi</li>
-                <li><strong>Kişiselleştirilmiş Öneriler:</strong> Hedeflerinize uygun beslenme tavsiyeleri</li>
-                <li><strong>İlerleme Raporları:</strong> Detaylı analiz ve grafikler</li>
-                <li><strong>Premium Özellikler:</strong> Gelişmiş analitik ve özel içerikler</li>
+                <li>Günlük kalori ve besin takibi</li>
+                <li>Temel yiyecek veritabanı</li>
+                <li>Su içme takibi</li>
+                <li>Basit adım sayacı</li>
+                <li>Temel istatistikler</li>
+                <li>Reklam destekli deneyim</li>
             </ul>
-        </div>
 
-        <h2>👤 Kullanıcı Sorumlulukları</h2>
-        <div class="section">
+            <h3>Premium Özellikler (Abonelik Gerektirir):</h3>
             <ul>
-                <li>Doğru ve güncel bilgiler sağlamak</li>
-                <li>Hesap güvenliğini korumak</li>
-                <li>Uygulamayı kötüye kullanmamak</li>
-                <li>Diğer kullanıcılara saygı göstermek</li>
-                <li>Yasal gereksinimlere uymak</li>
+                <li><strong>Reklamısız Deneyim:</strong> Hiç reklam görmezsiniz</li>
+                <li><strong>Gelişmiş İstatistikler:</strong> Detaylı raporlar ve analizler</li>
+                <li><strong>Veri Dışa Aktarma:</strong> CSV ve PDF formatında</li>
+                <li><strong>Premium Tarifler:</strong> Uzman onaylı beslenme önerileri</li>
+                <li><strong>Gelişmiş Tema Sistemi:</strong> Karanlık mod ve özel renkler</li>
+                <li><strong>Öncelikli Destek:</strong> Daha hızlı müşteri hizmetleri</li>
             </ul>
-        </div>
 
-        <div class="warning">
-            <strong>⚠️ Önemli Uyarı:</strong> MyNutrio bir sağlık uygulamasıdır, ancak tıbbi tavsiye yerine geçmez. 
-            Sağlık durumunuzla ilgili kararlar almadan önce mutlaka bir sağlık profesyonelinden destek alınız.
-        </div>
-
-        <h2>💳 Premium Abonelik</h2>
-        <div class="section">
+            <h3>Alternatif Erişim:</h3>
             <ul>
-                <li><strong>Aylık Abonelik:</strong> ₺29.99/ay (7 gün ücretsiz deneme)</li>
-                <li><strong>Yıllık Abonelik:</strong> ₺299.99/yıl (60% tasarruf + 14 gün ücretsiz deneme)</li>
-                <li><strong>Otomatik Yenileme:</strong> Abonelik otomatik olarak yenilenir</li>
-                <li><strong>İptal:</strong> İstediğiniz zaman Google Play Store'dan iptal edebilirsiniz</li>
+                <li><strong>Reklam İzleyerek Geçici Erişim:</strong> 2 reklam izleyerek 5 dakika premium özellikler</li>
+                <li><strong>Ücretsiz Deneme:</strong> Yeni kullanıcılar için 7 günlük deneme</li>
             </ul>
-        </div>
 
-        <h2>🔄 İptal ve İade Politikası</h2>
-        <div class="section">
+            <h2>3. Abonelik Şartları</h2>
+            
+            <h3>3.1 Abonelik Planları</h3>
             <ul>
-                <li>Ücretsiz deneme süresi boyunca istediğiniz zaman iptal edebilirsiniz</li>
-                <li>İade talepleri Google Play Store politikalarına tabidir</li>
-                <li>Ödeme yapıldıktan sonra iptal, mevcut dönem sonunda geçerli olur</li>
-                <li>Pro-rata iade yapılmaz</li>
+                <li><strong>Aylık Abonelik:</strong> Her ay faturalandırılır</li>
+                <li><strong>Yıllık Abonelik:</strong> Yılda bir faturalandırılır (aylığa göre indirimli)</li>
             </ul>
-        </div>
+            <p><strong>Not:</strong> Fiyatlar Google Play Store üzerinden Türk Lirası (TL) olarak belirlenir.</p>
 
-        <h2>🛡️ Fikri Mülkiyet</h2>
-        <div class="section">
+            <h3>3.2 Ödeme ve Faturalandırma</h3>
             <ul>
-                <li>MyNutrio uygulaması ve içeriği telif hakkı ile korunmaktadır</li>
-                <li>Besin veritabanı ve algoritması özel mülkiyet hakkına tabidir</li>
-                <li>İzinsiz kopyalama, dağıtım veya değiştirme yasaktır</li>
-                <li>Kullanıcı verileri kullanıcının mülkiyetindedir</li>
+                <li>Abonelikler Google Play Faturalandırma üzerinden işlenir</li>
+                <li>Ödeme, satın alma onayından sonra Google Play hesabınızdan çekilir</li>
+                <li>Abonelikler, mevcut dönemin bitiminden 24 saat önce iptal edilmediği takdirde otomatik olarak yenilenir</li>
+                <li>Google Play hesap ayarlarınızdan aboneliği yönetebilirsiniz</li>
             </ul>
-        </div>
 
-        <h2>⚖️ Sorumluluk Sınırlaması</h2>
-        <div class="section">
-            <p>MyNutrio, uygulamanın kullanımından doğabilecek doğrudan veya dolaylı zararlardan sorumlu değildir. Uygulama "olduğu gibi" sunulmaktadır.</p>
-        </div>
-
-        <h2>🔄 Değişiklikler</h2>
-        <div class="section">
-            <p>Bu kullanım şartları güncellenebilir. Önemli değişiklikler uygulama içi bildirimlerle duyurulacaktır. Güncellemelerden sonra uygulamayı kullanmaya devam etmek, yeni şartları kabul ettiğiniz anlamına gelir.</p>
-        </div>
-
-        <h2>📞 Müşteri Desteği</h2>
-        <div class="section">
+            <h3>3.3 İptal ve İade</h3>
             <ul>
-                <li><strong>E-posta Desteği:</strong> 7/24 müşteri hizmetleri</li>
-                <li><strong>Yanıt Süresi:</strong> 24 saat içinde geri dönüş</li>
-                <li><strong>Dil Desteği:</strong> Türkçe ve İngilizce</li>
-                <li><strong>Teknik Destek:</strong> Uygulama sorunları için özel ekip</li>
+                <li><strong>İptal:</strong> Google Play Store > Abonelikler > MyNutrio > Aboneliği İptal Et</li>
+                <li><strong>İptal Sonrası Erişim:</strong> Mevcut faturalandırma döneminizin sonuna kadar premium özellikler aktif kalır</li>
+                <li><strong>İadeler:</strong> Google Play Store'un iade politikası geçerlidir</li>
+                <li><strong>Kısmi İade Yok:</strong> Kullanılmayan dönemler için kısmi iade yapılmaz</li>
             </ul>
-        </div>
 
-        <h2>🌍 Geçerli Hukuk</h2>
-        <div class="section">
-            <p>Bu şartlar Türkiye Cumhuriyeti hukuku kapsamında geçerlidir. Uyuşmazlıklar Türkiye mahkemelerinde çözümlenecektir.</p>
-        </div>
+            <h2>4. Kullanıcı Sorumlulukları</h2>
+            
+            <h3>4.1 Doğru Bilgi Girişi</h3>
+            <ul>
+                <li>Yediğiniz yiyecekler, egzersiz ve sağlık verilerinin doğru girilmesinden siz sorumlusunuz</li>
+                <li>MyNutrio, genel veritabanlarına dayalı besin değeri tahminleri sağlar</li>
+                <li>Besin değerleri %100 doğru olmayabilir ve sadece genel rehber olarak kullanılmalıdır</li>
+            </ul>
 
-        <div class="contact">
-            <h3>📧 İletişim</h3>
-            <p>Kullanım şartları ile ilgili sorularınız için:</p>
-            <p><a href="mailto:legal@mynutrio.app">legal@mynutrio.app</a></p>
-            <p><a href="mailto:support@mynutrio.app">support@mynutrio.app</a></p>
+            <h3>4.2 Sağlık ve Tıbbi Sorumluluk Reddi</h3>
+            <div class="warning">
+                <p><strong>ÖNEMLİ TIBBİ SORUMLULUK REDDİ:</strong></p>
+                <ul>
+                    <li>MyNutrio <strong>sadece bilgilendirme amaçlıdır</strong></li>
+                    <li>Herhangi bir hastalığı teşhis etmek, tedavi etmek veya önlemek için tasarlanmamıştır</li>
+                    <li>Tıbbi tavsiye veya profesyonel sağlık hizmeti sağlamaz</li>
+                    <li><strong>Mutlaka lisanslı doktor, diyetisyen veya sağlık uzmanına danışın:</strong>
+                        <ul>
+                            <li>Herhangi bir diyet veya beslenme programı başlamadan önce</li>
+                            <li>Diyet veya egzersiz rutininde değişiklik yapmadan önce</li>
+                            <li>Tıbbi durumunuz, alerjiniz veya diyet kısıtlamanız varsa</li>
+                            <li>Hamileseniz, emziriyorsanız veya ilaç kullanıyorsanız</li>
+                        </ul>
+                    </li>
+                    <li>Bireysel sonuçlar önemli ölçüde değişebilir</li>
+                </ul>
+            </div>
+
+            <h3>4.3 Yasak Kullanımlar</h3>
+            <p>Şunları yapmayacağınızı kabul edersiniz:</p>
+            <ul>
+                <li>Uygulamayı yasadışı amaçlar için kullanmak</li>
+                <li>Uygulamayı tersine mühendislik yapmaya çalışmak</li>
+                <li>Yanlış, yanıltıcı veya zararlı içerik yüklemek</li>
+                <li>Uygulamanın işlevselliğini veya sunucularını bozmak</li>
+                <li>Otomatik araçlar (bot, scraper) kullanmak</li>
+                <li>Uygulamayı yeniden satmak veya ticari olarak kullanmak</li>
+            </ul>
+
+            <h2>5. Fikri Mülkiyet Hakları</h2>
+            <ul>
+                <li>MyNutrio ve tüm içeriği (yemek veritabanı, tarifler, grafik tasarımlar) bizim veya lisans verenlerimizin mülkiyetindedir</li>
+                <li>Size kişisel, ticari olmayan kullanım için sınırlı lisans verilir</li>
+                <li>Girdiğiniz veriler (yemek kayıtları, kişisel bilgiler) sizin mülkiyetinizde kalır</li>
+            </ul>
+
+            <h2>6. Üçüncü Taraf Hizmetler</h2>
+            
+            <h3>6.1 Reklamcılık</h3>
+            <ul>
+                <li>Ücretsiz sürüm Google AdMob reklamları gösterir</li>
+                <li>Reklam kişiselleştirmesini cihaz ayarlarından kontrol edebilirsiniz</li>
+            </ul>
+
+            <h3>6.2 Google Play Faturalandırma</h3>
+            <ul>
+                <li>Abonelikler Google Play Uygulama İçi Faturalandırma ile yönetilir</li>
+                <li>Google Play'in şartlarını ve koşullarını kabul edersiniz</li>
+            </ul>
+
+            <h2>7. Veri ve Gizlilik</h2>
+            <ul>
+                <li>Verileriniz Gizlilik Politikamızda açıklanan şekilde toplanır ve işlenir</li>
+                <li>Beslenme ve sağlık verileriniz cihazınızda yerel olarak saklanır</li>
+                <li>KVKK ve GDPR uyumlu veri koruma sağlanır</li>
+            </ul>
+
+            <h2>8. Sorumluluk Reddi ve Sınırlamalar</h2>
+            
+            <div class="warning">
+                <p><strong>Önemli Sınırlamalar:</strong></p>
+                <ul>
+                    <li>Uygulama "OLDUĞU GİBİ" ve "MEVCUT HALDE" sağlanır</li>
+                    <li>Sağlık sorunları veya tıbbi durumlardan sorumlu değiliz</li>
+                    <li>Besin değerlerinin %100 doğru olacağını garanti etmiyoruz</li>
+                    <li>Alerjen uyarısı: MyNutrio tüm alerjenleri tespit edemeyebilir</li>
+                    <li>Kilo yönetimi tavsiyesi sadece genel bilgi amaçlıdır</li>
+                </ul>
+            </div>
+
+            <h2>9. Hizmet Değişiklikleri</h2>
+            <ul>
+                <li>Bu şartları istediğimiz zaman değiştirebiliriz</li>
+                <li>Önemli değişiklikler uygulama içinde bildirilir</li>
+                <li>Kullanmaya devam etmek yeni şartları kabul ettiğiniz anlamına gelir</li>
+            </ul>
+
+            <h2>10. Fesih</h2>
+            <ul>
+                <li>Uygulamayı istediğiniz zaman kullanmayı bırakabilirsiniz</li>
+                <li>Şartları ihlal ederseniz erişiminizi sonlandırabiliriz</li>
+                <li>Fesih durumunda abonelikleri Google Play'den ayrıca iptal etmelisiniz</li>
+            </ul>
+
+            <h2>11. Geçerli Hukuk</h2>
+            <ul>
+                <li>Bu şartlar Türkiye Cumhuriyeti yasalarına tabidir</li>
+                <li>Anlaşmazlıklar Türkiye mahkemelerinde çözülür</li>
+            </ul>
+
+            <div class="contact">
+                <h3>📧 İletişim Bilgileri</h3>
+                <p>Sorularınız ve destek için:</p>
+                <p><strong>Geliştirici:</strong> Dayzen Studio<br>
+                <strong>E-posta:</strong> info@dayzenstudio.com<br>
+                <strong>Yanıt Süresi:</strong> 3-7 iş günü</p>
+            </div>
+
+            <div class="summary">
+                <h3>📋 Önemli Noktalar Özeti</h3>
+                <ul>
+                    <li>✅ <strong>Ücretsiz Kullanım:</strong> Reklamlı temel beslenme takibi</li>
+                    <li>✅ <strong>Premium Mevcut:</strong> Reklamızız deneyim ve gelişmiş özellikler</li>
+                    <li>✅ <strong>Esnek Erişim:</strong> Reklam izle veya abone ol</li>
+                    <li>✅ <strong>7 Günlük Deneme:</strong> Ücretsiz premium deneyimi</li>
+                    <li>✅ <strong>İstediğiniz Zaman İptal:</strong> Google Play üzerinden yönetin</li>
+                    <li>✅ <strong>Güvenli Veri:</strong> Yerel depolama, KVKK uyumlu</li>
+                    <li>⚠️ <strong>Tıbbi Tavsiye Değil:</strong> Sağlık uzmanlarına danışın</li>
+                    <li>ℹ️ <strong>Bireysel Sonuçlar:</strong> Tahminler sadece rehberdir</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <strong>MyNutrio'yu kullanarak bu Kullanım Şartlarını okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan edersiniz.</strong>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 MyNutrio - Dayzen Studio. Tüm hakları saklıdır.</p>
+            <p><strong>MyNutrio'yu seçtiğiniz için teşekkürler! 🥗💚</strong></p>
         </div>
     </div>
 </body>
