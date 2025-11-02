@@ -110,13 +110,22 @@
 
             <h2>Information We Collect</h2>
             
-            <h3>Personal Information</h3>
+            <h3>Personal and Health Information</h3>
             <ul>
-                <li><strong>Profile Data:</strong> Name, age, gender, height, weight (optional)</li>
-                <li><strong>Nutrition Data:</strong> Foods you eat, calorie tracking, water intake, manual and automatic entries</li>
-                <li><strong>Activity Data:</strong> Step count, exercise information (from device sensors)</li>
-                <li><strong>Goal Data:</strong> Weight goals, daily calorie targets, diet preferences</li>
-                <li><strong>App Preferences:</strong> Theme, language, notification settings</li>
+                <li><strong>Profile Information:</strong> Name, date of birth/age, gender, height, weight, target weight</li>
+                <li><strong>Health Information:</strong> Allergy list, medical conditions, dietary preferences (vegan, vegetarian, etc.), medication use, supplement use</li>
+                <li><strong>Lifestyle Information:</strong> Activity level, sitting duration, stress level, smoking/alcohol consumption, eating habits, cooking skills</li>
+                <li><strong>Nutrition Data:</strong> Daily meal records, foods you eat, calorie/macro tracking, water intake, meal times</li>
+                <li><strong>Physical Activity Data:</strong>
+                    <ul>
+                        <li>Step count (via Android ACTIVITY_RECOGNITION permission for pedometer usage)</li>
+                        <li>Activity sensor data (via Android BODY_SENSORS permission - optional, processed only on device)</li>
+                        <li>Google Fit/Apple Health integration (with user permission - optional)</li>
+                    </ul>
+                </li>
+                <li><strong>Goal and Preference Data:</strong> Daily calorie/macro goals, weight goals, weekly weight change target, nutrient limits (sugar, saturated fat, sodium)</li>
+                <li><strong>Socioeconomic Information:</strong> Budget range, household size, shopping frequency, location (city/region), organic food preference</li>
+                <li><strong>App Preferences:</strong> Theme selection, language preference, notification settings, privacy settings</li>
             </ul>
 
             <h3>Automatically Collected Information</h3>
@@ -166,24 +175,25 @@
                 <li>Temporary premium access can be granted by watching ads</li>
             </ul>
 
-            <h3>Firebase Analytics (Anonymous)</h3>
+            <h3>Firebase Services</h3>
             <ul>
-                <li>Anonymous usage statistics are collected to monitor app performance</li>
-                <li>This data does not contain your personal identity</li>
-                <li>Only information about which features are used and error information is collected</li>
-                <li>You can turn off this feature in settings</li>
-                <li>Error reports are sent anonymously via Firebase Crashlytics</li>
+                <li><strong>Firebase Analytics:</strong> Anonymous usage statistics (which features are used, app duration, etc.)</li>
+                <li><strong>Firebase Crashlytics:</strong> App crashes and error reports (device model, OS version, error details - no personal data)</li>
+                <li><strong>Firebase Remote Config:</strong> Remote app settings updates (ad display settings, feature toggles, etc.)</li>
+                <li>These services are subject to Google's privacy policy</li>
+                <li>Collected data does not contain your identity information and is processed anonymously</li>
+                <li>You can disable Analytics in settings, but Crashlytics is required for app stability</li>
             </ul>
 
             <h2>Your Rights</h2>
-            <p>Under GDPR and data protection laws, you have the following rights:</p>
+            <p>Under KVKK and GDPR, you have the following rights:</p>
             <ul>
                 <li><strong>Right of Access:</strong> You can learn what data is collected about you</li>
                 <li><strong>Right to Rectification:</strong> You can correct incorrect information</li>
                 <li><strong>Right to Erasure:</strong> You can request deletion of your data</li>
-                <li><strong>Right to Data Portability:</strong> You can export your data (Premium feature)</li>
+                <li><strong>Right to Data Portability:</strong> You can export your data (CSV/PDF - Premium feature)</li>
                 <li><strong>Right to Object:</strong> You can object to data processing</li>
-                <li><strong>Support and data management:</strong> For all rights, you can use app settings or contact info@dayzenstudio.com</li>
+                <li><strong>Support and data management:</strong> For all your rights, you can use app settings or contact info@dayzenstudio.com</li>
             </ul>
 
             <h2>Cookies and Local Storage</h2>
@@ -195,19 +205,29 @@
 
             <h2>Children's Privacy</h2>
             <ul>
-                <li>MyNutrio is not intended for children under 13</li>
-                <li>We do not knowingly collect data from children under 13</li>
-                <li>If such a situation is detected, data is immediately deleted</li>
-                <li>Additional measures are taken for children's privacy</li>
+                <li>MyNutrio is intended for users aged 13 and above</li>
+                <li>The app does not perform age verification</li>
+                <li>If users under 13 use the app, it is the responsibility of parents or guardians</li>
+                <li>If we learn that we have collected data from children under 13, we will delete such data immediately</li>
+                <li>Parents/guardians should supervise their children's app usage and request data deletion via info@dayzenstudio.com if necessary</li>
             </ul>
 
             <h2>Third-Party Services</h2>
+            <p>Third-party services used in the app:</p>
             <ul>
-                <li><strong>Google Play Services:</strong> App updates and purchases</li>
-                <li><strong>Google AdMob:</strong> Ad display (free version)</li>
-                <li><strong>Firebase:</strong> Performance monitoring, error reporting, and remote configuration</li>
-                <li><strong>Other services:</strong> May be added as required by law</li>
+                <li><strong>Google Play Services:</strong> App updates, in-app purchases (subscription management)</li>
+                <li><strong>Google AdMob:</strong> Ad display (banner and interstitial ads for free users)</li>
+                <li><strong>Firebase (Google):</strong>
+                    <ul>
+                        <li>Firebase Analytics - Usage statistics</li>
+                        <li>Firebase Crashlytics - Error reporting</li>
+                        <li>Firebase Remote Config - Remote configuration</li>
+                    </ul>
+                </li>
+                <li><strong>Google Fit (Optional):</strong> Step count and activity data synchronization via Health package (only with your permission)</li>
+                <li><strong>Apple Health (Optional - iOS):</strong> Health data integration via Health package (only with your permission)</li>
             </ul>
+            <p><strong>Note:</strong> Each of these third-party services has its own privacy policy. Please review the relevant service's privacy policy.</p>
 
             <h2>Policy Changes</h2>
             <p>We may update this privacy policy from time to time:</p>
@@ -219,14 +239,19 @@
             </ul>
 
             <h2>Data Deletion and Account Closure</h2>
-            <p>To delete your data:</p>
+            <p>You can delete your data using the following methods:</p>
             <ol>
-                <li>Go to "Privacy Center" from app settings</li>
-                <li>Use the "Delete All Data" option</li>
-                <li>Or completely delete the app</li>
-                <li>You can request data deletion by writing to info@dayzenstudio.com</li>
-                <li>For account deletion and data export, use app settings</li>
+                <li><strong>Within the App:</strong> Go to Settings → Privacy and Security → "Delete All Data" option</li>
+                <li><strong>Uninstall App:</strong> When you remove MyNutrio from your device, all local data is permanently deleted</li>
+                <li><strong>Email Request:</strong> Send an email to info@dayzenstudio.com with subject "Data Deletion Request" (processed within 3-7 business days)</li>
             </ol>
+            <p><strong>Data Export (Premium Feature):</strong></p>
+            <ul>
+                <li>Premium subscribers can export their data in CSV or PDF format</li>
+                <li>Use Settings → Data Management → "Export Data" option</li>
+                <li>For free users: You can request via info@dayzenstudio.com (GDPR/KVKK right)</li>
+            </ul>
+            <p><strong>Important Note:</strong> Since all your data is stored locally on your device, data deletion happens instantly and is irreversible.</p>
 
             <div class="contact">
                 <h3>📧 Contact</h3>
@@ -236,8 +261,10 @@
                 <strong>Response Time:</strong> 3-7 business days</p>
             </div>
 
+            <h2>🏥 Medical Disclaimer</h2>
             <div class="highlight">
-                <strong>Important Note:</strong> MyNutrio does not provide health advice. Always consult healthcare professionals for nutrition and diet programs. The app content is for informational purposes only.
+                <p><strong>IMPORTANT:</strong> MyNutrio is not a medical device and does not provide medical advice, diagnosis, or treatment. All health information in the app is for educational purposes only. Always consult a healthcare professional before making decisions about your health.</p>
+                <p>App content is for informational purposes only and does not replace professional medical advice.</p>
             </div>
         </div>
         

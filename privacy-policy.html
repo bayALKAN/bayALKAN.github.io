@@ -99,8 +99,8 @@
             <h1>Gizlilik Politikası</h1>
             
             <div class="highlight">
-                <strong>Son güncellenme: 28 Ekim 2025</strong><br>
-                Bu Gizlilik Politikası, MyNutrio uygulamasının kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar. Belirsiz veya yeni eklenen özellikler için güncel mevzuata ve en iyi uygulamalara uygun hareket edilir. Herhangi bir sorunuz olursa lütfen geliştiriciyle iletişime geçin.
+                <strong>Son güncellenme: 29 Ekim 2025</strong><br>
+                Bu Gizlilik Politikası, MyNutrio uygulamasının kişisel verilerinizi nasıl topladığını, kullandığını ve koruduğunu açıklar. Uygulama sağlıkla ilgili bilgilendirme yapar ancak tıbbi tavsiye sağlamaz. Herhangi bir sorunuz olursa lütfen geliştiriciyle iletişime geçin.
             </div>
 
             <h2>Uygulama Geliştirici Bilgileri</h2>
@@ -110,13 +110,22 @@
 
             <h2>Topladığımız Bilgiler</h2>
             
-            <h3>Kişisel Bilgiler</h3>
+            <h3>Kişisel ve Sağlık Bilgileri</h3>
             <ul>
-                <li><strong>Profil Bilgileri:</strong> İsim, yaş, cinsiyet, boy, kilo (isteğe bağlı)</li>
-                <li><strong>Beslenme Verileri:</strong> Yediğiniz yiyecekler, kalori takibi, su içme miktarı, manuel ve otomatik girişler</li>
-                <li><strong>Aktivite Verileri:</strong> Adım sayısı, egzersiz bilgileri (cihaz sensörlerinden)</li>
-                <li><strong>Hedef Veriler:</strong> Kilo hedefi, günlük kalori hedefi, diyet tercihleri</li>
-                <li><strong>Uygulama Tercihleri:</strong> Tema, dil, bildirim ayarları</li>
+                <li><strong>Profil Bilgileri:</strong> İsim, doğum tarihi/yaş, cinsiyet, boy, kilo, hedef kilo</li>
+                <li><strong>Sağlık Bilgileri:</strong> Alerji listesi, tıbbi durumlar, beslenme tercihleri (vegan, vejetaryen vb.), ilaç kullanımı, takviye kullanımı</li>
+                <li><strong>Yaşam Tarzı Bilgileri:</strong> Aktivite seviyesi, oturma süresi, stres seviyesi, sigara/alkol kullanımı, yemek alışkanlıkları, pişirme becerisi</li>
+                <li><strong>Beslenme Verileri:</strong> Günlük öğün kayıtları, yediğiniz yiyecekler, kalori/makro takibi, su içme miktarı, öğün zamanları</li>
+                <li><strong>Fiziksel Aktivite Verileri:</strong> 
+                    <ul>
+                        <li>Adım sayısı (Android ACTIVITY_RECOGNITION izni ile pedometer kullanımı)</li>
+                        <li>Aktivite sensör verileri (Android BODY_SENSORS izni ile - isteğe bağlı, sadece cihazda işlenir)</li>
+                        <li>Google Fit/Apple Health entegrasyonu (kullanıcı izni ile - isteğe bağlı)</li>
+                    </ul>
+                </li>
+                <li><strong>Hedef ve Tercih Verileri:</strong> Günlük kalori/makro hedefleri, kilo hedefi, haftalık kilo değişim hedefi, besin limitleri (şeker, doymuş yağ, sodyum)</li>
+                <li><strong>Sosyoekonomik Bilgiler:</strong> Bütçe aralığı, hanehalkı büyüklüğü, alışveriş sıklığı, konum (şehir/bölge), organik ürün tercihi</li>
+                <li><strong>Uygulama Tercihleri:</strong> Tema seçimi, dil tercihi, bildirim ayarları, gizlilik ayarları</li>
             </ul>
 
             <h3>Otomatik Toplanan Bilgiler</h3>
@@ -166,13 +175,14 @@
                 <li>Reklam izleyerek geçici premium erişim sağlanabilir</li>
             </ul>
 
-            <h3>Firebase Analytics (Anonim)</h3>
+            <h3>Firebase Hizmetleri</h3>
             <ul>
-                <li>Uygulama performansını izlemek için anonim kullanım istatistikleri toplanır</li>
-                <li>Bu veriler kişisel kimliğinizi içermez</li>
-                <li>Sadece hangi özelliklerin kullanıldığı ve hata bilgileri toplanır</li>
-                <li>Bu özelliği ayarlardan kapatabilirsiniz</li>
-                <li>Firebase Crashlytics ile hata raporları anonim olarak iletilir</li>
+                <li><strong>Firebase Analytics:</strong> Anonim kullanım istatistikleri (hangi özellikler kullanılıyor, uygulama süresi vb.)</li>
+                <li><strong>Firebase Crashlytics:</strong> Uygulama çökmeleri ve hata raporları (cihaz modeli, OS versiyonu, hata detayları - kişisel veri içermez)</li>
+                <li><strong>Firebase Remote Config:</strong> Uygulama ayarlarını uzaktan güncelleme (reklam gösterim ayarları, özellik açma/kapama vb.)</li>
+                <li>Bu servisler Google'ın gizlilik politikasına tabidir</li>
+                <li>Toplanan veriler kimlik bilgilerinizi içermez ve anonim olarak işlenir</li>
+                <li>Analytics'i ayarlardan kapatabilirsiniz ancak Crashlytics uygulama kararlılığı için gereklidir</li>
             </ul>
 
             <h2>Haklarınız</h2>
@@ -195,19 +205,29 @@
 
             <h2>Çocukların Gizliliği</h2>
             <ul>
-                <li>MyNutrio 13 yaş altındaki çocuklara yönelik değildir</li>
-                <li>Bilinçli olarak 13 yaş altından veri toplamayız</li>
-                <li>Böyle bir durum tespit edilirse veriler derhal silinir</li>
-                <li>Çocukların gizliliği için ek önlemler alınır</li>
+                <li>MyNutrio 13 yaş ve üzeri kullanıcılara yöneliktir</li>
+                <li>Uygulama yaş doğrulaması yapmamaktadır</li>
+                <li>13 yaş altı kullanıcıların uygulamayı kullanması durumunda ebeveyn veya veli sorumluluğundadır</li>
+                <li>13 yaş altı çocukların verilerinin toplandığını öğrenirsek, bu verileri derhal sileriz</li>
+                <li>Ebeveynler/veliler, çocuklarının uygulama kullanımını denetlemeli ve gerekirse info@dayzenstudio.com üzerinden veri silme talebinde bulunmalıdır</li>
             </ul>
 
             <h2>Üçüncü Taraf Hizmetler</h2>
+            <p>Uygulamada kullanılan üçüncü taraf servisleri:</p>
             <ul>
-                <li><strong>Google Play Hizmetleri:</strong> Uygulama güncellemeleri ve satın almalar</li>
-                <li><strong>Google AdMob:</strong> Reklam gösterimi (ücretsiz sürüm)</li>
-                <li><strong>Firebase:</strong> Performans izleme, hata raporlama ve uzaktan yapılandırma</li>
-                <li><strong>Diğer hizmetler:</strong> Yasal gereklilikler doğrultusunda eklenebilir</li>
+                <li><strong>Google Play Hizmetleri:</strong> Uygulama güncellemeleri, uygulama içi satın almalar (abonelik yönetimi)</li>
+                <li><strong>Google AdMob:</strong> Reklam gösterimi (ücretsiz kullanıcılar için banner ve interstitial reklamlar)</li>
+                <li><strong>Firebase (Google):</strong>
+                    <ul>
+                        <li>Firebase Analytics - Kullanım istatistikleri</li>
+                        <li>Firebase Crashlytics - Hata raporlama</li>
+                        <li>Firebase Remote Config - Uzaktan yapılandırma</li>
+                    </ul>
+                </li>
+                <li><strong>Google Fit (İsteğe Bağlı):</strong> Health package üzerinden adım sayısı ve aktivite verisi senkronizasyonu (sadece izin verirseniz)</li>
+                <li><strong>Apple Health (İsteğe Bağlı - iOS):</strong> Health package üzerinden sağlık verisi entegrasyonu (sadece izin verirseniz)</li>
             </ul>
+            <p><strong>Not:</strong> Bu üçüncü taraf hizmetlerin her biri kendi gizlilik politikalarına sahiptir. Lütfen ilgili hizmetin gizlilik politikasını da inceleyiniz.</p>
 
             <h2>Politika Değişiklikleri</h2>
             <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz:</p>
@@ -219,14 +239,19 @@
             </ul>
 
             <h2>Veri Silme ve Hesap Kapatma</h2>
-            <p>Verilerinizi silmek için:</p>
+            <p>Verilerinizi silmek için aşağıdaki yöntemleri kullanabilirsiniz:</p>
             <ol>
-                <li>Uygulama ayarlarından "Gizlilik Merkezi"ne gidin</li>
-                <li>"Tüm Verileri Sil" seçeneğini kullanın</li>
-                <li>Veya uygulamayı tamamen silin</li>
-                <li>İstek üzerine info@dayzenstudio.com adresine yazarak veri silme talebinde bulunabilirsiniz</li>
-                <li>Hesap silme ve veri dışa aktarma işlemleri için uygulama ayarlarını kullanabilirsiniz</li>
+                <li><strong>Uygulama İçinden:</strong> Ayarlar → Gizlilik ve Güvenlik → "Tüm Verileri Sil" seçeneğini kullanın</li>
+                <li><strong>Uygulamayı Silme:</strong> MyNutrio'yu cihazınızdan kaldırdığınızda tüm yerel veriler kalıcı olarak silinir</li>
+                <li><strong>E-posta ile Talep:</strong> info@dayzenstudio.com adresine "Veri Silme Talebi" konulu e-posta gönderin (3-7 iş günü içinde işleme alınır)</li>
             </ol>
+            <p><strong>Veri Dışa Aktarma (Premium Özellik):</strong></p>
+            <ul>
+                <li>Premium aboneler verilerini CSV veya PDF formatında dışa aktarabilir</li>
+                <li>Ayarlar → Veri Yönetimi → "Verileri Dışa Aktar" seçeneğini kullanın</li>
+                <li>Ücretsiz kullanıcılar için: info@dayzenstudio.com adresinden talep edebilirsiniz (GDPR/KVKK hakkı)</li>
+            </ul>
+            <p><strong>Önemli Not:</strong> Tüm verileriniz cihazınızda yerel olarak saklandığı için, veri silme işlemi anında gerçekleşir ve geri alınamaz.</p>
 
             <div class="contact">
                 <h3>📧 İletişim</h3>
@@ -236,8 +261,10 @@
                 <strong>Yanıt Süresi:</strong> 3-7 iş günü</p>
             </div>
 
+            <h2>🏥 Tıbbi Sorumluluk Reddi</h2>
             <div class="highlight">
-                <strong>Önemli Not:</strong> MyNutrio sağlık tavsiyesi vermez. Beslenme ve diyet programları için mutlaka sağlık profesyonellerine danışın. Uygulama içeriği yalnızca bilgilendirme amaçlıdır.
+                <p><strong>ÖNEMLİ:</strong> MyNutrio tıbbi bir cihaz değildir ve tıbbi tavsiye, teşhis veya tedavi sağlamaz. Uygulamadaki tüm sağlık bilgilendirmeleri sadece eğitim amaçlıdır. Sağlık durumunuzla ilgili kararlar almadan önce mutlaka bir sağlık uzmanına danışın.</p>
+                <p>Uygulama içeriği yalnızca bilgilendirme amaçlıdır ve profesyonel tıbbi tavsiyenin yerine geçmez.</p>
             </div>
         </div>
         
