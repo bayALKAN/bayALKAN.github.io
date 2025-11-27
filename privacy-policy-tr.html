@@ -147,7 +147,9 @@
                 <li><strong>Hata Raporları:</strong> Uygulama çökmesi durumunda teknik bilgiler (kişisel veri içermez)</li>
             </ul>
 
-            <h2>Bilgileri Nasıl Kullanırız</h2>
+            <h2>Bilgileri Nasıl Kullanırız ve Hukuki Dayanağı</h2>
+            
+            <h3>Veri İşleme Amaçları</h3>
             <p>Verilerinizi şu amaçlarla kullanırız:</p>
             <ul>
                 <li>Kişiselleştirilmiş beslenme önerileri sunmak</li>
@@ -157,6 +159,15 @@
                 <li>Teknik sorunları çözmek ve hata raporlamak</li>
                 <li>Size bildirimler göndermek (izin verirseniz)</li>
                 <li>Yasal gereklilikleri yerine getirmek</li>
+            </ul>
+            
+            <h3>Hukuki Dayanaklar (GDPR Madde 6 ve 9)</h3>
+            <p>Kişisel verilerinizi aşağıdaki yasal temellere dayanarak işliyoruz:</p>
+            <ul>
+                <li><strong>Açık Rıza (Consent):</strong> Sağlık verileriniz (kilo, kalori, öğün kayıtları) için açık rızanız alınır (GDPR Madde 9 - Özel Nitelikli Veriler)</li>
+                <li><strong>Sözleşmenin İfası (Contract Performance):</strong> Uygulama hizmetlerini sunmak için profil ve beslenme verilerinizi işleriz</li>
+                <li><strong>Meşru Menfaat (Legitimate Interest):</strong> Uygulama güvenliği, hata düzeltme ve performans iyileştirme için anonim kullanım verileri işlenir</li>
+                <li><strong>Yasal Yükümlülük (Legal Obligation):</strong> Vergi, mali raporlama gibi yasal gereklilikler için gerekli veriler saklanır</li>
             </ul>
 
             <h2>Veri Saklama ve Güvenlik</h2>
@@ -195,6 +206,20 @@
                 <li><strong>Yasal Yükümlülükler:</strong> Yasal gereklilikler (vergi, mali raporlama vb.) için gerekli olan veriler 5 yıl süreyle saklanabilir</li>
                 <li><strong>Anonim İstatistikler:</strong> Firebase Analytics tarafından toplanan anonim kullanım verileri (kimlik bilgisi içermez) Google'ın veri saklama politikasına tabidir</li>
             </ul>
+            
+            <h3>Uluslararası Veri Aktarımı (GDPR Madde 44-50)</h3>
+            <ul>
+                <li><strong>AB İçi Veri Depolama:</strong> Google Cloud Firestore verilerinizi Avrupa Birliği içinde (Belçika - eur3) saklar, GDPR tam uyumlu</li>
+                <li><strong>Google Hizmetleri:</strong> Firebase ve AdMob hizmetleri Google LLC (ABD) tarafından sağlanır ancak:
+                    <ul>
+                        <li>Google, AB-ABD Veri Gizliliği Çerçevesi (Data Privacy Framework) kapsamında sertifikalıdır</li>
+                        <li>Google, AB Standart Sözleşme Hükümleri (Standard Contractual Clauses - SCC) kullanır</li>
+                        <li>Verileriniz öncelikli olarak AB bölgesinde işlenir</li>
+                    </ul>
+                </li>
+                <li><strong>Veri Güvenliği:</strong> Tüm uluslararası veri transferleri TLS/SSL şifreleme ile korunur</li>
+                <li><strong>İtiraz Hakkı:</strong> AB dışına veri aktarımına itiraz etmek isterseniz Google hesabı kullanmadan sadece yerel depolama ile uygulamayı kullanabilirsiniz</li>
+            </ul>
 
             <h2>Reklamlar ve Analitik</h2>
             
@@ -220,14 +245,37 @@
             </ul>
 
             <h2>Haklarınız</h2>
-            <p>KVKK ve GDPR kapsamında aşağıdaki haklarınız vardır:</p>
+            
+            <h3>KVKK Kapsamında Haklarınız (Türkiye)</h3>
+            <p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında aşağıdaki haklarınız vardır:</p>
             <ul>
-                <li><strong>Erişim Hakkı:</strong> Hangi verilerinizin toplandığını öğrenebilirsiniz</li>
-                <li><strong>Düzeltme Hakkı:</strong> Yanlış bilgileri düzeltebilirsiniz</li>
-                <li><strong>Silme Hakkı:</strong> Verilerinizi uygulamadan veya cihazınızdan tamamen silebilirsiniz (geliştirici verilerinize erişemez)</li>
-                <li><strong>İtiraz Hakkı:</strong> Veri işlemeye itiraz edebilirsiniz</li>
-                <li><strong>Veri Taşınabilirlik Hakkı:</strong> Verilerinizi CSV veya PDF formatında dışa aktarabilirsiniz</li>
-                <li><strong>Destek ve veri yönetimi:</strong> Tüm haklarınız için uygulama ayarlarından veya info@dayzenstudio.com adresinden destek alabilirsiniz</li>
+                <li><strong>Bilgi Talep Etme:</strong> Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+                <li><strong>Erişim Hakkı:</strong> Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme</li>
+                <li><strong>Düzeltme Hakkı:</strong> Kişisel verilerinizin düzeltilmesini talep etme</li>
+                <li><strong>Silme Hakkı:</strong> Kişisel verilerinizin silinmesini veya yok edilmesini talep etme</li>
+                <li><strong>İtiraz Hakkı:</strong> Kişisel verilerin işlenmesine itiraz etme</li>
+                <li><strong>Zarar Talep Etme:</strong> KVKK hükümlerine aykırı işleme nedeniyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
+            </ul>
+            
+            <h3>GDPR Kapsamında Haklarınız (AB/Avrupa)</h3>
+            <p>Avrupa Birliği Genel Veri Koruma Yönetmeliği (GDPR) kapsamında aşağıdaki haklarınız vardır:</p>
+            <ul>
+                <li><strong>Right of Access (Erişim Hakkı):</strong> Hangi kişisel verilerinizin işlendiğini öğrenme hakkı</li>
+                <li><strong>Right to Rectification (Düzeltme Hakkı):</strong> Yanlış veya eksik kişisel verilerinizi düzeltme hakkı</li>
+                <li><strong>Right to Erasure / "Right to be Forgotten" (Unutulma Hakkı):</strong> Kişisel verilerinizin silinmesini talep etme hakkı</li>
+                <li><strong>Right to Restriction of Processing (İşlemeyi Kısıtlama Hakkı):</strong> Belirli koşullarda veri işlemenin kısıtlanmasını talep etme</li>
+                <li><strong>Right to Data Portability (Veri Taşınabilirlik Hakkı):</strong> Kişisel verilerinizi yapılandırılmış, yaygın kullanılan ve makine tarafından okunabilir formatta (CSV, PDF) alma ve başka bir veri sorumlusuna aktarma hakkı</li>
+                <li><strong>Right to Object (İtiraz Hakkı):</strong> Meşru menfaat veya kamu yararı temelinde yapılan veri işlemeye itiraz etme hakkı</li>
+                <li><strong>Right not to be subject to Automated Decision-Making (Otomatik Karar Vermeye Tabi Olmama Hakkı):</strong> Profilleme dahil olmak üzere, yalnızca otomatik işlemeye dayanan ve hukuki sonuç doğuran kararlara tabi olmama hakkı</li>
+                <li><strong>Right to Lodge a Complaint (Şikayet Hakkı):</strong> İlgili veri koruma otoritesine (Türkiye'de Kişisel Verileri Koruma Kurumu) şikayette bulunma hakkı</li>
+            </ul>
+            
+            <h3>Haklarınızı Nasıl Kullanabilirsiniz?</h3>
+            <ul>
+                <li><strong>Uygulama İçi:</strong> Ayarlar > Gizlilik > "Verilerimi Dışa Aktar" veya "Hesabı Sil" seçeneklerini kullanabilirsiniz</li>
+                <li><strong>E-posta:</strong> info@dayzenstudio.com adresine yazılı talebinizi gönderebilirsiniz</li>
+                <li><strong>Yanıt Süresi:</strong> Talebiniz en geç 30 gün içinde yanıtlanacaktır (KVKK ve GDPR gerekliliklerine uygun)</li>
+                <li><strong>Kimlik Doğrulama:</strong> Güvenlik amacıyla kimliğinizi doğrulamamız gerekebilir</li>
             </ul>
 
             <h2>KVKK Açık Rıza Metni</h2>
