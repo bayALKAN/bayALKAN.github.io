@@ -128,13 +128,6 @@
                 <li><strong>Sağlık Bilgileri:</strong> Alerji listesi, tıbbi durumlar, beslenme tercihleri (vegan, vejetaryen vb.), ilaç kullanımı, takviye kullanımı</li>
                 <li><strong>Yaşam Tarzı Bilgileri:</strong> Aktivite seviyesi, oturma süresi, stres seviyesi, sigara/alkol kullanımı, yemek alışkanlıkları, pişirme becerisi</li>
                 <li><strong>Beslenme Verileri:</strong> Günlük öğün kayıtları, yediğiniz yiyecekler, kalori/makro takibi, su içme miktarı, öğün zamanları</li>
-                <li><strong>Fiziksel Aktivite Verileri:</strong> 
-                    <ul>
-                        <li>Adım sayısı (Android ACTIVITY_RECOGNITION izni ile pedometer kullanımı)</li>
-                        <li>Aktivite sensör verileri (Android BODY_SENSORS izni ile - isteğe bağlı, sadece cihazda işlenir)</li>
-                        <li>Google Fit/Apple Health entegrasyonu (kullanıcı izni ile - isteğe bağlı)</li>
-                    </ul>
-                </li>
                 <li><strong>Hedef ve Tercih Verileri:</strong> Günlük kalori/makro hedefleri, kilo hedefi, haftalık kilo değişim hedefi, besin limitleri (şeker, doymuş yağ, sodyum)</li>
                 <li><strong>Sosyoekonomik Bilgiler:</strong> Bütçe aralığı, hanehalkı büyüklüğü, alışveriş sıklığı, konum (şehir/bölge), organik ürün tercihi</li>
                 <li><strong>Uygulama Tercihleri:</strong> Tema seçimi, dil tercihi, bildirim ayarları, gizlilik ayarları</li>
@@ -203,7 +196,7 @@
             <ul>
                 <li><strong>Aktif Hesaplar:</strong> Verileriniz hesabınız aktif olduğu sürece saklanır</li>
                 <li><strong>Hesap Silme Sonrası:</strong> Hesabınızı sildiğinizde veya uygulamayı kaldırdığınızda, tüm verileriniz 30 gün içinde kalıcı olarak silinir</li>
-                <li><strong>Yasal Yükümlülükler:</strong> Yasal gereklilikler (vergi, mali raporlama vb.) için gerekli olan veriler 5 yıl süreyle saklanabilir</li>
+                <li><strong>Abonelik ve Ödeme Bilgileri:</strong> Tüm abonelik ödemeleri Google Play Store tarafından yönetilir ve işlenir. Ödeme bilgileriniz (kredi kartı, fatura adresi vb.) tamamen Google'ın sistemlerinde saklanır ve Google'ın veri saklama politikasına tabidir. Geliştirici olarak ödeme bilgilerinize hiçbir şekilde erişimimiz yoktur.</li>
                 <li><strong>Anonim İstatistikler:</strong> Firebase Analytics tarafından toplanan anonim kullanım verileri (kimlik bilgisi içermez) Google'ın veri saklama politikasına tabidir</li>
             </ul>
             
@@ -238,7 +231,6 @@
                 <li><strong>Firebase Cloud Firestore:</strong> Google hesabı ile giriş yapanlar için bulut veri depolama hizmeti - Tüm beslenme ve sağlık verileriniz Avrupa (eur3) bölgesinde güvenli şekilde saklanır</li>
                 <li><strong>Firebase Analytics:</strong> Anonim kullanım istatistikleri (hangi özellikler kullanılıyor, uygulama süresi vb.) - Uygulama performansını iyileştirmek için gereklidir</li>
                 <li><strong>Firebase Crashlytics:</strong> Uygulama çökmeleri ve hata raporları (cihaz modeli, OS versiyonu, hata detayları - kişisel veri içermez) - Teknik sorunları tespit etmek için gereklidir</li>
-                <li><strong>Firebase Remote Config:</strong> Uygulama ayarlarını uzaktan güncelleme (reklam gösterim ayarları, özellik açma/kapama vb.)</li>
                 <li>Bu servisler Google'ın gizlilik politikasına tabidir: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
                 <li>Firebase Analytics ve Crashlytics tarafından toplanan veriler kimlik bilgilerinizi içermez ve anonim olarak işlenir</li>
                 <li><strong>Önemli:</strong> Firebase Analytics ve Crashlytics uygulamanın kararlı çalışması ve teknik sorunların tespiti için gereklidir ve devre dışı bırakılamaz</li>
@@ -333,20 +325,19 @@
                 </ul>
             </div>
 
-            <h2>Üçüncü Taraf Hizmetler</h2>
+            <h3>Üçüncü Taraf Hizmetler</h3>
             <p>Uygulamada kullanılan üçüncü taraf servisleri:</p>
             <ul>
                 <li><strong>Google Play Hizmetleri:</strong> Uygulama güncellemeleri, uygulama içi satın almalar (abonelik yönetimi)</li>
                 <li><strong>Google AdMob:</strong> Reklam gösterimi (ücretsiz kullanıcılar için banner ve interstitial reklamlar)</li>
                 <li><strong>Firebase (Google):</strong>
                     <ul>
+                        <li>Firebase Authentication - Google ile giriş</li>
+                        <li>Firebase Cloud Firestore - Bulut veri depolama</li>
                         <li>Firebase Analytics - Kullanım istatistikleri</li>
                         <li>Firebase Crashlytics - Hata raporlama</li>
-                        <li>Firebase Remote Config - Uzaktan yapılandırma</li>
                     </ul>
                 </li>
-                <li><strong>Google Fit (İsteğe Bağlı):</strong> Health package üzerinden adım sayısı ve aktivite verisi senkronizasyonu (sadece izin verirseniz)</li>
-                <li><strong>Apple Health (İsteğe Bağlı - iOS):</strong> Health package üzerinden sağlık verisi entegrasyonu (sadece izin verirseniz)</li>
             </ul>
             <p><strong>Not:</strong> Bu üçüncü taraf hizmetlerin her biri kendi gizlilik politikalarına sahiptir. Lütfen ilgili hizmetin gizlilik politikasını da inceleyiniz.</p>
 

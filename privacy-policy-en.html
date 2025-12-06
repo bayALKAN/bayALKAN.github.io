@@ -128,13 +128,6 @@
                 <li><strong>Health Information:</strong> Allergy list, medical conditions, dietary preferences (vegan, vegetarian, etc.), medication use, supplement use</li>
                 <li><strong>Lifestyle Information:</strong> Activity level, sitting duration, stress level, smoking/alcohol consumption, eating habits, cooking skills</li>
                 <li><strong>Nutrition Data:</strong> Daily meal records, foods you eat, calorie/macro tracking, water intake, meal times</li>
-                <li><strong>Physical Activity Data:</strong>
-                    <ul>
-                        <li>Step count (via Android ACTIVITY_RECOGNITION permission for pedometer usage)</li>
-                        <li>Activity sensor data (via Android BODY_SENSORS permission - optional, processed only on device)</li>
-                        <li>Google Fit/Apple Health integration (with user permission - optional)</li>
-                    </ul>
-                </li>
                 <li><strong>Goal and Preference Data:</strong> Daily calorie/macro goals, weight goal, weekly weight change target, nutrient limits (sugar, saturated fat, sodium)</li>
                 <li><strong>Socioeconomic Information:</strong> Budget range, household size, shopping frequency, location (city/region), organic food preference</li>
                 <li><strong>App Preferences:</strong> Theme selection, language preference, notification settings, privacy settings</li>
@@ -203,7 +196,7 @@
             <ul>
                 <li><strong>Active Accounts:</strong> Your data is retained as long as your account is active</li>
                 <li><strong>After Account Deletion:</strong> When you delete your account or uninstall the app, all your data is permanently deleted within 30 days</li>
-                <li><strong>Legal Obligations:</strong> Data required for legal requirements (tax, financial reporting, etc.) may be retained for 5 years</li>
+                <li><strong>Subscription and Payment Information:</strong> All subscription payments are managed and processed by Google Play Store. Your payment information (credit card, billing address, etc.) is stored entirely in Google's systems and is subject to Google's data retention policy. As the developer, we have no access to your payment information whatsoever.</li>
                 <li><strong>Anonymous Statistics:</strong> Anonymous usage data collected by Firebase Analytics (does not include identity information) is subject to Google's data retention policy</li>
             </ul>
             
@@ -238,7 +231,6 @@
                 <li><strong>Firebase Cloud Firestore:</strong> Cloud data storage service for users signed in with Google account - All your nutrition and health data is securely stored in the Europe (eur3) region</li>
                 <li><strong>Firebase Analytics:</strong> Anonymous usage statistics (which features are used, app usage time, etc.) - Required to improve app performance</li>
                 <li><strong>Firebase Crashlytics:</strong> App crashes and error reports (device model, OS version, error details - does not contain personal data) - Required to detect technical issues</li>
-                <li><strong>Firebase Remote Config:</strong> Remote app settings updates (ad display settings, feature enable/disable, etc.)</li>
                 <li>These services are subject to Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
                 <li>Data collected by Firebase Analytics and Crashlytics does not include your identity information and is processed anonymously</li>
                 <li><strong>Important:</strong> Firebase Analytics and Crashlytics are required for stable app operation and technical issue detection, and cannot be disabled</li>
@@ -339,13 +331,12 @@
                 <li><strong>Google AdMob:</strong> Ad display (banner and interstitial ads for free users)</li>
                 <li><strong>Firebase (Google):</strong>
                     <ul>
+                        <li>Firebase Authentication - Google sign-in</li>
+                        <li>Firebase Cloud Firestore - Cloud data storage</li>
                         <li>Firebase Analytics - Usage statistics</li>
                         <li>Firebase Crashlytics - Error reporting</li>
-                        <li>Firebase Remote Config - Remote configuration</li>
                     </ul>
                 </li>
-                <li><strong>Google Fit (Optional):</strong> Step count and activity data synchronization via Health package (only with your permission)</li>
-                <li><strong>Apple Health (Optional - iOS):</strong> Health data integration via Health package (only with your permission)</li>
             </ul>
             <p><strong>Note:</strong> Each of these third-party services has its own privacy policy. Please review the relevant service's privacy policy.</p>
 
