@@ -447,12 +447,19 @@
 
             <h3>🗑️ Veri Silme</h3>
             <p><strong>Verilerinizi Silme:</strong></p>
-            <p>Tüm verileriniz sadece sizin cihazınızda saklandığı için, veri silme işlemini doğrudan siz yapabilirsiniz:</p>
+            <p>MyNutrio hem cihazınızda (yerel olarak) hem de Google ile giriş yaptıysanız Firebase Firestore'da (bulutta) veri saklar. Verilerinizi silmek için:</p>
             <ol>
-                <li><strong>Uygulama İçinden:</strong> Ayarlar → Gizlilik ve Güvenlik → "Tüm Verileri Sil" seçeneğini kullanın (anında silinir)</li>
-                <li><strong>Uygulamayı Silme:</strong> MyNutrio'yu cihazınızdan kaldırdığınızda tüm yerel veriler otomatik olarak kalıcı silinir</li>
+                <li><strong>Uygulama İçinden:</strong> Ayarlar → Gizlilik ve Güvenlik → "Hesabı ve Tüm Verileri Sil" seçeneğini kullanın
+                    <ul>
+                        <li>Hem cihazınızdaki yerel veriler anında silinir</li>
+                        <li>Hem de Firebase Firestore'daki bulut verileriniz kalıcı olarak silinir</li>
+                        <li>Google hesabı bağlantınız koparılır</li>
+                    </ul>
+                </li>
+                <li><strong>Uygulamayı Silme:</strong> MyNutrio'yu cihazınızdan kaldırdığınızda sadece yerel veriler silinir. Firebase'deki bulut verileriniz için yukarıdaki işlemi yapmalısınız.</li>
+                <li><strong>E-posta ile Talep:</strong> info@dayzenstudio.com adresine e-posta göndererek hesabınızın ve tüm verilerinizin silinmesini talep edebilirsiniz (30 gün içinde işleme alınır)</li>
             </ol>
-            <p><strong>Önemli Not:</strong> MyNutrio geliştiricisi olarak kullanıcı verilerinize doğrudan erişimimiz yoktur. Tüm verileriniz yalnızca sizin cihazınızda şifreli olarak saklanır. Bu nedenle veri silme ve veri dışa aktarma işlemlerini tamamen kendiniz kontrol edersiniz.</p>
+            <p><strong>Önemli Not:</strong> Veri silme işlemi <strong>geri alınamaz</strong>. Silinen veriler hiçbir şekilde kurtarılamaz. Google Analytics ve Crashlytics gibi anonim teknik loglar hariç, tüm kişisel verileriniz kalıcı olarak silinir.</p>
 
             <div class="contact">
                 <h3>📧 İletişim</h3>

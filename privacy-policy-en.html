@@ -446,12 +446,19 @@
 
             <h3>🗑️ Data Deletion</h3>
             <p><strong>Deleting Your Data:</strong></p>
-            <p>Since all your data is stored only on your device, you can delete it directly:</p>
+            <p>MyNutrio stores data both on your device (locally) and in Firebase Firestore (cloud) if you sign in with Google. To delete your data:</p>
             <ol>
-                <li><strong>Within the App:</strong> Go to Settings → Privacy and Security → "Delete All Data" option (instant deletion)</li>
-                <li><strong>Uninstall App:</strong> When you remove MyNutrio from your device, all local data is automatically and permanently deleted</li>
+                <li><strong>Within the App:</strong> Go to Settings → Privacy and Security → "Delete Account and All Data" option
+                    <ul>
+                        <li>Local data on your device is deleted immediately</li>
+                        <li>Your cloud data in Firebase Firestore is permanently deleted</li>
+                        <li>Your Google account connection is removed</li>
+                    </ul>
+                </li>
+                <li><strong>Uninstall App:</strong> When you remove MyNutrio from your device, only local data is deleted. For cloud data in Firebase, you must follow the process above.</li>
+                <li><strong>Email Request:</strong> You can email info@dayzenstudio.com to request deletion of your account and all data (processed within 30 days)</li>
             </ol>
-            <p><strong>Important Note:</strong> As the developer of MyNutrio, we do not have direct access to your user data. All your data is stored encrypted only on your device. Therefore, you control both data deletion and data export directly.</p>
+            <p><strong>Important Note:</strong> Data deletion is <strong>irreversible</strong>. Deleted data cannot be recovered in any way. All personal data is permanently deleted, except anonymous technical logs such as Google Analytics and Crashlytics.</p>
 
             <div class="contact">
                 <h3>📧 Contact</h3>
