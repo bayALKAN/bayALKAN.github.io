@@ -122,7 +122,8 @@
                 <li><strong>Profile Information:</strong> Name, date of birth/age, gender, height, weight, target weight</li>
                 <li><strong>Health Information:</strong> Allergy list, medical conditions, dietary preferences (vegan, vegetarian, etc.), protein supplement use</li>
                 <li><strong>Lifestyle Information:</strong> Activity level, eating habits (meal timing), cooking skills</li>
-                <li><strong>Nutrition Data:</strong> Daily meal records, foods you eat, calorie/macro tracking, water intake, meal times</li>
+                <li><strong>Nutrition Data:</strong> Daily meal logs, food consumed, calorie/macro tracking, water intake, meal timing</li>
+                <li><strong>Physical Activity Data:</strong> Step counts, walking distance, active duration, and calories burned during these activities</li>
                 <li><strong>Goal and Preference Data:</strong> Daily calorie/macro goals, weight goal, weekly weight change target, nutrient limits (sugar, saturated fat, sodium)</li>
                 <li><strong>App Preferences:</strong> Theme selection, unit system (metric/imperial), language preference, notification settings, privacy settings</li>
             </ul>
@@ -141,7 +142,8 @@
             <ul>
                 <li>Provide personalized nutrition recommendations</li>
                 <li>Calculate calories and nutritional values</li>
-                <li>Help you track your progress</li>
+                <li>To help you track your progress</li>
+                <li><strong>Background Step Tracking:</strong> To measure physical activity and calculate calories burned even when the app is closed</li>
                 <li>Improve app performance and security</li>
                 <li>Resolve technical issues and report errors</li>
                 <li>Send you notifications (with your permission)</li>
@@ -183,7 +185,14 @@
                 <li>Google Cloud Firestore security rules prevent unauthorized access</li>
                 <li>Security improvements are made with app updates</li>
                 <li>Third-party access is prevented</li>
-                <li>Best practices for privacy and security are followed</li>
+                <li>Privacy and security best practices are followed</li>
+            </ul>
+
+            <h3>Background Tracking and Foreground Services</h3>
+            <ul>
+                <li>Our app uses Android's <strong>Foreground Service</strong> technology to count steps continuously and accurately.</li>
+                <li>While this service is running, a persistent notification is shown in the notification panel; this notification informs the user that the app is counting data in the background.</li>
+                <li>You can stop this permission at any time from the app settings or system settings.</li>
             </ul>
             
             <h3>Data Retention Period</h3>
