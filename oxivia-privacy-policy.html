@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası | Oxivia</title>
+    <style>
+        :root {
+            --primary: #10B981;
+            --primary-dark: #059669;
+            --bg: #09090B;
+            --card-bg: #121214;
+            --card-border: #222226;
+            --text-main: #F4F4F5;
+            --text-sub: #A1A1AA;
+            --accent-blue: #0284C7;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 44px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 24px;
+        }
+        .logo-icon {
+            font-size: 38px;
+            background: rgba(16, 185, 129, 0.12);
+            padding: 12px;
+            border-radius: 18px;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #FFFFFF;
+            letter-spacing: -0.5px;
+        }
+        .update-badge {
+            display: inline-block;
+            background: rgba(2, 132, 199, 0.15);
+            color: #38BDF8;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-top: 6px;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+        }
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        p {
+            color: var(--text-sub);
+            font-size: 14.5px;
+            margin-bottom: 14px;
+        }
+        ul {
+            list-style-type: none;
+            margin-bottom: 18px;
+            padding-left: 4px;
+        }
+        li {
+            color: var(--text-sub);
+            font-size: 14px;
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 24px;
+        }
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        .highlight-box {
+            background: rgba(16, 185, 129, 0.08);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 14px 14px 0;
+            padding: 16px 20px;
+            margin: 24px 0;
+        }
+        .highlight-box p {
+            color: #E4E4E7;
+            margin: 0;
+            font-size: 13.5px;
+        }
+        .disclaimer-box {
+            background: rgba(239, 68, 68, 0.08);
+            border-left: 4px solid #EF4444;
+            border-radius: 0 14px 14px 0;
+            padding: 16px 20px;
+            margin: 24px 0;
+        }
+        .disclaimer-box p {
+            color: #FCA5A5;
+            margin: 0;
+            font-size: 13.5px;
+        }
+        .nav-links {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--card-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13.5px;
+        }
+        a {
+            color: #34D399;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #71717A;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-icon">🫁</div>
+            <div>
+                <h1>Gizlilik Politikası (Privacy Policy)</h1>
+                <span class="update-badge">Son Güncelleme: 24 Ağustos 2026 | Sürüm: 1.0.0</span>
+            </div>
+        </div>
+
+        <p><strong>DayZen Studio ("biz", "bizim" veya "Oxivia")</strong> olarak gizliliğinize en üst düzeyde saygı duyuyoruz. Bu Gizlilik Politikası, <strong>Oxivia: Sigara Bırakma Rehberi</strong> mobil uygulamasını kullandığınızda bilgilerinizin nasıl işlendiğini, saklandığını ve korunduğunu açıklar.</p>
+
+        <h2>1. Toplanan ve İşlenen Bilgiler</h2>
+        <p>Oxivia, temel olarak <em>Offline-First (Önce Yerel Cihaz)</em> prensibiyle geliştirilmiştir. Uygulamanın çalışması için aşağıdaki veriler işlenir:</p>
+        <ul>
+            <li><strong>Alışkanlık ve Bırakma Parametreleri:</strong> Sigara bırakma tarihi ve saati, günlük içilen sigara adedi, paket fiyatı, para birimi ve zam geçmişi kayıtları.</li>
+            <li><strong>Kullanım ve İlerleme Verileri:</strong> Savuşturulan kriz sayısı, kaçamak kayıtları, tamamlanan başarı rozetleri, tasarruf hedefleri ve kazanılan deneyim puanları (XP).</li>
+            <li><strong>Hesap Bilgileri (Opsiyonel):</strong> Google Hesabı ile yedekleme yapmayı seçtiğinizde yalnızca ad-soyad, e-posta adresi ve Firebase UID kimliği. Misafir girişinde hiçbir kişisel kimlik verisi toplanmaz.</li>
+            <li><strong>Cihaz ve Tercih Verileri:</strong> Bildirim izin durumları, tema seçimi (OLED Koyu / Açık Mod), dil tercihi ve titreşim (haptic) ayarları.</li>
+        </ul>
+
+        <div class="highlight-box">
+            <p><strong>🔒 Sıfır Reklam ve Sıfır Veri Satışı İlkesi:</strong> Kişisel sağlık, tasarruf veya kullanım verileriniz asla 3. taraf reklam şirketlerine, veri simsarlarına satılmaz, kiralanmaz ve profil çıkarma amacıyla kullanılmaz.</p>
+        </div>
+
+        <h2>2. Verilerin Saklanması ve Bulut Senkronizasyonu</h2>
+        <p>Kullanıcı verileriniz öncelikli olarak cihazınızın güvenli yerel veritabanında (SharedPreferences / Local Storage) saklanır. Google Hesabınızla oturum açtığınız takdirde verileriniz Google Cloud Firestore altyapısında uçtan uca güvenlikle yedeklenir.</p>
+
+        <h2>3. Uygulama İçi İzinler</h2>
+        <ul>
+            <li><strong>Bildirim İzni (POST_NOTIFICATIONS):</strong> Günlük motivasyon bildirimleri, sağlık kilometre taşı kutlamaları ve kriz hatırlatıcıları göndermek için kullanılır. Dilediğiniz an ayarlardan kapatabilirsiniz.</li>
+            <li><strong>Titreşim & Dokunsal Geri Bildirim (VIBRATE):</strong> 4-7-8 nefes egzersizlerinde göze bakmadan nefes ritmini hissettirmek ve oyun içi geri bildirimler için kullanılır.</li>
+        </ul>
+
+        <h2>4. Tıbbi ve Yasal Feragatname (Medical Disclaimer)</h2>
+        <div class="disclaimer-box">
+            <p><strong>⚠️ Önemli Sağlık Uyarısı:</strong> Oxivia bir tıbbi cihaz, klinik teşhis aracı veya farmakolojik tedavi yöntemi değildir. Uygulamada yer alan sağlık geri kazanım istatistikleri ve akciğer yenilenme süreleri, Dünya Sağlık Örgütü (WHO) ve Amerikan Kanser Topluluğu (ACS) gibi kamuya açık tıbbi literatürlerden derlenmiş motivasyonel tahminlerdir. Sigara bırakma sürecinizdeki klinik ve tıbbi kararlarınız için daima yetkili hekiminize veya sağlık kuruluşunuza danışınız.</p>
+        </div>
+
+        <h2>5. Verilerin Silinmesi ve Hesap Kapatma</h2>
+        <p>Kullanıcılarımız verileri üzerinde tam kontrole sahiptir. Uygulama içerisindeki <strong>Profil > Hakkında > Hesabımı ve Verilerimi Sil</strong> seçeneğini kullanarak yerel ve buluttaki tüm verilerinizi anında ve kalıcı olarak silebilirsiniz.</p>
+
+        <h2>6. İletişim</h2>
+        <p>Gizlilik politikamız veya kişisel verilerinizle ilgili her türlü soru, geri bildirim veya talepleriniz için bizimle iletişime geçebilirsiniz:</p>
+        <p><strong>Geliştirici & Stüdyo:</strong> DayZen Studio<br>
+        <strong>E-Posta:</strong> <a href="mailto:dayzenstudio@gmail.com">dayzenstudio@gmail.com</a><br>
+        <strong>Web / Depo:</strong> <a href="https://github.com/DayZen-Studio/Anti-Sigara" target="_blank">DayZen-Studio/Anti-Sigara</a></p>
+
+        <div class="nav-links">
+            <a href="terms-conditions.html">Kullanım Koşulları (Terms & Conditions) →</a>
+            <span>© 2026 DayZen Studio. Tüm hakları saklıdır.</span>
+        </div>
+    </div>
+    <div class="footer-note">Oxivia - Akıllı Sigara Bırakma Asistanı</div>
+</body>
+</html>
