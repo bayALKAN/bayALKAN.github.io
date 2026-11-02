@@ -1,370 +1,260 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="tr">
 <head>
+    <link rel="canonical" href="https://dayzenstudio.com/mynutrio/terms.html">
+    <script>if(window.location.hostname!=='dayzenstudio.com'||window.location.pathname!=='/mynutrio/terms.html'){window.location.replace('https://dayzenstudio.com/mynutrio/terms.html');}</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyNutrio - Terms of Service</title>
+    <title>MyNutrio — Kullanım Şartları / Terms of Service | DayZen Studio</title>
+    <meta name="description" content="MyNutrio: Kalori & Diyet Takip uygulaması resmi Kullanım Şartları ve Tıbbi Sorumluluk Reddi.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #0A0A0B;
+            --surface: #121215;
+            --border: #232329;
+            --text: #F4F4F6;
+            --text-secondary: #9E9EA8;
+            --text-muted: #686873;
+            --accent: #10B981;
+            --amber: #F59E0B;
+            --serif: 'Instrument Serif', Georgia, serif;
+            --sans: 'Inter', -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            min-height: 100vh;
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(10,10,11,0.88);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
         }
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            text-align: center;
+        .nav {
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
+        .back-link {
+            font-size: 13.5px;
+            font-weight: 500;
+            color: var(--text-secondary);
         }
-        .subtitle {
-            opacity: 0.9;
-            font-size: 1.1rem;
+        .back-link:hover { color: var(--text); text-decoration: none; }
+        .lang-switch {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
         }
-        .content {
-            padding: 2rem;
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 500;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        .lang-btn.active {
+            background: var(--surface);
+            color: var(--text);
+        }
+        main { padding: 64px 0 96px; }
+        .doc-meta {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+            display: block;
         }
         h1 {
-            color: #667eea;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 0.5rem;
+            font-size: clamp(32px, 5vw, 46px);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+        .updated {
+            font-family: var(--mono);
+            font-size: 12px;
+            color: var(--text-muted);
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
         }
         h2 {
-            color: #5a6fd8;
-            margin-top: 2rem;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 36px 0 14px;
+            letter-spacing: -0.015em;
         }
-        h3 {
-            color: #6366f1;
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
         }
-        .highlight {
-            background: #fff3cd;
-            padding: 1rem;
-            border-left: 4px solid #ffc107;
-            margin: 1rem 0;
-        }
-        .footer {
-            background: #f8f9fa;
-            padding: 2rem;
-            text-align: center;
-            border-top: 1px solid #e9ecef;
-        }
-        .contact {
-            background: #667eea;
-            color: white;
-            padding: 1.5rem;
+        .notice-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--amber);
             border-radius: 8px;
-            margin: 2rem 0;
+            padding: 20px 24px;
+            margin: 24px 0;
         }
-        .contact h3 {
-            color: white;
-            margin-top: 0;
+        .notice-box h3 {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
         }
-        ul, ol {
-            padding-left: 1.5rem;
+        .notice-box p { margin-bottom: 0; font-size: 14px; }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
         }
-        li {
-            margin-bottom: 0.5rem;
-        }
-        .summary-box {
-            background: #f0f4ff;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-        @media (max-width: 768px) {
-            .header, .content {
-                padding: 1rem;
-            }
-            .logo {
-                font-size: 2rem;
-            }
-        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">🥗 MyNutrio</div>
-            <div class="subtitle">Smart Nutrition Tracking App - Terms of Service</div>
+    <header>
+        <div class="wrap nav">
+            <a href="/mynutrio/" class="back-link">&larr; MyNutrio</a>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('tr', this)">TR</button>
+                <button class="lang-btn" onclick="switchLang('en', this)">EN</button>
+            </div>
         </div>
-        
-        <div class="content">
+    </header>
+
+    <main class="wrap">
+        <!-- ================= TURKISH ================= -->
+        <div id="sec-tr" class="lang-section active">
+            <span class="doc-meta">YASAL BELGE // MYNUTRIO</span>
+            <h1>Kullanım Şartları (Terms of Service)</h1>
+            <div class="updated">Son Güncelleme: 2 Kasım 2026</div>
+
+            <p>
+                <strong>DayZen Studio</strong> tarafından geliştirilen <strong>MyNutrio: Kalori &amp; Diyet Takip</strong> uygulamasını indirerek veya kullanarak bu Kullanım Şartlarını kabul etmiş sayılırsınız.
+            </p>
+
+            <h2>1. Hizmetin Amacı</h2>
+            <p>
+                MyNutrio; kullanıcıların günlük öğünlerini, kalori dengesini, su tüketimini, kilo değişimini ve temel makro/mikro besin değerlerini takip etmelerine yardımcı olan kişisel bir beslenme günlüğü uygulamasıdır.
+            </p>
+
+            <h2>2. Tıbbi Sorumluluk Reddi</h2>
+            <div class="notice-box">
+                <h3>Tıbbi Teşhis veya Diyetisyen Tavsiyesi Değildir</h3>
+                <p>
+                    MyNutrio içerisinde yer alan besin veritabanı, kalori hedefleri, BMI hesaplamaları ve sağlık skorları yalnızca genel bilgilendirme amaçlıdır. Uygulama <strong>kesinlikle profesyonel tıbbi teşhis, tedavi veya uzman diyetisyen reçetesi yerine geçmez.</strong> Besin alerjileri, kronik rahatsızlıklar veya kilo yönetimi kararlarınız için lütfen bir hekime veya uzman diyetisyene başvurunuz.
+                </p>
+            </div>
+
+            <h2>3. Besin Değerleri Doğruluğu</h2>
+            <p>
+                Uygulamadaki besinlerin kalori, makro ve vitamin/mineral değerleri standart referans veritabanlarına ve ortalama porsiyonlara dayanmaktadır. Üretici firmaların tarif değişiklikleri veya pişirme yöntemlerine göre gerçek besin değerleri farklılık gösterebilir.
+            </p>
+
+            <h2>4. Fikri Mülkiyet</h2>
+            <p>
+                MyNutrio uygulamasının arayüz tasarımı, grafik bileşenleri ve kaynak kodları <strong>DayZen Studio</strong>'ya aittir ve telif hakkı yasalarıyla korunmaktadır.
+            </p>
+
+            <h2>5. İletişim</h2>
+            <p>
+                Kullanım şartlarıyla ilgili sorularınız için:<br>
+                <strong>E-posta:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Web:</strong> <a href="https://dayzenstudio.com/mynutrio/">https://dayzenstudio.com/mynutrio/</a>
+            </p>
+        </div>
+
+        <!-- ================= ENGLISH ================= -->
+        <div id="sec-en" class="lang-section">
+            <span class="doc-meta">LEGAL DOCUMENT // MYNUTRIO</span>
             <h1>Terms of Service</h1>
-            
-            <div class="highlight">
-                <strong>Last Updated: April 21, 2026</strong><br>
-                <strong>Effective Date: April 21, 2026</strong><br>
-                <strong>App Version: 1.2.8</strong>
+            <div class="updated">Last Updated: November 2, 2026</div>
+
+            <p>
+                By downloading or using <strong>MyNutrio: Calorie &amp; Diet Tracker</strong>, developed by <strong>DayZen Studio</strong>, you agree to these Terms of Service.
+            </p>
+
+            <h2>1. Purpose of Service</h2>
+            <p>
+                MyNutrio is a personal nutrition and hydration journal that helps users log meals, monitor calorie balance, track weight trends, and review essential macro/micronutrients.
+            </p>
+
+            <h2>2. Medical Disclaimer</h2>
+            <div class="notice-box">
+                <h3>Not Medical or Clinical Dietetic Advice</h3>
+                <p>
+                    All nutritional data, calorie targets, BMI calculations, and wellness scores provided in MyNutrio are for informational and educational purposes only. MyNutrio <strong>does not substitute professional medical advice, diagnosis, or clinical dietetic therapy.</strong> Always consult your physician or registered dietitian before making significant changes to your diet.
+                </p>
             </div>
 
-            <h2>1. Introduction and Basic Rules</h2>
+            <h2>3. Accuracy of Nutritional Data</h2>
+            <p>
+                Nutritional values in the catalog are based on standard reference databases and average serving sizes. Actual values may vary depending on brand formulations and preparation methods.
+            </p>
 
-            <div class="warning">
-                <strong>⚠️ Important Health Warning:</strong> MyNutrio is a nutrition tracking and wellness app. It does not replace professional medical advice, diagnosis, or treatment. Always consult qualified healthcare professionals before making health and nutrition decisions.
-            </div>
+            <h2>4. Intellectual Property</h2>
+            <p>
+                All UI designs, custom components, and source code of MyNutrio are the exclusive property of <strong>DayZen Studio</strong>.
+            </p>
 
-            <div class="warning">
-                <strong>🔞 Age Restriction:</strong> MyNutrio is intended for users <strong>18 years of age and older</strong>. Individuals under 18 may not use the app.
-            </div>
-
-
-
-            <h2>2. Service Description</h2>
-            
-            <h3>Free Features:</h3>
-            <ul>
-                <li><strong>Google Sign-In:</strong> Sign in with your Google account to store your data in the cloud and enable multi-device synchronization</li>
-                <li><strong>Cloud Backup and Sync:</strong> For users who sign in with Google account, all data is securely stored in Google Cloud Firestore in the European region's Google infrastructure</li>
-                <li>Daily calorie and nutrition tracking</li>
-                <li>Basic food database</li>
-                <li>Water intake tracking</li>
-                <li>Basic statistics</li>
-                <li>Ad-supported experience</li>
-                <li>Manual and automatic food entry</li>
-                <li>Profile and goal management</li>
-                <li>App settings and theme selection</li>
-                <li><strong>Data Export:</strong> You can export all your data in CSV and PDF formats (completely free)</li>
-            </ul>
-
-            <h3>Premium Features (Subscription Required):</h3>
-            <ul>
-                <li><strong>Ad-Free Experience:</strong> No ads whatsoever</li>
-                <li><strong>Advanced Statistics and Analytics:</strong> Detailed nutrition reports, weekly/monthly trends, macro ratios</li>
-                <li><strong>Premium Recipes and Recommendations:</strong> Personalized recipe suggestions, food combinations</li>
-                <li><strong>Advanced Theme System:</strong> Dark mode and customizable colors</li>
-                <li><strong>All Premium Nutrition Information:</strong> Detailed tracking of vitamins, minerals, and other micronutrients</li>
-                <li><strong>Advanced Goal Management:</strong> Set custom nutrition goals (Omega-3, Vitamin C, etc.)</li>
-            </ul>
-
-            <h3>Alternative Access:</h3>
-            <ul>
-                <li><strong>Temporary Access by Watching Ads:</strong> Watch 2 ads to get 5 minutes of premium features</li>
-                <li><strong>Free Trial:</strong> 14-day trial for new users (annual plan only)</li>
-                <li><strong>Support:</strong> Direct email support at mynutrio_support@dayzenstudio.com</li>
-            </ul>
-
-            <h2>3. Subscription Terms</h2>
-            
-            <h3>3.1 Subscription Plans</h3>
-            <ul>
-                <li><strong>Monthly Subscription:</strong> Billed monthly</li>
-                <li><strong>Annual Subscription:</strong> Billed once a year (discounted compared to monthly)</li>
-            </ul>
-            <p><strong>Note:</strong> Prices are automatically determined by Google Play Store based on the user's country and currency.</p>
-
-            <h3>3.2 Payment and Billing</h3>
-            <ul>
-                <li>Subscriptions are processed through Google Play Billing</li>
-                <li>Payment is charged to your Google Play account after purchase confirmation</li>
-                <li>Subscriptions automatically renew unless canceled 24 hours before the end of the current period</li>
-                <li>You can manage your subscription from your Google Play account settings</li>
-            </ul>
-
-            <h3>3.3 Cancellation and Refund</h3>
-            <ul>
-                <li><strong>Cancellation:</strong> Google Play Store > Subscriptions > MyNutrio > Cancel Subscription</li>
-                <li><strong>Access After Cancellation:</strong> Premium features remain active until the end of your current billing period</li>
-                <li><strong>Refunds:</strong> Google Play Store's refund policy applies</li>
-                <li><strong>No Partial Refunds:</strong> No partial refunds for unused periods</li>
-            </ul>
-
-            <h2>4. User Responsibilities</h2>
-            
-            <h3>4.1 Accurate Information Entry</h3>
-            <ul>
-                <li>You are responsible for entering accurate profile information (age, height, weight, gender, activity level) - incorrect information affects calorie calculations</li>
-                <li>You are responsible for accurately recording the foods you eat, portion sizes, and meal times</li>
-                <li>MyNutrio provides nutritional value estimates generated using AI-assisted calculation methods with reference to open-source databases such as USDA</li>
-                <li>Nutritional values may not be 100% accurate - factors like brand, cooking method, fresh/processed status can affect values</li>
-                <li>For packaged foods especially, we recommend checking the product label information</li>
-                <li>All data should be used as a general guide only</li>
-            </ul>
-
-            <h3>4.2 Health and Medical Disclaimer</h3>
-            <div class="highlight">
-                <p><strong>IMPORTANT MEDICAL DISCLAIMER:</strong></p>
-                <ul>
-                    <li>MyNutrio is for nutrition tracking and informational purposes only</li>
-                    <li>It is not designed to diagnose, treat, or prevent any disease</li>
-                    <li>It does not provide medical advice, professional healthcare services, or dietitian services</li>
-                    <li><strong>You must consult a licensed doctor, dietitian, or health professional:</strong>
-                        <ul>
-                            <li>Before starting any diet or nutrition program</li>
-                            <li>Before setting calorie restriction or weight loss/gain goals</li>
-                            <li>Before making changes to your exercise program</li>
-                            <li>If you have chronic diseases, diabetes, heart conditions, or other medical issues</li>
-                            <li>If you have allergies, food intolerances, or dietary restrictions</li>
-                            <li>If you are pregnant, breastfeeding, or planning to become pregnant</li>
-                            <li>If you are taking medication or supplements (food-drug interactions may occur)</li>
-                        </ul>
-                    </li>
-                    <li><strong>Nutritional Values:</strong> Nutritional values in the app are taken from general databases and may not be 100% accurate. They may vary depending on brand and cooking method.</li>
-                    <li><strong>Calorie Calculations:</strong> Daily calorie requirement calculations are based on general formulas (Harris-Benedict, Mifflin-St Jeor) and may not fully reflect individual metabolic differences.</li>
-                    <li><strong>Allergen Warning:</strong> The app may not detect all allergens. If you have serious allergies/intolerances, carefully check the content of each food.</li>
-                    <li>Individual results may vary significantly from person to person</li>
-                </ul>
-            </div>
-
-            <h3>4.3 Prohibited Uses</h3>
-            <p>You agree not to:</p>
-            <ul>
-                <li>Use the app for illegal purposes</li>
-                <li>Attempt to reverse engineer the app</li>
-                <li>Upload false, misleading, or harmful content</li>
-                <li>Disrupt the app's functionality or servers</li>
-                <li>Use automated tools (bots, scrapers)</li>
-                <li>Resell or use the app commercially</li>
-            </ul>
-
-            <h2>5. Intellectual Property Rights</h2>
-            <ul>
-                <li>MyNutrio and all its content (food database, recipes, graphic designs) are owned by us or our licensors</li>
-                <li>You are granted a limited license for personal, non-commercial use</li>
-                <li>Data you enter (meal records, personal information) remains your property</li>
-            </ul>
-
-            <h2>6. Third-Party Services</h2>
-            
-            <h3>6.1 Advertising</h3>
-            <ul>
-                <li>The free version displays Google AdMob ads</li>
-                <li>You can control ad personalization from device settings</li>
-            </ul>
-
-            <h3>6.2 Google Play Billing</h3>
-            <ul>
-                <li>Subscriptions are managed through Google Play In-App Billing</li>
-                <li>You accept Google Play's terms and conditions</li>
-            </ul>
-
-            <h2>7. Data and Privacy</h2>
-            <ul>
-                <li>Your data is collected and processed as described in our Privacy Policy</li>
-                <li><strong>Local Storage (Guest Mode):</strong> If you use the app without a Google account, your nutrition and profile data is stored locally and encrypted on your device only, and is never sent to any server</li>
-                <li><strong>Google Sign-In:</strong> If you sign in with your Google account:
-                    <ul>
-                        <li>Your email address, first name, last name, and profile photo are obtained from your Google account</li>
-                        <li>All your data is securely stored in <strong>Google Cloud Firestore</strong> in the European region</li>
-                        <li>You can sync across multiple devices</li>
-                        <li>All data transfers are encrypted with TLS/SSL</li>
-                        <li>Only your Google account can access your data</li>
-                        <li>You can sign out at any time to stop cloud storage</li>
-                    </ul>
-                </li>
-                <li><strong>Anonymous Analytics:</strong> Only anonymous usage statistics (which features were used, error reports) are collected via Firebase</li>
-                <li><strong>Ad Identifiers:</strong> Google AdMob uses ad ID for ad display (personalization can be turned off in settings)</li>
-                <li><strong>KVKK and GDPR Compliant:</strong> Full compliance with data protection legislation</li>
-                <li><strong>Data Rights:</strong> You can exercise your rights to data deletion, correction, and export as specified in the Privacy Policy</li>
-                <li><strong>Data Retention Period:</strong> When you delete your account, all your data is permanently deleted. Merely uninstalling the app does not delete your cloud data.</li>
-            </ul>
-
-            <h2>8. Disclaimer and Limitations</h2>
-            <div class="highlight">
-                <p><strong>Important Liability Limitations:</strong></p>
-                <ul>
-                    <li><strong>"AS IS" Warranty:</strong> The app is provided "AS IS" and "AS AVAILABLE" with no express or implied warranties</li>
-                    <li><strong>Health Liability:</strong> Dayzen Studio cannot be held responsible for health issues, weight changes, nutritional deficiencies, or other health outcomes resulting from app usage</li>
-                    <li><strong>Nutritional Value Accuracy:</strong> We do not guarantee that nutritional values, calorie calculations, and macro ratios will be 100% accurate</li>
-                    <li><strong>Allergen Risk:</strong> MyNutrio cannot detect all allergens or guarantee the content of every food - take extra precautions if you have serious allergies</li>
-                    <li><strong>Weight Management:</strong> Weight loss/gain advice in the app is for general information purposes and individual results are not guaranteed</li>
-                    <li><strong>Third-Party Services:</strong> We are not responsible for interruptions, data loss, or errors from third-party services like Google AdMob and Firebase</li>
-                    <li><strong>Data Loss:</strong> We are not responsible for data loss due to device failure, accidental deletion, or technical issues (regular backups recommended)</li>
-                    <li><strong>Service Interruptions:</strong> The app may be temporarily unavailable due to maintenance, updates, or technical issues</li>
-                    <li><strong>Refund Policy:</strong> All subscription payments and refunds are managed by Google Play Store and subject to Google Play's refund policy. As developers, we cannot make refund decisions or process refunds</li>
-                </ul>
-            </div>
-
-            <h2>9. Service Changes</h2>
-            <ul>
-                <li>We may change these terms at any time</li>
-                <li>Significant changes will be notified within the app</li>
-                <li>Continuing to use means you accept the new terms</li>
-            </ul>
-
-            <h2>10. Termination</h2>
-            <ul>
-                <li>You can stop using the app at any time</li>
-                <li>We may terminate your access if you violate the terms</li>
-                <li>In case of termination, you must separately cancel subscriptions from Google Play</li>
-            </ul>
-
-            <h2>11. Governing Law and Jurisdiction</h2>
-            <ul>
-                <li><strong>Governing Law:</strong> These Terms of Service shall be governed by and construed in accordance with the laws of the Republic of Turkey.</li>
-                <li><strong>Exclusive Jurisdiction:</strong> Any dispute arising out of or in connection with these Terms shall be subject to the <strong>exclusive jurisdiction of the Courts and Execution Offices of Antalya, Turkey</strong>. Both parties hereby irrevocably submit to this jurisdiction.</li>
-                <li><strong>Subscription Disputes:</strong> Subscription and payment disputes shall be resolved primarily pursuant to Google Play Billing policies.</li>
-                <li><strong>Google Terms:</strong> For services provided through Google Play Store, Google LLC's Terms of Service also apply.</li>
-                <li><strong>EU/EEA Users:</strong> Users residing in the European Union or European Economic Area do not waive their rights under applicable mandatory local consumer protection laws.</li>
-            </ul>
-
-            <h2>12. Force Majeure</h2>
-            <p>Dayzen Studio shall not be held liable for partial or complete failure to provide the service due to circumstances beyond its reasonable control, including but not limited to:</p>
-            <ul>
-                <li>Natural disasters, fire, flood, earthquake, or similar events</li>
-                <li>Epidemics, pandemics, quarantine measures, or government decisions/sanctions</li>
-                <li>War, terrorist attacks, or civil unrest</li>
-                <li>Internet infrastructure outages or cyberattacks</li>
-                <li>Modification, restriction, or termination of third-party services such as Google Firebase or Google Play</li>
-                <li>Decisions of competent authorities or legal obligations</li>
-            </ul>
-            <p>Once the force majeure event ends, service will be resumed as soon as reasonably practicable.</p>
-
-            <h2>13. Liability Cap and User Indemnification</h2>
-            <div class="highlight">
-                <p><strong>13.1 Maximum Liability</strong></p>
-                <p>To the maximum extent permitted by applicable mandatory law, Dayzen Studio's total aggregate liability for any and all claims arising from or related to the use of MyNutrio — including but not limited to direct, indirect, incidental, special, or consequential damages — shall not exceed the total subscription fees paid by the user during the twelve (12) months preceding the event giving rise to the claim. For users of the free version, this cap is <strong>zero (0)</strong>.</p>
-                <p><strong>13.2 User Indemnification</strong></p>
-                <p>You agree to indemnify, defend, and hold harmless Dayzen Studio, its employees, and business partners from and against any and all third-party claims, lawsuits, damages, losses, costs, and reasonable attorneys' fees arising out of or related to: (i) your breach of these Terms of Service; (ii) your use of the app outside its intended purpose; (iii) your submission of false or misleading information; or (iv) your infringement of any third-party rights.</p>
-            </div>
-
-            <div class="summary">
-                <h3>📋 Summary of Key Points</h3>
-                <ul>
-                    <li>✅ <strong>Free Usage:</strong> Ad-supported basic nutrition tracking, calorie and macro calculation, water tracking</li>
-                    <li>✅ <strong>Premium Subscription:</strong> Ad-free experience, advanced statistics, premium recipes</li>
-                    <li>✅ <strong>Flexible Access:</strong> Watch 2 ads for 5 minutes of premium access or monthly/annual subscription</li>
-                    <li>✅ <strong>14-Day Free Trial:</strong> New users can test premium features with the annual plan</li>
-                    <li>✅ <strong>Cancel Anytime:</strong> Easily cancel from Google Play Store > Subscriptions</li>
-                    <li>✅ <strong>Secure Data Storage:</strong> In guest mode, your data stays only on your device (app sandbox); when signed in with Google, it is encrypted and stored in Google Cloud Firestore in the European region</li>
-                    <li>✅ <strong>KVKK/GDPR Compliant:</strong> Your legal data protection rights are protected</li>
-                    <li>✅ <strong>Data Rights:</strong> You have the right to delete and correct your data</li>
-                    <li>⚠️ <strong>Not Medical Advice:</strong> Always consult a doctor/dietitian/health professional</li>
-                    <li>⚠️ <strong>Estimated Nutritional Values:</strong> Not 100% accurate, for general guidance purposes</li>
-                    <li>⚠️ <strong>Allergen Check:</strong> If you have serious allergies, check product labels</li>
-                    <li>ℹ️ <strong>Individual Results Vary:</strong> Calorie needs and weight changes vary by individual</li>
-                </ul>
-            </div>
-
-            <p>By using MyNutrio, you declare that you have read, understood, and accept these Terms of Service. For new or uncertain features, we act according to current legislation and best practices. If you have any questions, please contact the developer.</p>
-
-            <div class="contact">
-                <h3>📧 Developer Information and Contact</h3>
-                <p>For questions and support:</p>
-                <p><strong>Developer:</strong> Dayzen Studio (Individual developer)<br>
-                <strong>Data Controller:</strong> ONUR ALKAN<br>
-                <strong>Email:</strong> mynutrio_support@dayzenstudio.com<br>
-                <strong>Address:</strong> Sarılar Mah. 3056. Sok. No: 6, 07600 Manavgat/Antalya, Turkey<br>
-                <strong>Note:</strong> We strive to respond to your inquiries as soon as possible</p>
-            </div>
+            <h2>5. Contact</h2>
+            <p>
+                For questions regarding these Terms:<br>
+                <strong>Email:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Website:</strong> <a href="https://dayzenstudio.com/mynutrio/">https://dayzenstudio.com/mynutrio/</a>
+            </p>
         </div>
-        
-        <div class="footer">
-            <p>&copy; 2026 MyNutrio - Dayzen Studio. All rights reserved.</p>
-            <p>Thank you for choosing MyNutrio! 🥗💚</p>
+    </main>
+
+    <footer class="wrap">
+        <div>&copy; 2026 DayZen Studio. All rights reserved.</div>
+        <div>
+            <a href="/mynutrio/">MyNutrio</a> &bull;
+            <a href="/mynutrio/privacy.html">Privacy Policy</a> &bull;
+            <a href="/">DayZen Studio</a>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        function switchLang(lang, btn) {
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+            document.getElementById('sec-' + lang).classList.add('active');
+            document.documentElement.lang = lang;
+        }
+    </script>
 </body>
 </html>
+
