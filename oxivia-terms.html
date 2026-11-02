@@ -1,199 +1,285 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link rel="canonical" href="https://dayzenstudio.com/oxivia/terms.html">
+    <script>if(window.location.hostname!=='dayzenstudio.com'||window.location.pathname!=='/oxivia/terms.html'){window.location.replace('https://dayzenstudio.com/oxivia/terms.html');}</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kullanım Koşulları | Oxivia</title>
+    <title>Oxivia — Kullanım Şartları / Terms of Service | DayZen Studio</title>
+    <meta name="description" content="Oxivia: Sigara Bırakma Takibi resmi Kullanım Şartları ve Tıbbi Sorumluluk Reddi.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #0284C7;
-            --primary-dark: #0369A1;
-            --bg: #09090B;
-            --card-bg: #121214;
-            --card-border: #222226;
-            --text-main: #F4F4F5;
-            --text-sub: #A1A1AA;
-            --accent-green: #10B981;
+            --bg: #0A0A0B;
+            --surface: #121215;
+            --border: #232329;
+            --text: #F4F4F6;
+            --text-secondary: #9E9EA8;
+            --text-muted: #686873;
+            --accent: #10B981;
+            --amber: #F59E0B;
+            --serif: 'Instrument Serif', Georgia, serif;
+            --sans: 'Inter', -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', monospace;
         }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg);
-            color: var(--text-main);
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
             line-height: 1.7;
-            padding: 40px 20px;
+            -webkit-font-smoothing: antialiased;
         }
-        .container {
-            max-width: 820px;
-            margin: 0 auto;
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 24px;
-            padding: 44px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(10,10,11,0.88);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
         }
-        .header {
+        .nav {
+            height: 64px;
             display: flex;
             align-items: center;
-            gap: 16px;
-            margin-bottom: 28px;
-            border-bottom: 1px solid var(--card-border);
-            padding-bottom: 24px;
+            justify-content: space-between;
         }
-        .logo-icon {
-            font-size: 38px;
-            background: rgba(2, 132, 199, 0.12);
-            padding: 12px;
-            border-radius: 18px;
-            border: 1px solid rgba(2, 132, 199, 0.3);
+        .back-link {
+            font-size: 13.5px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .back-link:hover { color: var(--text); text-decoration: none; }
+        .lang-switch {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 500;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        .lang-btn.active {
+            background: var(--surface);
+            color: var(--text);
+        }
+        main { padding: 64px 0 96px; }
+        .doc-meta {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+            display: block;
         }
         h1 {
-            font-size: 28px;
-            font-weight: 800;
-            color: #FFFFFF;
-            letter-spacing: -0.5px;
+            font-size: clamp(32px, 5vw, 46px);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 16px;
         }
-        .update-badge {
-            display: inline-block;
-            background: rgba(16, 185, 129, 0.15);
-            color: #34D399;
+        .updated {
+            font-family: var(--mono);
             font-size: 12px;
-            font-weight: 700;
-            padding: 4px 12px;
-            border-radius: 20px;
-            margin-top: 6px;
-            border: 1px solid rgba(52, 211, 153, 0.25);
+            color: var(--text-muted);
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
         }
         h2 {
             font-size: 19px;
-            font-weight: 700;
-            color: #FFFFFF;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 36px 0 14px;
+            letter-spacing: -0.015em;
         }
         p {
-            color: var(--text-sub);
-            font-size: 14.5px;
-            margin-bottom: 14px;
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
         }
         ul {
-            list-style-type: none;
-            margin-bottom: 18px;
-            padding-left: 4px;
+            margin: 0 0 20px 20px;
+            color: var(--text-secondary);
+            font-size: 15px;
         }
-        li {
-            color: var(--text-sub);
-            font-size: 14px;
-            margin-bottom: 10px;
-            position: relative;
-            padding-left: 24px;
-        }
-        li::before {
-            content: "✦";
-            position: absolute;
-            left: 0;
-            color: var(--primary);
-            font-weight: bold;
-        }
-        .warning-box {
-            background: rgba(239, 68, 68, 0.08);
-            border-left: 4px solid #EF4444;
-            border-radius: 0 14px 14px 0;
-            padding: 16px 20px;
+        li { margin-bottom: 10px; }
+        li strong { color: var(--text); }
+        .notice-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--amber);
+            border-radius: 8px;
+            padding: 20px 24px;
             margin: 24px 0;
         }
-        .warning-box p {
-            color: #FCA5A5;
-            margin: 0;
-            font-size: 13.5px;
+        .notice-box h3 {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
         }
-        .info-box {
-            background: rgba(2, 132, 199, 0.08);
-            border-left: 4px solid var(--primary);
-            border-radius: 0 14px 14px 0;
-            padding: 16px 20px;
-            margin: 24px 0;
-        }
-        .info-box p {
-            color: #BAE6FD;
-            margin: 0;
-            font-size: 13.5px;
-        }
-        .nav-links {
-            margin-top: 40px;
-            padding-top: 24px;
-            border-top: 1px solid var(--card-border);
+        .notice-box p { margin-bottom: 0; font-size: 14px; }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            font-size: 13px;
+            color: var(--text-muted);
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            font-size: 13.5px;
+            flex-wrap: wrap;
+            gap: 12px;
         }
-        a {
-            color: #38BDF8;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .footer-note {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 12px;
-            color: #71717A;
-        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo-icon">📜</div>
-            <div>
-                <h1>Kullanım Koşulları (Terms & Conditions)</h1>
-                <span class="update-badge">Son Güncelleme: 24 Ağustos 2026 | Sürüm: 1.0.0</span>
+    <header>
+        <div class="wrap nav">
+            <a href="/oxivia/" class="back-link">&larr; Oxivia</a>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('tr', this)">TR</button>
+                <button class="lang-btn" onclick="switchLang('en', this)">EN</button>
             </div>
         </div>
+    </header>
 
-        <p>Lütfen <strong>Oxivia: Sigara Bırakma Rehberi</strong> mobil uygulamasını ("Uygulama") kullanmadan önce bu Kullanım Koşullarını dikkatlice okuyunuz. Uygulamayı indirerek, kurarak veya kullanarak bu koşulları kabul etmiş sayılırsınız.</p>
+    <main class="wrap">
+        <!-- ================= TURKISH ================= -->
+        <div id="sec-tr" class="lang-section active">
+            <span class="doc-meta">YASAL BELGE // OXIVIA</span>
+            <h1>Kullanım Şartları (Terms of Service)</h1>
+            <div class="updated">Son Güncelleme: 2 Kasım 2026</div>
 
-        <h2>1. Hizmetin Tanımı ve Kapsamı</h2>
-        <p>Oxivia, kullanıcıların tütün bağımlılığını bırakma süreçlerini takip etmelerine, kriz anlarını 4-7-8 nefes ve bilişsel odak egzersizleriyle yönetmelerine ve maddi/biyolojik tasarruflarını görselleştirmelerine yardımcı olan bir kişisel motivasyon ve alışkanlık takip asistanıdır.</p>
+            <p>
+                <strong>DayZen Studio</strong> tarafından geliştirilen <strong>Oxivia: Sigara Bırakma Takibi</strong> uygulamasını indirerek veya kullanarak aşağıdaki Kullanım Şartlarını kabul etmiş sayılırsınız.
+            </p>
 
-        <h2>2. Tıbbi Feragatname ve Sorumluluk Sınırı</h2>
-        <div class="warning-box">
-            <p><strong>⚠️ Tıbbi Teşhis/Tedavi Değildir:</strong> Oxivia bir hekim, psikiyatrist, tıp merkezi veya klinik tedavi hizmeti değildir. Uygulama içerisindeki hiçbir sayaç, sağlık yüzdesi veya öneri tıbbi tavsiye yerine geçemez. Nikotin yoksunluğu, psikolojik semptomlar veya tütün bağımlılığıyla ilgili sağlık sorunlarınız için daima uzman bir hekime veya Sağlık Bakanlığı ALO 171 Sigara Bırakma Hattı'na başvurunuz.</p>
+            <h2>1. Hizmetin Kapsamı</h2>
+            <p>
+                Oxivia; sigarayı bırakma sürecindeki kullanıcılar için geçen süreyi, içilmeyen sigara sayısını, finansal tasarrufları, Dünya Sağlık Örgütü (DSÖ/WHO) verilerine dayalı biyolojik iyileşme zaman çizelgesini, nefes egzersizlerini ve odak mini oyunlarını sunan bir motivasyon ve alışkanlık takip uygulamasıdır.
+            </p>
+
+            <h2 id="disclaimer">2. Tıbbi Sorumluluk Reddi</h2>
+            <div class="notice-box">
+                <h3>Tıbbi Cihaz veya Tedavi Aracı Değildir</h3>
+                <p>
+                    Oxivia bir tıbbi cihaz, klinik teşhis aracı veya doktor reçetesi değildir. Uygulamada sunulan akciğer simülasyonu, biyolojik iyileşme yüzdeleri ve nefes egzersizleri Dünya Sağlık Örgütü (WHO) ve genel tıp literatüründeki istatistiksel ortalamalara dayalı motivasyonel rehberlerdir; <strong>profesyonel tıbbi teşhis, tedavi veya hekim tavsiyesi yerine geçmez.</strong> Nikotin bağımlılığı tedavisi veya sağlık sorunlarınız için mutlaka uzman bir hekime veya resmi sağlık kuruluşlarına başvurunuz.
+                </p>
+            </div>
+
+            <h2>3. Oxivia PRO ve Uygulama İçi Satın Alımlar</h2>
+            <ul>
+                <li><strong>Oxivia PRO:</strong> Uygulama içerisinde isteğe bağlı olarak sunulan <strong>tek seferlik (ömür boyu)</strong> dijital yükseltme paketidir; yinelenen bir abonelik değildir. Satın alındığında tüm reklamları kalıcı olarak kaldırır.</li>
+                <li><strong>Ödeme ve Faturalandırma:</strong> Tüm ödemeler yalnızca <strong>Google Play Store</strong> hesabınız üzerinden güvenli olarak tahsil edilir.</li>
+                <li><strong>Satın Alımları Geri Yükleme:</strong> Cihaz değiştirdiğinizde veya uygulamayı yeniden yüklediğinizde, aynı Google Play hesabıyla <em>"Satın Alımı Geri Yükle"</em> seçeneğini kullanarak Oxivia PRO lisansınızı ücretsiz geri yükleyebilirsiniz.</li>
+                <li><strong>İade Politikası:</strong> Dijital satın alımlara ilişkin iptal ve geri ödeme talepleri doğrudan Google Play Store'un resmi iade politikalarına tabidir.</li>
+            </ul>
+
+            <h2>4. Bulut Senkronizasyonu ve Kullanım Kuralları</h2>
+            <p>
+                Oxivia verilerinizi çevrimdışı öncelikli olarak telefonunuzda saklar. Cihaz değişikliği veya uygulama silinmesi durumunda veri kaybı yaşamamak için Google hesabınızla giriş yaparak bulut senkronizasyonunu aktif etmek veya uygulama içi yedekleme menüsünden yedeğinizi almak kullanıcının sorumluluğundadır. Uygulamanın kaynak kodunu tersine mühendislikle çözmek veya kopyalamak yasaktır.
+            </p>
+
+            <h2>5. Fikri Mülkiyet Hakları</h2>
+            <p>
+                Oxivia uygulamasının arayüz tasarımları, görselleri, metinleri ve yazılım kodları <strong>DayZen Studio</strong>'ya aittir ve telif hakkı yasalarıyla korunmaktadır.
+            </p>
+
+            <h2>6. İletişim</h2>
+            <p>
+                Kullanım şartlarıyla ilgili sorularınız için:<br>
+                <strong>Geliştirici:</strong> DayZen Studio<br>
+                <strong>E-posta:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Web:</strong> <a href="https://dayzenstudio.com/oxivia/">https://dayzenstudio.com/oxivia/</a>
+            </p>
         </div>
 
-        <h2>3. Kullanıcı Sorumlulukları ve Veri Doğruluğu</h2>
-        <ul>
-            <li><strong>Veri Girişi:</strong> Uygulama içerisindeki sigara fiyatları, günlük adet ve bırakma tarihi kullanıcı tarafından belirlenir. Hesaplanan tasarruf tutarları bu verilere dayalı tahminlerdir.</li>
-            <li><strong>Kişisel Güvenlik:</strong> Google Hesabı ile oturum açan kullanıcılar hesap güvenliklerinden bizzat sorumludur.</li>
-            <li><strong>Yedekleme:</strong> Kullanıcı dilerse "JSON Dışa Aktar" özelliğiyle verilerini dilediği an kendi yerel cihazına yedekleyebilir.</li>
-        </ul>
+        <!-- ================= ENGLISH ================= -->
+        <div id="sec-en" class="lang-section">
+            <span class="doc-meta">LEGAL DOCUMENT // OXIVIA</span>
+            <h1>Terms of Service</h1>
+            <div class="updated">Last Updated: November 2, 2026</div>
 
-        <h2>4. Fikri Mülkiyet Hakları</h2>
-        <p>Oxivia içerisindeki tüm arayüz tasarımları, 3D anatomik akciğer görselleştirmeleri, algoritma hesaplamaları, oyun mekanikleri, logolar ve yazılım kodları <strong>DayZen Studio</strong>'ya aittir. İzinsiz kopyalanamaz, tersine mühendislikle çoğaltılamaz veya ticari olarak dağıtılamaz.</p>
+            <p>
+                By downloading or using <strong>Oxivia: Quit Smoking Tracker</strong>, developed by <strong>DayZen Studio</strong>, you agree to be bound by these Terms of Service.
+            </p>
 
-        <h2>5. Değişiklikler ve Güncellemeler</h2>
-        <p>DayZen Studio, uygulamanın özelliklerini, algoritmalarını veya bu kullanım şartlarını dilediği zaman güncelleme hakkını saklı tutar. Kritik değişiklikler uygulama güncellemeleri ve sürüm notlarıyla bildirilir.</p>
+            <h2>1. Scope of Service</h2>
+            <p>
+                Oxivia is a habit-tracking and motivational companion app that calculates smoke-free time, cigarettes avoided, financial savings, WHO-aligned biological recovery milestones, breathing exercises, and focus mini-games.
+            </p>
 
-        <h2>6. İletişim ve Destek</h2>
-        <p>Kullanım koşullarıyla ilgili her türlü soru, öneri ve destek talepleriniz için:</p>
-        <p><strong>E-Posta:</strong> <a href="mailto:dayzenstudio@gmail.com">dayzenstudio@gmail.com</a><br>
-        <strong>Geliştirici:</strong> DayZen Studio</p>
+            <h2>2. Medical Disclaimer</h2>
+            <div class="notice-box">
+                <h3>Not a Medical Device or Clinical Advice</h3>
+                <p>
+                    Oxivia is not a medical device, clinical cessation program, or medical prescription. All lung visuals, biological recovery timelines, and breathing exercises are provided for informational and motivational purposes based on general World Health Organization (WHO) statistical averages and <strong>do not substitute professional medical advice, diagnosis, or treatment.</strong> Always seek the advice of a qualified physician or healthcare professional regarding nicotine withdrawal or any medical condition.
+                </p>
+            </div>
 
-        <div class="nav-links">
-            <a href="privacy-policy.html">← Gizlilik Politikası (Privacy Policy)</a>
-            <span>© 2026 DayZen Studio. Tüm hakları saklıdır.</span>
+            <h2>3. Oxivia PRO &amp; In-App Purchases</h2>
+            <ul>
+                <li><strong>Oxivia PRO:</strong> An optional <strong>one-time lifetime</strong> upgrade—not a recurring subscription. It permanently removes all advertisements.</li>
+                <li><strong>Billing:</strong> All payments are processed securely through your <strong>Google Play Store</strong> account.</li>
+                <li><strong>Restoring Purchases:</strong> If you switch devices or reinstall the app, you can restore your Oxivia PRO entitlement at no extra cost using the same Google Play account via <em>"Restore Purchase"</em>.</li>
+                <li><strong>Refunds:</strong> Refund requests are governed by Google Play Store's official refund policies.</li>
+            </ul>
+
+            <h2>4. Cloud Sync &amp; User Responsibilities</h2>
+            <p>
+                Oxivia stores all habit and financial data offline-first on your device with optional Google Cloud synchronization. Before switching phones or uninstalling the application, you may sign in with Google or export a backup from Settings. Reverse engineering, decompiling, or unauthorized redistribution of the application is prohibited.
+            </p>
+
+            <h2>5. Intellectual Property</h2>
+            <p>
+                All UI designs, illustrations, source code, and trademarks within Oxivia are the exclusive property of <strong>DayZen Studio</strong>.
+            </p>
+
+            <h2>6. Contact</h2>
+            <p>
+                For questions regarding these Terms:<br>
+                <strong>Developer:</strong> DayZen Studio<br>
+                <strong>Email:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Website:</strong> <a href="https://dayzenstudio.com/oxivia/">https://dayzenstudio.com/oxivia/</a>
+            </p>
         </div>
-    </div>
-    <div class="footer-note">Oxivia - DayZen Studio Tarafından Geliştirilmiştir</div>
+    </main>
+
+    <footer class="wrap">
+        <div>&copy; 2026 DayZen Studio. All rights reserved.</div>
+        <div>
+            <a href="/oxivia/">Oxivia</a> &bull;
+            <a href="/oxivia/privacy.html">Privacy Policy</a> &bull;
+            <a href="/">DayZen Studio</a>
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang, btn) {
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+            document.getElementById('sec-' + lang).classList.add('active');
+            document.documentElement.lang = lang;
+        }
+    </script>
 </body>
 </html>
+
