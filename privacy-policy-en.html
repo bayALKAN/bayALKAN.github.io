@@ -1,451 +1,348 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="tr">
 <head>
+    <link rel="canonical" href="https://dayzenstudio.com/mynutrio/privacy.html">
+    <script>if(window.location.hostname!=='dayzenstudio.com'||window.location.pathname!=='/mynutrio/privacy.html'){window.location.replace('https://dayzenstudio.com/mynutrio/privacy.html');}</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyNutrio - Privacy Policy</title>
+    <title>MyNutrio — Gizlilik Politikası / Privacy Policy | DayZen Studio</title>
+    <meta name="description" content="MyNutrio: Kalori & Diyet Takip uygulaması resmi Gizlilik Politikası ve Aydınlatma Metni.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #0A0A0B;
+            --surface: #121215;
+            --border: #232329;
+            --text: #F4F4F6;
+            --text-secondary: #9E9EA8;
+            --text-muted: #686873;
+            --accent: #10B981;
+            --amber: #F59E0B;
+            --serif: 'Instrument Serif', Georgia, serif;
+            --sans: 'Inter', -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
         }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            min-height: 100vh;
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(10,10,11,0.88);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
         }
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 2rem;
-            text-align: center;
+        .nav {
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-        .logo {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
+        .back-link {
+            font-size: 13.5px;
+            font-weight: 500;
+            color: var(--text-secondary);
         }
-        .subtitle {
-            opacity: 0.9;
-            font-size: 1.1rem;
+        .back-link:hover { color: var(--text); text-decoration: none; }
+        .lang-switch {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
         }
-        .content {
-            padding: 2rem;
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 500;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        .lang-btn.active {
+            background: var(--surface);
+            color: var(--text);
+        }
+        main { padding: 64px 0 96px; }
+        .doc-meta {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+            display: block;
         }
         h1 {
-            color: #667eea;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 0.5rem;
+            font-size: clamp(32px, 5vw, 46px);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+        .updated {
+            font-family: var(--mono);
+            font-size: 12px;
+            color: var(--text-muted);
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
         }
         h2 {
-            color: #5a6fd8;
-            margin-top: 2rem;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 36px 0 14px;
+            letter-spacing: -0.015em;
         }
-        h3 {
-            color: #6366f1;
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
         }
-        .highlight {
-            background: #f0f4ff;
-            padding: 1rem;
-            border-left: 4px solid #667eea;
-            margin: 1rem 0;
+        ul {
+            margin: 0 0 20px 20px;
+            color: var(--text-secondary);
+            font-size: 15px;
         }
-        .footer {
-            background: #f8f9fa;
-            padding: 2rem;
-            text-align: center;
-            border-top: 1px solid #e9ecef;
-        }
-        .contact {
-            background: #667eea;
-            color: white;
-            padding: 1.5rem;
+        li { margin-bottom: 10px; }
+        li strong { color: var(--text); }
+        .notice-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
             border-radius: 8px;
-            margin: 2rem 0;
+            padding: 20px 24px;
+            margin: 24px 0;
         }
-        .contact h3 {
-            color: white;
-            margin-top: 0;
+        .notice-box.warn { border-left-color: var(--amber); }
+        .notice-box h3 {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
         }
-        ul, ol {
-            padding-left: 1.5rem;
+        .notice-box p { margin-bottom: 0; font-size: 14px; }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 28px;
+            font-size: 14px;
         }
-        li {
-            margin-bottom: 0.5rem;
+        .data-table th, .data-table td {
+            border: 1px solid var(--border);
+            padding: 12px 14px;
+            text-align: left;
+            vertical-align: top;
         }
-        @media (max-width: 768px) {
-            .header, .content {
-                padding: 1rem;
-            }
-            .logo {
-                font-size: 2rem;
-            }
+        .data-table th {
+            background: var(--surface);
+            color: var(--text);
+            font-weight: 600;
         }
+        .data-table td { color: var(--text-secondary); }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="logo">🥗 MyNutrio</div>
-            <div class="subtitle">Smart Nutrition Tracking App - Privacy Policy</div>
+    <header>
+        <div class="wrap nav">
+            <a href="/mynutrio/" class="back-link">&larr; MyNutrio</a>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('tr', this)">TR</button>
+                <button class="lang-btn" onclick="switchLang('en', this)">EN</button>
+            </div>
         </div>
-        
-        <div class="content">
+    </header>
+
+    <main class="wrap">
+        <!-- ================= TURKISH ================= -->
+        <div id="sec-tr" class="lang-section active">
+            <span class="doc-meta">YASAL BELGE // MYNUTRIO</span>
+            <h1>Gizlilik Politikası ve Aydınlatma Metni</h1>
+            <div class="updated">Son Güncelleme: 2 Kasım 2026</div>
+
+            <p>
+                <strong>DayZen Studio</strong> olarak, <strong>MyNutrio: Kalori &amp; Diyet Takip</strong> uygulamamızın kullanıcılarının gizliliğine büyük önem veriyoruz. Uygulamamız günlük kalori, su tüketimi, vücut kitle indeksi (BMI) ve makro/mikro besin değerlerinizi gizlilik odaklı bir yapıyla takip edebilmeniz için tasarlanmıştır.
+            </p>
+
+            <div class="notice-box">
+                <h3>Çevrimdışı Öncelikli Mimari</h3>
+                <p>
+                    MyNutrio tamamen <strong>çevrimdışı öncelikli (Offline-First)</strong> çalışır. Kişisel beslenme ve fiziksel profil verileriniz reklam şirketlerine veya üçüncü taraf veri aracılarına satılmaz.
+                </p>
+            </div>
+
+            <h2>1. İşlenen Veriler ve Saklama Yöntemi</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Veri Kategorisi</th>
+                        <th>İçerik</th>
+                        <th>Saklandığı Yer ve Amaç</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Fiziksel Profil ve Hedef Verileri</strong></td>
+                        <td>Yaş, boy, mevcut kilo, hedef kilo, cinsiyet ve aktivite düzeyi.</td>
+                        <td>Yalnızca bazal metabolizma hızı (BMR), BMI ve günlük kalori/makro hedeflerinizi hesaplamak amacıyla <strong>cihazınızın yerel belleğinde</strong> işlenir.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Beslenme ve Su Kayıtları</strong></td>
+                        <td>Günlük eklenen öğünler, besin dağılımı, su tüketimi ve kilo geçmişi.</td>
+                        <td>Doğrudan cihazınızda yerel olarak saklanır; harici bir sunucuya otomatik olarak aktarılmaz.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uygulama Tercihleri</strong></td>
+                        <td>Tema seçimi ve dil tercihi.</td>
+                        <td>Kullanıcı deneyimini kişiselleştirmek için cihaz içinde tutulur.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>2. Cihaz İzinleri</h2>
+            <p>
+                MyNutrio; kamera, mikrofon, rehber, konum (GPS) veya arka plan sensör izinlerini <strong>talep etmez ve kullanmaz</strong>.
+            </p>
+
+            <h2>3. Tıbbi ve Beslenme Sorumluluk Reddi</h2>
+            <div class="notice-box warn">
+                <h3>Önemli Tıbbi Uyarı</h3>
+                <p>
+                    MyNutrio bir tıbbi cihaz veya klinik diyetisyen hizmeti değildir. Uygulama içerisindeki kalori, BMI, makro ve vitamin/mineral hesaplamaları standart beslenme formüllerine dayalı genel bilgilendirme amaçlıdır; <strong>tıbbi teşhis, tedavi veya uzman diyetisyen tavsiyesi yerine geçmez.</strong> Özel bir sağlık durumunuz, alerjiniz, diyabetiniz veya gebelik durumunuz varsa herhangi bir diyet programına başlamadan önce mutlaka doktorunuza veya diyetisyeninize danışınız.
+                </p>
+            </div>
+
+            <h2>4. Verilerin Silinmesi</h2>
+            <p>
+                Tüm beslenme, kilo ve profil verileriniz cihazınızda yerel olarak tutulduğundan, cihazınızın uygulama ayarlarından MyNutrio verilerini temizleyerek veya uygulamayı cihazınızdan kaldırarak tüm kayıtları anında ve kalıcı olarak silebilirsiniz.
+            </p>
+
+            <h2>5. İletişim</h2>
+            <p>
+                Gizlilik politikamızla ilgili sorularınız için:<br>
+                <strong>Geliştirici:</strong> DayZen Studio<br>
+                <strong>E-posta:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Web:</strong> <a href="https://dayzenstudio.com/mynutrio/">https://dayzenstudio.com/mynutrio/</a>
+            </p>
+        </div>
+
+        <!-- ================= ENGLISH ================= -->
+        <div id="sec-en" class="lang-section">
+            <span class="doc-meta">LEGAL DOCUMENT // MYNUTRIO</span>
             <h1>Privacy Policy</h1>
-            
-            <div class="highlight">
-                <strong>Last Updated: April 28, 2026</strong><br>
-                <strong>App Version: 1.2.8</strong><br>
-                This Privacy Policy explains how the MyNutrio app collects, uses, and protects your personal data. The app provides health-related information but does not provide medical advice. If you have any questions, please contact the developer.
-            </div>            <div class="highlight" style="border-left-color: #e53e3e; background: #fff5f5;">
-                <h3 style="color: #c53030; margin-top: 0;">🗑️ Account and Data Deletion Request</h3>
-                <p>Users have full control over their data. To delete your account and all associated data, please use one of these methods:</p>
-                <ul>
-                    <li><strong>In-App:</strong> Use the "Delete Account and Data" option located at the bottom of the Settings page (under the Danger Zone section) for instant deletion of local and cloud (Firebase) data.</li>
-                    <li><strong>Email Request:</strong> Send an email with the subject "Account Deletion Request" to <span style="white-space: nowrap;"><a href="mailto:mynutrio_support@dayzenstudio.com" style="text-decoration: none;">mynutrio_support@dayzenstudio.com</a></span> (Requests are generally processed within 48 hours).</li>
-                </ul>
-                <p><strong>Security Note:</strong> Data deletion is <strong>permanent</strong> and cannot be undone. Merely uninstalling the app will not delete your cloud-stored data.</p>
-                <p>When you delete your account and data, all your personal data (profile information, food logs, weight history, etc.) is immediately and permanently removed from our systems. However, for security, abuse prevention, and legal audit requirements, basic systemic transaction records (audit logs such as who deleted the account and when) are securely stored for 90 days and are automatically and completely deleted at the end of this period.</p>
+            <div class="updated">Last Updated: November 2, 2026</div>
+
+            <p>
+                <strong>MyNutrio: Calorie &amp; Diet Tracker</strong>, developed by <strong>DayZen Studio</strong>, is designed to help users track their daily calories, hydration, Body Mass Index (BMI), and essential macro/micronutrients with a strict privacy-first approach.
+            </p>
+
+            <div class="notice-box">
+                <h3>Offline-First Architecture</h3>
+                <p>
+                    MyNutrio operates on an <strong>Offline-First</strong> local architecture. Your personal nutrition and physical profile metrics are never sold or shared with third-party data brokers.
+                </p>
             </div>
 
+            <h2>1. Data We Process &amp; Storage</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Category</th>
+                        <th>Details</th>
+                        <th>Storage &amp; Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Physical Profile &amp; Goal Metrics</strong></td>
+                        <td>Age, height, current weight, target weight, gender, and activity level.</td>
+                        <td>Processed strictly <strong>locally on your device</strong> to calculate your BMI and daily calorie/macro targets.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nutrition &amp; Hydration Logs</strong></td>
+                        <td>Logged meals, macro/micronutrient breakdowns, water intake, and weight history.</td>
+                        <td>Stored locally on your device; never transmitted to external servers.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>App Preferences</strong></td>
+                        <td>Theme mode and language preference.</td>
+                        <td>Stored locally on your device.</td>
+                    </tr>
+                </tbody>
+            </table>
 
+            <h2>2. Device Permissions</h2>
+            <p>
+                MyNutrio <strong>does not request or use</strong> camera, microphone, contacts, GPS location, or background sensor permissions.
+            </p>
 
-            <h2>Information We Collect</h2>
-            
-            <h3>Personal and Health Information</h3>
-            <ul>
-                <li><strong>Google Account Information (For Google Sign-In Users):</strong>
-                    <ul>
-                        <li>Your email address (obtained from your Google account)</li>
-                        <li>Your profile photo (optional, obtained from your Google account)</li>
-                        <li>First and last name (obtained from your Google account)</li>
-                        <li>This information is used for authentication and account management</li>
-                        <li>Google's privacy policy and terms of service also apply</li>
-                    </ul>
-                </li>
-                <li><strong>Profile Information:</strong> Name, date of birth/age, gender, height, weight, target weight</li>
-                <li><strong>Health Information:</strong> Allergy list, medical conditions, dietary preferences (vegan, vegetarian, etc.), protein supplement use</li>
-                <li><strong>Lifestyle Information:</strong> Activity level, eating habits (meal timing), cooking skills</li>
-                <li><strong>Nutrition Data:</strong> Daily meal logs, food consumed, calorie/macro tracking, water intake, meal timing</li>
-                <li><strong>Physical Activity Data:</strong> Step counts, walking distance, active duration, and calories burned during these activities</li>
-                <li><strong>Goal and Preference Data:</strong> Daily calorie/macro goals, weight goal, weekly weight change target, nutrient limits (sugar, saturated fat, sodium)</li>
-                <li><strong>App Preferences:</strong> Theme selection, unit system (metric/imperial), language preference, notification settings, privacy settings</li>
-            </ul>
-
-            <h3>Automatically Collected Information</h3>
-            <ul>
-                <li><strong>Device Information:</strong> Device model, operating system, app version</li>
-                <li><strong>Usage Data:</strong> Which features are used, app usage duration, premium and ad interactions</li>
-                <li><strong>Error Reports:</strong> Technical information in case of app crashes (no personal data)</li>
-                <li><strong>Administrator Operation Logs (Admin Logs):</strong> Administrative actions performed by platform administrators (such as user suspension, food deletion, etc.) are securely logged with the performing administrator's ID, target user ID/email, and a timestamp for system security, abuse prevention, and data integrity auditing purposes.</li>
-            </ul>
-
-            <h2>How We Use Your Information and Legal Basis</h2>
-            
-            <h3>Data Processing Purposes</h3>
-            <p>We use your data for the following purposes:</p>
-            <ul>
-                <li>Provide personalized nutrition recommendations</li>
-                <li>Calculate calories and nutritional values</li>
-                <li>To help you track your progress</li>
-                <li><strong>Background Step Tracking:</strong> To measure physical activity and calculate calories burned even when the app is closed</li>
-                <li>Improve app performance and security</li>
-                <li>Resolve technical issues and report errors</li>
-                <li>Send you notifications (with your permission)</li>
-                <li>Fulfill legal requirements</li>
-            </ul>
-            
-            <h3>Legal Basis (GDPR Article 6 and 9)</h3>
-            <p>We process your personal data based on the following legal grounds:</p>
-            <ul>
-                <li><strong>Consent:</strong> Explicit consent is obtained for your health data (weight, calories, meal records) (GDPR Article 9 - Special Categories of Personal Data)</li>
-                <li><strong>Contract Performance:</strong> We process your profile and nutrition data to provide app services</li>
-                <li><strong>Legitimate Interest:</strong> Anonymous usage data is processed for app security, bug fixes, and performance improvements</li>
-                <li><strong>Legal Obligation:</strong> Necessary data is retained for legal requirements such as tax and financial reporting</li>
-            </ul>
-
-            <h2>Data Storage and Security</h2>
-            
-            <h3>Cloud Storage (For Google Sign-In Users)</h3>
-            <ul>
-                <li><strong>Google Cloud Firestore:</strong> When you sign in with your Google account, your data is securely stored in Google Cloud Firestore</li>
-                <li><strong>Server Location:</strong> Your data is stored on Google Cloud servers in the European region</li>
-                <li><strong>Multi-Device Sync:</strong> Cloud storage allows you to access your data from all your devices</li>
-                <li><strong>Encryption:</strong> All data transfers are encrypted with TLS/SSL, and data is also encrypted in the cloud</li>
-                <li><strong>Access Control:</strong> Only your Google account can access your data; other users cannot see it</li>
-                <li><strong>Backup:</strong> Protected by Google Cloud's infrastructure security and backup systems</li>
-                <li><strong>Revocable:</strong> You can stop cloud storage at any time by signing out of your Google account</li>
-            </ul>
-            
-            <h3>Local Storage</h3>
-            <ul>
-                <li>All your personal data is <strong>stored locally in your device's secure app sandbox</strong></li>
-                <li>For users who don't use a Google account, data stays only on the device and is never sent to any servers</li>
-                <li>When you delete the app, your local data on the device is permanently deleted</li>
-            </ul>
-
-            <h3>Security Measures</h3>
-            <ul>
-                <li>Cloud data is stored encrypted, while local data is protected by the device's sandbox environment</li>
-                <li>Google Cloud Firestore security rules prevent unauthorized access</li>
-                <li>Security improvements are made with app updates</li>
-                <li>Third-party access is prevented</li>
-                <li>Privacy and security best practices are followed</li>
-            </ul>
-
-            <h3>Background Tracking and Foreground Services</h3>
-            <ul>
-                <li>Our app uses Android's <strong>Foreground Service</strong> technology to count steps continuously and accurately.</li>
-                <li>While this service is running, a persistent notification is shown in the notification panel; this notification informs the user that the app is counting data in the background.</li>
-                <li>You can stop this permission at any time from the app settings or system settings.</li>
-            </ul>
-            
-            <h3>Data Retention Period</h3>
-            <ul>
-                <li><strong>Active Accounts:</strong> Your data is retained as long as your account is active</li>
-                <li><strong>After Account Deletion:</strong> When you delete your account and data, all your personal data (profile information, food logs, weight history, etc.) is immediately and permanently removed from our systems. However, for security, abuse prevention, and legal audit requirements, basic systemic transaction records (audit logs) are securely stored for 90 days and are automatically and completely deleted at the end of this period. Merely uninstalling the app does not delete your cloud data linked to your Google account.</li>
-                <li><strong>Subscription and Payment Information:</strong> All subscription payments are managed and processed by Google Play Store. Your payment information (credit card, billing address, etc.) is stored entirely in Google's systems and is subject to Google's data retention policy. As the developer, we have no access to your payment information whatsoever.</li>
-                <li><strong>Anonymous Statistics:</strong> Anonymous usage data collected by Firebase Analytics (does not include identity information) is subject to Google's data retention policy</li>
-            </ul>
-            
-            <h3>International Data Transfers (GDPR Articles 44-50)</h3>
-            <ul>
-                <li><strong>EU Data Storage:</strong> Google Cloud Firestore stores your data within the European Union's Google infrastructure, fully GDPR compliant</li>
-                <li><strong>Google Services:</strong> Firebase and AdMob services are provided by Google LLC (USA), however:
-                    <ul>
-                        <li>Google is certified under the EU-US Data Privacy Framework</li>
-                        <li>Google uses EU Standard Contractual Clauses and the June 2024 KVKK Standard Contractual Clauses (SCC) for data transfers</li>
-                        <li>Your data is primarily processed in the EU region</li>
-                    </ul>
-                </li>
-                <li><strong>Data Security:</strong> All international data transfers are protected with TLS/SSL encryption</li>
-                <li><strong>Right to Object:</strong> If you wish to object to data transfers outside the EU, you can use the app with local storage only without using a Google account</li>
-            </ul>
-
-            <h2>Advertising and Analytics</h2>
-            
-            <h3>Google AdMob Ads</h3>
-            <ul>
-                <li>Google AdMob ads are shown in the free version</li>
-                <li>You can turn off personalized ads from your device settings or <a href="https://adssettings.google.com" target="_blank">Google Ad Settings</a></li>
-                <li>Ad preferences can be managed through Google Ad Settings</li>
-                <li>Data used for ads is subject to Google's privacy policy</li>
-                <li>Temporary premium access can be granted by watching ads</li>
-            </ul>
-
-            <h3>Firebase Services</h3>
-            <ul>
-                <li><strong>Firebase Authentication:</strong> Authentication service for Google sign-in users - Your email address and profile information are obtained from your Google account</li>
-                <li><strong>Firebase Cloud Firestore:</strong> Cloud data storage service for users signed in with Google account - All your nutrition and health data is securely stored in the European region's Google infrastructure</li>
-                <li><strong>Firebase Analytics:</strong> Anonymous usage statistics (features used, app usage time, etc.) - Your data is irreversibly hashed using SHA-256 for anonymity. Instead of specific food names, only categorical data is sent. In accordance with the data minimization principle, this analytical data is retained for a maximum of 14 months and then automatically deleted.</li>
-                <li><strong>Firebase Crashlytics:</strong> App crashes and error reports (device model, OS version, error details - does not contain personal data) - Required to detect technical issues</li>
-                <li>These services are subject to Google's privacy policy: <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
-                <li>Data collected by Firebase Analytics and Crashlytics does not include your identity information and is processed anonymously</li>
-                <li><strong>Important:</strong> Firebase Analytics and Crashlytics are required for stable app operation and technical issue detection, and cannot be disabled</li>
-            </ul>
-
-            <h2>Your Rights</h2>
-            
-            <div class="highlight">
-                <p><strong>📋 VERBİS Registration Exemption</strong></p>
-                <p>Pursuant to Article 16 of Law No. 6698 on Protection of Personal Data (KVKK), data controllers with fewer than 50 employees and an annual financial balance sheet total not exceeding 25 million TRY are exempt from registration with the Data Controllers' Registry Information System (VERBİS) (Board Decision No. 2018/88, dated 19/07/2018). Dayzen Studio operates within this exemption and is not subject to VERBİS registration obligations.</p>
+            <h2>3. Medical &amp; Nutritional Disclaimer</h2>
+            <div class="notice-box warn">
+                <h3>Important Medical Notice</h3>
+                <p>
+                    MyNutrio is not a medical device or clinical nutrition service. All calorie, BMI, macro, and nutrient calculations are based on standard nutritional formulas for general informational purposes only and <strong>do not constitute medical advice, clinical diagnosis, or professional dietetic therapy.</strong> Always consult a physician or registered dietitian before starting any diet or nutrition plan.
+                </p>
             </div>
 
-            <h3>Your Rights Under KVKK (Turkey)</h3>
-            <p>Under the Law No. 6698 on Protection of Personal Data (KVKK), you have the following rights:</p>
-            <ul>
-                <li><strong>Right to Information:</strong> Learn whether your personal data is being processed</li>
-                <li><strong>Right of Access:</strong> Request information if your personal data has been processed</li>
-                <li><strong>Right to Rectification:</strong> Request correction of your personal data</li>
-                <li><strong>Right to Erasure:</strong> Request deletion or destruction of your personal data</li>
-                <li><strong>Right to Object:</strong> Object to the processing of your personal data</li>
-            </ul>
-            
-            <h3>Your Rights Under GDPR (EU/Europe)</h3>
-            <p>Under the General Data Protection Regulation (GDPR), you have the following rights:</p>
-            <ul>
-                <li><strong>Right of Access:</strong> Right to learn what personal data is being processed about you</li>
-                <li><strong>Right to Rectification:</strong> Right to correct inaccurate or incomplete personal data</li>
-                <li><strong>Right to Erasure / "Right to be Forgotten":</strong> Right to request deletion of your personal data</li>
-                <li><strong>Right to Restriction of Processing:</strong> Right to request restriction of data processing under certain conditions</li>
-                <li><strong>Right to Data Portability:</strong> Right to receive your personal data in a structured, commonly used, and machine-readable format (CSV, PDF) and transfer it to another data controller</li>
-                <li><strong>Right to Object:</strong> Right to object to data processing based on legitimate interests or public interest</li>
-                <li><strong>Right not to be subject to Automated Decision-Making:</strong> Right not to be subject to decisions based solely on automated processing, including profiling, which produce legal effects</li>
-                <li><strong>Right to Lodge a Complaint:</strong> Right to lodge a complaint with the relevant data protection authority (Personal Data Protection Authority in Turkey)</li>
-            </ul>
-            
-            <h3>How to Exercise Your Rights?</h3>
-            <ul>
-                <li><strong>In-App:</strong> You can use Settings > Data & Privacy Management > "Download Your Information" or Danger Zone > "Delete Account and Data" options</li>
-                <li><strong>Email:</strong> You can send your written request to mynutrio_support@dayzenstudio.com</li>
-                <li><strong>Response Time:</strong> Your request will be responded to within 30 days (in compliance with KVKK and GDPR requirements)</li>
-                <li><strong>Identity Verification:</strong> We may need to verify your identity for security purposes</li>
-            </ul>
+            <h2>4. Data Deletion</h2>
+            <p>
+                Because all data is stored locally on your device, clearing the application storage or uninstalling MyNutrio immediately and permanently erases all local records.
+            </p>
 
-            <h2>KVKK Explicit Consent Statement</h2>
-            <div class="highlight">
-                <p><strong>Under the Law No. 6698 on Protection of Personal Data ("KVKK"), regarding the processing of my personal data:</strong></p>
-                
-                <h3>1. Processing of My Health Data</h3>
-                <p>I give my explicit consent to the processing of my <strong>health data</strong>, which is special category personal data (weight, height, BMI values, calorie tracking, meal records, food consumption history, allergy information, medical conditions, medication and supplement use).</p>
-                
-                <h3>2. Cloud Storage and Synchronization</h3>
-                <p>When I sign in with my Google account, I give my explicit consent to:</p>
-                <ul>
-                    <li>Obtaining my email address, first name, last name, and profile photo from my Google account,</li>
-                    <li>Storing all my personal and health data encrypted in <strong>Google Cloud Firestore</strong> (European region),</li>
-                    <li>Using my data for multi-device synchronization,</li>
-                    <li>Secure data transfers with TLS/SSL encryption,</li>
-                </ul>
-                
-                <h3>3. Use of Firebase Services</h3>
-                <p>I give my explicit consent to the processing of my data for Firebase services (Authentication, Cloud Firestore, Analytics, Crashlytics, Remote Config) used within the app. I understand that the anonymous usage data collected by Firebase Analytics and Crashlytics does not include my identity information and is only used to improve app performance.</p>
-                
-                <h3>4. Statistical Analysis</h3>
-                <p>I give my explicit consent to the processing of my personal and health data, after being anonymized, for statistical analysis and app improvement purposes.</p>
-                
-                <h3>5. Ad Display</h3>
-                <p>I give my explicit consent to the display of Google AdMob ads and the processing of necessary data for this purpose while using the free version. I understand that I can turn off personalized ads at any time through device settings or Google Ad Settings.</p>
-                
-                <h3>Right to Withdraw Consent</h3>
-                <p><strong>Right to Withdraw Consent:</strong> I understand that I can withdraw this explicit consent at any time. To withdraw my consent, I can: sign out of my Google account to stop cloud storage, use the "Delete Account and Data" option in app settings, or send an email to mynutrio_support@dayzenstudio.com to make a request. I accept that when I withdraw my consent, my data will be <strong>immediately and permanently</strong> deleted and I may not be able to use the app's core features.</p>
-            </div>
-
-            <h2>Cookies and Local Storage</h2>
-            <ul>
-                <li>Local storage is used to save your app preferences</li>
-                <li>Web cookies are not used (mobile app only)</li>
-                <li>Your preferences are stored securely on your device</li>
-                <li><strong>WebView and Temporary Cache:</strong> The WebView component used to display in-app privacy policy and terms of service pages may technically store temporary cache data for session management and performance purposes. This data is not used for advertising or personal tracking and is cleared when the app is closed.</li>
-            </ul>
-
-            <h2>Children's Privacy</h2>
-            <div class="warning">
-                <p><strong>⚠️ AGE RESTRICTIONS</strong></p>
-                <ul>
-                    <li><strong>Minimum Age: 18 years</strong> - MyNutrio is intended for users aged 18 and above</li>
-                    <li><strong>Age Rules:</strong> The app collects age information during profile creation. According to the Terms of Service, use by individuals under 18 is prohibited</li>
-                    <li><strong>Under 18 Usage:</strong> Use of the app by individuals under 18 is strictly prohibited (KVKK and GDPR Article 8 compliance)</li>
-                    <li><strong>Data Storage:</strong> User data is stored locally on the device and in Firebase Firestore when signed in with Google. The developer can only access data within Firebase security rules for support and legal request purposes</li>
-                    <li><strong>Contact:</strong> For questions about your account, please contact mynutrio_support@dayzenstudio.com</li>
-                </ul>
-            </div>
-
-            <div class="highlight">
-                <p><strong>🇺🇸 US Market and COPPA Compliance</strong></p>
-                <p>In accordance with the Children's Online Privacy Protection Act (COPPA, 1998) applicable in the United States, MyNutrio is <strong>not directed at children under the age of 13</strong> and does not knowingly collect personal data from this age group. Any data found to belong to a user under 13 will be immediately and permanently deleted.</p>
-            </div>
-
-            <h2>Third-Party Services</h2>
-            <p>Third-party services used in the app:</p>
-            <ul>
-                <li><strong>Google Play Services:</strong> App updates, in-app purchases (subscription management)</li>
-                <li><strong>Google AdMob:</strong> Ad display (banner and interstitial ads for free users)</li>
-                <li><strong>Firebase (Google):</strong>
-                    <ul>
-                        <li>Firebase Authentication - Google sign-in</li>
-                        <li>Firebase Cloud Firestore - Cloud data storage</li>
-                        <li>Firebase Analytics - Usage statistics</li>
-                        <li>Firebase Crashlytics - Error reporting</li>
-                    </ul>
-                </li>
-            </ul>
-            <p><strong>Note:</strong> Each of these third-party services has its own privacy policy. Please review the relevant service's privacy policy.</p>
-
-            <h2>Automated Decision-Making and Profiling (GDPR Article 22)</h2>
-            <div class="highlight">
-                <p><strong>The App Makes Automatic Calculations (Advisory Nature)</strong></p>
-                <ul>
-                    <li><strong>Calorie Calculations:</strong> Your daily calorie needs are calculated using automatic formulas (Harris-Benedict, Mifflin-St Jeor)</li>
-                    <li><strong>Nutritional Value Calculations:</strong> Macro and micronutrient values of foods you eat are automatically calculated</li>
-                    <li><strong>Progress Tracking:</strong> Metrics such as weight change and calorie balance are automatically analyzed</li>
-                    <li><strong>Important Note:</strong> These automatic calculations:
-                        <ul>
-                            <li>Are <strong>advisory only</strong>, not medical decisions or diagnoses</li>
-                            <li>Do not produce legal consequences</li>
-                            <li>Users can make manual corrections at any time</li>
-                            <li>May not fully reflect your personal health status</li>
-                        </ul>
-                    </li>
-                    <li><strong>Right to Object:</strong> If you do not wish to rely on automatic calculations, you can use manual data entry and editing</li>
-                    <li><strong>Profiling:</strong> The app uses your profile data (age, gender, activity level) to provide personalized recommendations, but this profiling does not produce legal consequences</li>
-                </ul>
-            </div>
-
-            <h2>Data Breach Notification and Emergency Procedures</h2>
-            <div class="warning">
-                <p><strong>🚨 Actions in Case of Data Breach</strong></p>
-                <p>We maintain the highest level of security for your personal data. However, in the event of a data breach:</p>
-                
-                <h3>Our Responsibilities:</h3>
-                <ul>
-                    <li><strong>Notification Within 72 Hours:</strong> Within 72 hours from detecting the breach:
-                        <ul>
-                            <li>Notification to the Personal Data Protection Authority (KVKK)</li>
-                            <li>Notification to relevant data protection authorities (GDPR)</li>
-                        </ul>
-                    </li>
-                    <li><strong>User Notification:</strong> Affected users will be immediately informed via email</li>
-                    <li><strong>Transparency:</strong> Clear and understandable information will be provided about the breach:
-                        <ul>
-                            <li>Which data was affected</li>
-                            <li>Possible consequences</li>
-                            <li>Measures taken</li>
-                            <li>What users should do</li>
-                        </ul>
-                    </li>
-                    <li><strong>Corrective Measures:</strong> Necessary technical and administrative measures to prevent the breach will be taken immediately</li>
-                </ul>
-                
-                <h3>Your Rights:</h3>
-                <ul>
-                    <li>Right to information about your data processing</li>
-                    <li>Right to immediately delete your data</li>
-                </ul>
-                
-                <p><strong>Emergency Contact:</strong> <a href="mailto:mynutrio_support@dayzenstudio.com" style="text-decoration: none;">mynutrio_support@dayzenstudio.com</a></p>
-                <p><strong>Note:</strong> No data breaches have occurred to date. All your data is stored encrypted and continuous security updates are performed.</p>
-            </div>
-
-            <h2>Policy Changes</h2>
-            <ul>
-                <li>Significant changes will be notified within the app</li>
-                <li>Updated date is indicated on this page</li>
-                <li>Continuing to use means you accept the updates</li>
-                <li>Updates are made as required by law</li>
-            </ul>
-
-            <h3>✅ Data Portability and Export</h3>
-            <p>You can export all your data at any time in CSV or PDF format. To do this, simply use the Settings → Data & Privacy Management → "Download Your Information" option. Files are generated locally on your device and are not sent to any server.</p>
-
-
-
-            <h2>🏥 Medical Disclaimer</h2>
-            <div class="highlight">
-                <p><strong>IMPORTANT:</strong> MyNutrio is not a medical device and does not provide medical advice, diagnosis, or treatment. All health information in the app is for educational purposes only. Always consult a healthcare professional before making decisions about your health.</p>
-                <p>App content is for informational purposes only and does not replace professional medical advice.</p>
-            </div>
-
-            <div class="contact">
-                <h3>📧 Developer Information and Contact</h3>
-                <p>For privacy-related questions and requests:</p>
-                <p><strong>Developer:</strong> Dayzen Studio (Individual developer)<br>
-                <strong>Data Controller:</strong> ONUR ALKAN<br>
-                <strong>Email:</strong> mynutrio_support@dayzenstudio.com<br>
-                <strong>Address:</strong> Sarılar Mah. 3056. Sok. No: 6, 07600 Manavgat/Antalya, Turkey<br>
-                <strong>Response Time:</strong> Your inquiries will be responded to within 30 days at the latest (KVKK and GDPR compliant)</p>
-            </div>
+            <h2>5. Contact Us</h2>
+            <p>
+                For any privacy-related questions:<br>
+                <strong>Developer:</strong> DayZen Studio<br>
+                <strong>Email:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Website:</strong> <a href="https://dayzenstudio.com/mynutrio/">https://dayzenstudio.com/mynutrio/</a>
+            </p>
         </div>
-        
-        <div class="footer">
-            <p>&copy; 2026 MyNutrio - Dayzen Studio. All rights reserved.</p>
-            <p>Updated: April 28, 2026</p>
+    </main>
+
+    <footer class="wrap">
+        <div>&copy; 2026 DayZen Studio. All rights reserved.</div>
+        <div>
+            <a href="/mynutrio/">MyNutrio</a> &bull;
+            <a href="/mynutrio/terms.html">Terms of Service</a> &bull;
+            <a href="/">DayZen Studio</a>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        function switchLang(lang, btn) {
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+            document.getElementById('sec-' + lang).classList.add('active');
+            document.documentElement.lang = lang;
+        }
+    </script>
 </body>
 </html>
+
