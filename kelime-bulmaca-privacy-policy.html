@@ -1,77 +1,325 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link rel="canonical" href="https://dayzenstudio.com/kelime-bulmaca/privacy.html">
+    <script>if(window.location.hostname!=='dayzenstudio.com'||window.location.pathname!=='/kelime-bulmaca/privacy.html'){window.location.replace('https://dayzenstudio.com/kelime-bulmaca/privacy.html');}</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lexiora (Kelime Bulmaca) - Gizlilik Politikası / Privacy Policy</title>
+    <title>Lexiora: Kelime Bulmaca — Gizlilik Politikası / Privacy Policy | DayZen Studio</title>
+    <meta name="description" content="Lexiora: Kelime Bulmaca resmi Gizlilik Politikası ve Aydınlatma Metni.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #0A0A0B;
+            --surface: #121215;
+            --border: #232329;
+            --text: #F4F4F6;
+            --text-secondary: #9E9EA8;
+            --text-muted: #686873;
+            --accent: #10B981;
+            --serif: 'Instrument Serif', Georgia, serif;
+            --sans: 'Inter', -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8fafc;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
         }
-        .container {
-            background: #ffffff;
-            padding: 32px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-            border: 1px solid #e2e8f0;
-        }
-        h1 { color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; font-size: 24px; }
-        h2 { color: #1e293b; margin-top: 24px; font-size: 18px; }
-        p, li { color: #475569; font-size: 14.5px; }
-        .footer { margin-top: 40px; font-size: 0.9em; color: #94a3b8; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 20px; }
-        a { color: #0284c7; text-decoration: none; font-weight: 600; }
+        a { color: var(--accent); text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(10,10,11,0.88);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .nav {
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .back-link {
+            font-size: 13.5px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .back-link:hover { color: var(--text); text-decoration: none; }
+        .lang-switch {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 500;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        .lang-btn.active {
+            background: var(--surface);
+            color: var(--text);
+        }
+        main { padding: 64px 0 96px; }
+        .doc-meta {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+            display: block;
+        }
+        h1 {
+            font-size: clamp(32px, 5vw, 46px);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+        .updated {
+            font-family: var(--mono);
+            font-size: 12px;
+            color: var(--text-muted);
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 36px 0 14px;
+            letter-spacing: -0.015em;
+        }
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 0 0 20px 20px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        li { margin-bottom: 10px; }
+        li strong { color: var(--text); }
+        .notice-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .notice-box h3 {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+        .notice-box p { margin-bottom: 0; font-size: 14px; }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 28px;
+            font-size: 14px;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid var(--border);
+            padding: 12px 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .data-table th {
+            background: var(--surface);
+            color: var(--text);
+            font-weight: 600;
+        }
+        .data-table td { color: var(--text-secondary); }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Lexiora (Kelime Bulmaca) - Gizlilik Politikası</h1>
-        <p><strong>Son Güncelleme:</strong> 8 Ekim 2026</p>
-        <p><strong>Dayzen Studio</strong> ("biz", "bizim") olarak, <strong>Lexiora: Kelime Bulmaca</strong> (Google Play paket adı: <code>com.dayzen.kelimebulmaca</code>) mobil oyunumuzun kullanıcılarının gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası, Uygulamamızı kullandığınızda verilerinizin nasıl işlendiğini ve korunduğunu açıklar.</p>
-
-        <h2>1. Toplanan ve İşlenen Bilgiler</h2>
-        <p>Lexiora, kullanıcıların kişisel kimlik bilgilerini (ad, soyad, e-posta, telefon numarası vb.) <strong>toplamaz veya saklamaz</strong>.</p>
-        <p>Kullanıcının seviye ilerlemesi, kazanılan puanlar ve çözülen kelimeler sadece kullanıcının kendi cihazında yerel olarak saklanır.</p>
-        <p>Uygulamamız içerisinde üçüncü taraf reklam hizmeti olarak Google AdMob kullanılmaktadır. Google AdMob, kişiselleştirilmiş veya kişiselleştirilmemiş reklamlar sunmak amacıyla cihaz reklam kimliği (GAID/IDFA) ve anonim kullanım istatistikleri toplayabilir.</p>
-
-        <h2>2. Çerezler ve İzinler</h2>
-        <p>Uygulamamız doğrudan çerez kullanmaz. Ancak reklam sunum ortaklarımızın sunduğu kütüphaneler cihazınıza özel reklam kimliği teknolojileri kullanabilir.</p>
-
-        <h2>3. Çocukların Gizliliği</h2>
-        <p>Uygulamamız genel kitleye yöneliktir ve 13 yaşın altındaki çocuklardan bilerek kişisel bilgi toplamaz.</p>
-
-        <h2>4. İletişim</h2>
-        <p>Gizlilik politikamız ile ilgili tüm sorularınız için bizimle iletişime geçebilirsiniz:</p>
-        <p><strong>Geliştirici & Stüdyo:</strong> Dayzen Studio<br>
-        <strong>E-posta:</strong> <a href="mailto:dayzenstudio@gmail.com">dayzenstudio@gmail.com</a></p>
-
-        <hr style="margin: 40px 0; border: none; border-top: 1px solid #e2e8f0;">
-
-        <h1>Lexiora (Word Puzzle) - Privacy Policy (English)</h1>
-        <p><strong>Last Updated:</strong> October 8, 2026</p>
-        <p><strong>Dayzen Studio</strong> ("we", "us", "our") respects your privacy. This Privacy Policy explains how data is handled when you use our mobile application <strong>Lexiora</strong> (Google Play package ID: <code>com.dayzen.kelimebulmaca</code>).</p>
-
-        <h2>1. Information We Collect</h2>
-        <p>Lexiora does not require registration and does not collect or store personal identifiable information (PII) such as names, emails, or phone numbers.</p>
-        <p>We use Google AdMob for in-app advertising. AdMob may collect anonymous device advertising identifiers (GAID/IDFA) and diagnostic data to serve relevant advertisements.</p>
-
-        <h2>2. Third-Party Services</h2>
-        <p>For more details on how Google handles advertising data, please review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
-
-        <h2>3. Contact Us</h2>
-        <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
-        <p><strong>Developer:</strong> Dayzen Studio<br>
-        <strong>Email:</strong> <a href="mailto:dayzenstudio@gmail.com">dayzenstudio@gmail.com</a></p>
-
-        <div class="footer">
-            &copy; 2026 Dayzen Studio. All rights reserved.
+    <header>
+        <div class="wrap nav">
+            <a href="/kelime-bulmaca/" class="back-link">&larr; Lexiora</a>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('tr', this)">TR</button>
+                <button class="lang-btn" onclick="switchLang('en', this)">EN</button>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <main class="wrap">
+        <!-- ================= TURKISH ================= -->
+        <div id="sec-tr" class="lang-section active">
+            <span class="doc-meta">YASAL BELGE // LEXIORA</span>
+            <h1>Gizlilik Politikası ve Aydınlatma Metni</h1>
+            <div class="updated">Son Güncelleme: 2 Kasım 2026</div>
+
+            <p>
+                <strong>DayZen Studio</strong> olarak, <strong>Lexiora: Kelime Bulmaca</strong> oyunumuzun kullanıcılarının gizliliğine büyük önem veriyoruz. Bu belge, oyun içerisinde işlenen verileri ve kullanılan resmi Google servislerini açıklar.
+            </p>
+
+            <h2>1. İşlenen Veriler ve Kullanılan Servisler</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Veri Kategorisi</th>
+                        <th>İçerik</th>
+                        <th>Saklandığı Yer ve Amaç</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Yerel Oyun İlerlemesi</strong></td>
+                        <td>Tamamlanan bölümler, bölüm içi ilerleme durumu, oyun içi altın bakiyesi, günlük görev ilerlemesi ile ses ve dil ayarları.</td>
+                        <td>Çevrimdışı kesintisiz oynanabilmesi için doğrudan cihazınızın yerel belleğinde saklanır.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Play Games Bulut Kaydı</strong></td>
+                        <td>Oyuncu görünen adı, oyuncu kimliği, profil ikonu ve bulut kayıt verisi.</td>
+                        <td>Cihaz değiştirdiğinizde veya oyunu yeniden yüklediğinizde bölüm ve altın ilerlemenizin kaybolmaması için Google Play Games bulut servisleri üzerinden Google hesabınızla senkronize edilir.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uygulama İçi Satın Alımlar</strong></td>
+                        <td>Oyun içi altın paketleri ve VIP satın alma durumu.</td>
+                        <td>Tüm ödemeler doğrudan Google Play Mağazası faturalandırma altyapısı tarafından işlenir. Kredi kartı veya finansal bilgileriniz tarafımızca görülmez ve kaydedilmez.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>2. Cihaz İzinleri</h2>
+            <p>
+                Lexiora yalnızca mağaza satın alımları ve bulut senkronizasyonu için standart internet bağlantısı kullanır. Kamera, mikrofon, rehber, fotoğraf galerisi veya konum (GPS) izinleri <strong>kesinlikle talep edilmez</strong>.
+            </p>
+
+            <h2>3. Çocukların Gizliliği</h2>
+            <p>
+                Lexiora her yaştan kullanıcıya uygun genel kitleye yönelik bir kelime bulmaca oyunudur ve çocuklardan bilerek kişisel kimlik bilgisi toplamaz. Bir ebeveyn veya vasi olarak çocuğunuzun izniniz olmadan kişisel bilgi paylaştığını düşünüyorsanız bizimle iletişime geçebilirsiniz.
+            </p>
+
+            <h2>4. Verilerin Silinmesi</h2>
+            <p>
+                Lexiora'da harici bir kullanıcı hesabı veya kayıt zorunluluğu bulunmaz. Cihazınızda saklanan yerel ilerleme verilerinizi telefonunuzun <strong>Ayarlar &rarr; Uygulamalar &rarr; Lexiora &rarr; Depolama &rarr; Verileri Temizle</strong> menüsünden veya oyunu cihazınızdan kaldırarak dilediğiniz an kalıcı olarak silebilirsiniz. Google Play Games bulut kaydınızı ise <strong>Google Play Oyunlar &rarr; Ayarlar &rarr; Play Oyunlar hesabını ve verilerini sil</strong> adımlarını takip ederek veya <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a> adresine yazarak sildirebilirsiniz.
+            </p>
+
+            <h2>5. İletişim</h2>
+            <p>
+                Sorularınız ve veri talepleriniz için:<br>
+                <strong>Geliştirici:</strong> DayZen Studio<br>
+                <strong>E-posta:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Web:</strong> <a href="https://dayzenstudio.com/kelime-bulmaca/">https://dayzenstudio.com/kelime-bulmaca/</a>
+            </p>
+        </div>
+
+        <!-- ================= ENGLISH ================= -->
+        <div id="sec-en" class="lang-section">
+            <span class="doc-meta">LEGAL DOCUMENT // LEXIORA</span>
+            <h1>Privacy Policy</h1>
+            <div class="updated">Last Updated: November 2, 2026</div>
+
+            <p>
+                <strong>Lexiora: Word Puzzle</strong>, developed by <strong>DayZen Studio</strong>, is a word puzzle game built with user privacy in mind. This policy explains what data is processed and which official Google services are used.
+            </p>
+
+            <h2>1. Data We Process &amp; Services Used</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Category</th>
+                        <th>Details</th>
+                        <th>Storage &amp; Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Local Game Progress</strong></td>
+                        <td>Completed levels, in-progress board state, coin balance, daily quest progress, and audio/language settings.</td>
+                        <td>Stored directly on your device for seamless offline gameplay.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Play Games Cloud Save</strong></td>
+                        <td>Play Games display name, Player ID, avatar icon, and encrypted cloud save data.</td>
+                        <td>Synchronized via Google Play Games services so your completed levels and coins are backed up across devices.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>In-App Purchases</strong></td>
+                        <td>Coin bundles and VIP entitlement status.</td>
+                        <td>Processed securely by Google Play Billing. We never access or store your credit card or banking information.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>2. Device Permissions</h2>
+            <p>
+                Lexiora only uses standard network access for cloud save and store services. It <strong>never</strong> requests camera, microphone, contacts, photo gallery, or location permissions.
+            </p>
+
+            <h2>3. Children's Privacy</h2>
+            <p>
+                Lexiora is a general-audience word puzzle game suitable for all ages and does not knowingly collect personal identity information from children. If you are a parent or guardian and believe your child has provided personal information without your consent, please contact us.
+            </p>
+
+            <h2>4. Data Deletion</h2>
+            <p>
+                Lexiora does not require an external user account. You can permanently delete all locally stored game progress at any time by clearing application data via device settings (<strong>Settings &rarr; Apps &rarr; Lexiora &rarr; Storage &rarr; Clear Data</strong>) or by uninstalling the application. You can also delete your Google Play Games cloud save through the <strong>Google Play Games app &rarr; Settings &rarr; Delete Play Games account &amp; data</strong>, or by contacting us at <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a>.
+            </p>
+
+            <h2>5. Contact Us</h2>
+            <p>
+                <strong>Developer:</strong> DayZen Studio<br>
+                <strong>Email:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Website:</strong> <a href="https://dayzenstudio.com/kelime-bulmaca/">https://dayzenstudio.com/kelime-bulmaca/</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="wrap">
+        <div>&copy; 2026 DayZen Studio. All rights reserved.</div>
+        <div>
+            <a href="/kelime-bulmaca/">Lexiora</a> &bull;
+            <a href="/kelime-bulmaca/terms.html">Terms of Service</a> &bull;
+            <a href="/">DayZen Studio</a>
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang, btn) {
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+            document.getElementById('sec-' + lang).classList.add('active');
+            document.documentElement.lang = lang;
+        }
+    </script>
 </body>
 </html>
+
