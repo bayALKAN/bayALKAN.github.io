@@ -1,87 +1,350 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
+    <link rel="canonical" href="https://dayzenstudio.com/slime-chess/privacy.html">
+    <script>if(window.location.hostname!=='dayzenstudio.com'||window.location.pathname!=='/slime-chess/privacy.html'){window.location.replace('https://dayzenstudio.com/slime-chess/privacy.html');}</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slimeria (Slime Chess) - Gizlilik Politikası / Privacy Policy</title>
+    <title>Slimeria — Gizlilik Politikası / Privacy Policy | DayZen Studio</title>
+    <meta name="description" content="Slimeria: 7x7 Strateji Arenası resmi Gizlilik Politikası ve Aydınlatma Metni.">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #0A0A0B;
+            --surface: #121215;
+            --border: #232329;
+            --text: #F4F4F6;
+            --text-secondary: #9E9EA8;
+            --text-muted: #686873;
+            --accent: #10B981;
+            --serif: 'Instrument Serif', Georgia, serif;
+            --sans: 'Inter', -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f8fafc;
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
         }
-        .container {
-            background: #ffffff;
-            padding: 32px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
-            border: 1px solid #e2e8f0;
-        }
-        h1 { color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; font-size: 24px; }
-        h2 { color: #1e293b; margin-top: 24px; font-size: 18px; }
-        p, li { color: #475569; font-size: 14.5px; }
-        .footer { margin-top: 40px; font-size: 0.9em; color: #94a3b8; text-align: center; border-top: 1px solid #e2e8f0; padding-top: 20px; }
-        a { color: #0284c7; text-decoration: none; font-weight: 600; }
+        a { color: var(--accent); text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .wrap { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+        header {
+            border-bottom: 1px solid var(--border);
+            background: rgba(10,10,11,0.88);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .nav {
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .back-link {
+            font-size: 13.5px;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .back-link:hover { color: var(--text); text-decoration: none; }
+        .lang-switch {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .lang-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 500;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+        .lang-btn.active {
+            background: var(--surface);
+            color: var(--text);
+        }
+        main { padding: 64px 0 96px; }
+        .doc-meta {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+            display: block;
+        }
+        h1 {
+            font-size: clamp(32px, 5vw, 46px);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+        .updated {
+            font-family: var(--mono);
+            font-size: 12px;
+            color: var(--text-muted);
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--text);
+            margin: 36px 0 14px;
+            letter-spacing: -0.015em;
+        }
+        p {
+            color: var(--text-secondary);
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+        ul {
+            margin: 0 0 20px 20px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+        li { margin-bottom: 10px; }
+        li strong { color: var(--text); }
+        .notice-box {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+        .notice-box h3 {
+            font-size: 14.5px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 6px;
+        }
+        .notice-box p { margin-bottom: 0; font-size: 14px; }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0 28px;
+            font-size: 14px;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid var(--border);
+            padding: 12px 14px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .data-table th {
+            background: var(--surface);
+            color: var(--text);
+            font-weight: 600;
+        }
+        .data-table td { color: var(--text-secondary); }
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .lang-section { display: none; }
+        .lang-section.active { display: block; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Slimeria (Slime Chess) - Gizlilik Politikası</h1>
-        <p><strong>Son Güncelleme:</strong> 8 Ekim 2026</p>
-        <p><strong>Dayzen Studio</strong> ("biz", "bizim") olarak, <strong>Slimeria</strong> (Google Play paket adı: <code>com.dayzen.slimechess</code>) mobil oyunumuzun kullanıcılarının gizliliğine büyük önem veriyoruz. Bu Gizlilik Politikası, oyunumuzu kullandığınızda verilerinizin nasıl işlendiğini ve korunduğunu açıklar.</p>
-
-        <h2>1. Toplanan ve İşlenen Bilgiler</h2>
-        <p>Slimeria, çevrimdışı öncelikli (offline-first) bir oyundur. Kullanıcıların kişisel kimlik bilgilerini (ad, soyad, e-posta, telefon numarası vb.) <strong>toplamaz veya saklamaz</strong>.</p>
-        <p>Oyun içi ilerleme (açılan kostümler, toplanan Jöle miktarı, maç istatistikleri ve başarılar) yalnızca cihazınızın yerel hafızasında güvenle saklanır ve üçüncü taraf sunuculara aktarılmaz.</p>
-        <p>Uygulamamız içerisinde üçüncü taraf reklam hizmeti olarak Google AdMob kullanılmaktadır. Google AdMob, kişiselleştirilmiş veya kişiselleştirilmemiş reklamlar sunmak amacıyla cihaz reklam kimliği (GAID/IDFA) ve anonim tanı verileri toplayabilir.</p>
-
-        <h2>2. Uygulama İçi Satın Alma & Ödüllü Reklamlar</h2>
-        <p>Oyuncular dilerse oyun içi Jelly (Jöle) bakiyelerini artırmak için ödüllü reklamları izleyebilir veya Google Play Faturalandırma Sistemi (Google Play In-App Billing) aracılığıyla paket satın alabilir. Tüm ödeme işlemleri doğrudan Google Play tarafından güvenle işlenir; Dayzen Studio kredi kartı veya ödeme bilgilerinize hiçbir şekilde erişemez.</p>
-
-        <h2>3. Üçüncü Taraf Hizmetler</h2>
-        <p>Google'ın reklam verilerini nasıl işlediğine dair detaylı bilgi için lütfen <a href="https://policies.google.com/privacy" target="_blank">Google Gizlilik ve Şartlar</a> sayfasını inceleyiniz.</p>
-
-        <h2>4. Çocukların Gizliliği</h2>
-        <p>Slimeria genel oyuncu kitlesine yöneliktir ve 13 yaşın altındaki çocuklardan bilerek kişisel kimlik bilgisi toplamaz.</p>
-
-        <h2>5. İletişim</h2>
-        <p>Gizlilik politikamız ile ilgili tüm sorularınız için bizimle iletişime geçebilirsiniz:</p>
-        <p><strong>Geliştirici & Stüdyo:</strong> Dayzen Studio<br>
-        <strong>E-posta:</strong> <a href="mailto:dayzenstudio@gmail.com">dayzenstudio@gmail.com</a></p>
-
-        <hr style="margin: 40px 0; border: none; border-top: 1px solid #e2e8f0;">
-
-        <h1>Slimeria (Slime Chess) - Privacy Policy (English)</h1>
-        <p><strong>Last Updated:</strong> October 8, 2026</p>
-        <p><strong>Dayzen Studio</strong> ("we", "us", "our") respects your privacy. This Privacy Policy explains how data is handled when you use our mobile application <strong>Slimeria</strong> (Google Play package ID: <code>com.dayzen.slimechess</code>).</p>
-
-        <h2>1. Information We Collect and Process</h2>
-        <p>Slimeria is an offline-first game. It does not require user registration and does not collect or store personally identifiable information (PII) such as names, emails, or phone numbers.</p>
-        <p>Game progression (unlocked skins, collected Jelly currency, game stats, and quests) is stored locally on your device and is not transmitted to external servers.</p>
-        <p>We use Google AdMob for in-app advertising. AdMob may collect anonymous device advertising identifiers (GAID/IDFA) and diagnostic data to serve relevant advertisements.</p>
-
-        <h2>2. In-App Purchases & Rewarded Ads</h2>
-        <p>Players may optionally choose to earn Jelly currency by viewing rewarded advertisements or purchasing store bundles via Google Play In-App Billing. All payment processing is securely handled by Google Play; Dayzen Studio does not access or store your financial information.</p>
-
-        <h2>3. Third-Party Services</h2>
-        <p>For more details on how Google handles advertising data, please review the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy & Terms</a>.</p>
-
-        <h2>4. Children's Privacy</h2>
-        <p>Slimeria is intended for a general audience and does not knowingly collect personal information from children under 13.</p>
-
-        <h2>5. Contact Us</h2>
-        <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
-        <p><strong>Developer:</strong> Dayzen Studio<br>
-        <strong>Email:</strong> <a href="mailto:dayzenstudio@gmail.com">dayzenstudio@gmail.com</a></p>
-
-        <div class="footer">
-            &copy; 2026 Dayzen Studio. All rights reserved.
+    <header>
+        <div class="wrap nav">
+            <a href="/slime-chess/" class="back-link">&larr; Slimeria</a>
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLang('tr', this)">TR</button>
+                <button class="lang-btn" onclick="switchLang('en', this)">EN</button>
+            </div>
         </div>
-    </div>
+    </header>
+
+    <main class="wrap">
+        <!-- ================= TURKISH ================= -->
+        <div id="sec-tr" class="lang-section active">
+            <span class="doc-meta">YASAL BELGE // SLIMERIA</span>
+            <h1>Gizlilik Politikası ve Aydınlatma Metni</h1>
+            <div class="updated">Son Güncelleme: 2 Kasım 2026</div>
+
+            <p>
+                <strong>DayZen Studio</strong> olarak, <strong>Slimeria</strong> mobil oyunumuzun kullanıcılarının gizliliğine ve veri güvenliğine büyük önem veriyoruz. Bu Gizlilik Politikası, oyunumuzu kullandığınızda hangi verilerin işlendiğini, kullanılan resmi servisleri ve verilerinizi nasıl silebileceğinizi açıklar.
+            </p>
+
+            <h2>1. İşlenen Veriler ve Kullanılan Servisler</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Veri Kategorisi</th>
+                        <th>İçerik</th>
+                        <th>Saklandığı Yer ve Amaç</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Yerel Oyun İlerlemesi</strong></td>
+                        <td>Oyuncu adı, seviye ve deneyim ilerlemesi, oyun içi bakiye (Slimium), açılan karakter ve tahta kozmetikleri, maç istatistikleri, görev/başarım durumu ile ses ve dil tercihleri.</td>
+                        <td>Çevrimdışı (Misafir) modda kesintisiz oynanabilmesi için doğrudan cihazınızın yerel belleğinde saklanır.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Play Games Bulut Kaydı ve Liderlik Tablosu</strong></td>
+                        <td>Oyuncu görünen adı, oyuncu kimliği, liderlik tablosu skorları, başarımlar ve oyun ilerleme yedeği.</td>
+                        <td>Google Play Games ile giriş yaptığınızda oyun profiliniz, koleksiyonunuz ve istatistikleriniz cihazlarınız arasında kaybolmaması için Google Play Games bulut servisleri üzerinden şifreli olarak eşitlenir.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Online PvP Çok Oyunculu Verileri</strong></td>
+                        <td>Oda kodu, seçilen harita, maç içi hamleler, kuşanılan kozmetikler ve hızlı ifadeler.</td>
+                        <td>Gerçek zamanlı çevrimiçi maçlarda iki oyuncuyu eşleştirmek amacıyla yalnızca aktif maç süresince geçici olarak iletilir; kalıcı olarak kaydedilmez.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reklam ve Analiz Hizmetleri</strong></td>
+                        <td>Cihaz reklam kimliği, reklam etkileşim verileri ve anonim oyun içi kullanım istatistikleri.</td>
+                        <td>Ücretsiz sürümde geçiş reklamları ve isteğe bağlı ödüllü reklamlar sunmak için Google AdMob; oyun kararlılığını iyileştirmek için ise anonim olarak Google Firebase Analytics kullanılır.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uygulama İçi Satın Alımlar</strong></td>
+                        <td>Oyun içi paketler ve "Reklamları Kaldır" seçeneğine ait satın alma durumu.</td>
+                        <td>Tüm ödemeler doğrudan Google Play Mağazası faturalandırma altyapısı tarafından güvenli şekilde işlenir. Kredi kartı veya banka bilgileriniz tarafımızca görülmez ve saklanmaz.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>2. Cihaz İzinleri</h2>
+            <p>
+                Slimeria; kamera, mikrofon, rehber, fotoğraf galerisi veya konum (GPS) izinlerini <strong>talep etmez ve kullanmaz</strong>. Yalnızca çevrimiçi maçlar, bulut yedekleme ve mağaza işlemleri için standart internet bağlantısı kullanır.
+            </p>
+
+            <h2>3. Verilerin Silinmesi</h2>
+            <div class="notice-box">
+                <h3>Verilerinizi Nasıl Silebilirsiniz?</h3>
+                <p>
+                    Slimeria'da harici bir üyelik açma zorunluluğu yoktur. Cihazınızda saklanan yerel oyun verilerinizi telefonunuzun <strong>Ayarlar &rarr; Uygulamalar &rarr; Slimeria &rarr; Depolama &rarr; Verileri Temizle</strong> menüsünden veya oyunu cihazınızdan kaldırarak anında ve kalıcı olarak silebilirsiniz. Google Play Games bulut verilerinizi ise <strong>Google Play Oyunlar uygulaması &rarr; Ayarlar &rarr; Play Oyunlar hesabını ve verilerini sil</strong> adımlarından veya <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a> adresine e-posta göndererek sildirebilirsiniz.
+                </p>
+            </div>
+
+            <h2>4. Çocukların Gizliliği</h2>
+            <p>
+                Slimeria genel kitleye yönelik bir strateji oyunudur ve çocuklardan bilerek kişisel kimlik bilgisi toplamaz. Bir ebeveyn veya vasi olarak çocuğunuzun izniniz olmadan kişisel bilgi paylaştığını düşünüyorsanız bizimle iletişime geçebilirsiniz.
+            </p>
+
+            <h2>5. İletişim</h2>
+            <p>
+                <strong>Geliştirici:</strong> DayZen Studio<br>
+                <strong>E-posta:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Web:</strong> <a href="https://dayzenstudio.com/slime-chess/">https://dayzenstudio.com/slime-chess/</a>
+            </p>
+        </div>
+
+        <!-- ================= ENGLISH ================= -->
+        <div id="sec-en" class="lang-section">
+            <span class="doc-meta">LEGAL DOCUMENT // SLIMERIA</span>
+            <h1>Privacy Policy</h1>
+            <div class="updated">Last Updated: November 2, 2026</div>
+
+            <p>
+                <strong>DayZen Studio</strong> is committed to protecting the privacy and data security of players of our mobile game <strong>Slimeria</strong>. This Privacy Policy explains what data is processed when you play the game, which third-party services are used, and how you can delete your data.
+            </p>
+
+            <h2>1. Data We Process &amp; Services Used</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Data Category</th>
+                        <th>Details</th>
+                        <th>Storage &amp; Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Local Game Progress</strong></td>
+                        <td>Player display name, level and XP progress, in-game currency (Slimium), unlocked character and board cosmetics, match statistics, quest/achievement progress, and audio/language settings.</td>
+                        <td>Stored directly on your device for seamless offline play.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Google Play Games Cloud Save &amp; Leaderboards</strong></td>
+                        <td>Play Games display name, Player ID, leaderboard scores, achievements, and cloud save backup.</td>
+                        <td>When you sign in with Google Play Games, your game profile, unlocked collection, and statistics are synced via Google Play Games cloud services across your devices.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Online PvP Matchmaking Data</strong></td>
+                        <td>Room code, selected map, move coordinates, equipped cosmetics, and quick emoji reactions.</td>
+                        <td>Transmitted ephemerally in real time solely during an active online match; never permanently logged.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Advertising &amp; Analytics Services</strong></td>
+                        <td>Device Advertising ID, ad interaction data, and anonymous gameplay usage statistics.</td>
+                        <td>Used by Google AdMob to serve interstitial and optional rewarded ads in the free version, and by Google Firebase Analytics anonymously to improve game stability.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>In-App Purchases</strong></td>
+                        <td>In-game bundles and "Remove Ads" purchase status.</td>
+                        <td>Processed securely through Google Play Billing. We never access or store your credit card or payment details.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>2. Device Permissions</h2>
+            <p>
+                Slimeria <strong>never</strong> requests camera, microphone, contacts, photo library, or GPS location permissions. Standard internet access is used solely for online matches, cloud backup, and store services.
+            </p>
+
+            <h2>3. Data Deletion</h2>
+            <div class="notice-box">
+                <h3>How to Delete Your Data</h3>
+                <p>
+                    Slimeria does not require an external user account. You can permanently delete all locally stored game data at any time via your device settings (<strong>Settings &rarr; Apps &rarr; Slimeria &rarr; Storage &rarr; Clear Data</strong>) or by uninstalling the game. To delete optional Google Play Games cloud data, use the <strong>Google Play Games app &rarr; Settings &rarr; Delete Play Games account &amp; data</strong>, or email us at <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a>.
+                </p>
+            </div>
+
+            <h2>4. Children's Privacy</h2>
+            <p>
+                Slimeria is a general-audience strategy game and does not knowingly collect personal identity information from children. If you are a parent or guardian and believe your child has provided personal information without your consent, please contact us.
+            </p>
+
+            <h2>5. Contact Us</h2>
+            <p>
+                <strong>Developer:</strong> DayZen Studio<br>
+                <strong>Email:</strong> <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a><br>
+                <strong>Website:</strong> <a href="https://dayzenstudio.com/slime-chess/">https://dayzenstudio.com/slime-chess/</a>
+            </p>
+        </div>
+    </main>
+
+    <footer class="wrap">
+        <div>&copy; 2026 DayZen Studio. All rights reserved.</div>
+        <div>
+            <a href="/slime-chess/">Slimeria</a> &bull;
+            <a href="/slime-chess/terms.html">Terms of Service</a> &bull;
+            <a href="/">DayZen Studio</a>
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang, btn) {
+            document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.lang-section').forEach(s => s.classList.remove('active'));
+            document.getElementById('sec-' + lang).classList.add('active');
+            document.documentElement.lang = lang;
+        }
+    </script>
 </body>
 </html>
+
