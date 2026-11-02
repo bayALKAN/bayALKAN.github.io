@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyNutrio — Gizlilik Politikası / Privacy Policy | DayZen Studio</title>
-    <meta name="description" content="MyNutrio: Su, Hidrasyon ve Elektrolit Takip uygulaması resmi Gizlilik Politikası ve Aydınlatma Metni.">
+    <meta name="description" content="MyNutrio: Kalori & Diyet Takip uygulaması resmi Gizlilik Politikası ve Aydınlatma Metni.">
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -187,10 +187,17 @@
             <div class="updated">Son Güncelleme: 2 Kasım 2026</div>
 
             <p>
-                <strong>DayZen Studio</strong> olarak, <strong>MyNutrio: Su, Hidrasyon ve Elektrolit Takibi</strong> mobil uygulamamızın kullanıcılarının gizliliğine ve veri güvenliğine büyük önem veriyoruz. Bu Gizlilik Politikası; uygulamamızda hangi verilerin işlendiğini, kullanılan resmi servisleri ve verilerinizi nasıl silebileceğinizi açıklar.
+                <strong>DayZen Studio</strong> olarak, <strong>MyNutrio: Kalori &amp; Diyet Takip</strong> uygulamamızın kullanıcılarının gizliliğine büyük önem veriyoruz. Uygulamamız günlük kalori, su tüketimi, vücut kitle indeksi (BMI) ve makro/mikro besin değerlerinizi gizlilik odaklı bir yapıyla takip edebilmeniz için tasarlanmıştır.
             </p>
 
-            <h2>1. İşlenen Veriler ve Kullanılan Servisler</h2>
+            <div class="notice-box">
+                <h3>Çevrimdışı Öncelikli Mimari</h3>
+                <p>
+                    MyNutrio tamamen <strong>çevrimdışı öncelikli (Offline-First)</strong> çalışır. Kişisel beslenme ve fiziksel profil verileriniz reklam şirketlerine veya üçüncü taraf veri aracılarına satılmaz.
+                </p>
+            </div>
+
+            <h2>1. İşlenen Veriler ve Saklama Yöntemi</h2>
             <table class="data-table">
                 <thead>
                     <tr>
@@ -202,47 +209,44 @@
                 <tbody>
                     <tr>
                         <td><strong>Fiziksel Profil ve Hedef Verileri</strong></td>
-                        <td>Boy, kilo, yaş, cinsiyet, günlük aktivite düzeyi ve isteğe bağlı görünen ad.</td>
-                        <td>Vücut Kitle İndeksi (BMI) ile günlük su ve elektrolit (Sodyum, Potasyum, Magnezyum, Kalsiyum) hedeflerinizi bilimsel referans formüllerine göre hesaplamak amacıyla işlenir.</td>
+                        <td>Yaş, boy, mevcut kilo, hedef kilo, cinsiyet ve aktivite düzeyi.</td>
+                        <td>Yalnızca bazal metabolizma hızı (BMR), BMI ve günlük kalori/makro hedeflerinizi hesaplamak amacıyla <strong>cihazınızın yerel belleğinde</strong> işlenir.</td>
                     </tr>
                     <tr>
-                        <td><strong>Hidrasyon ve İçecek Kayıtları</strong></td>
-                        <td>Günlük tüketilen içecekler, net hidrasyon (BHI) değerleri, elektrolit ve kafein miktarları ile geçmiş gün kayıtları.</td>
-                        <td>Çevrimdışı erişim için <strong>cihazınızın yerel belleğinde</strong> saklanır ve veri kaybını önlemek amacıyla <strong>Google Firebase (Cloud Firestore)</strong> bulut altyapısı üzerinden şifreli olarak yedeklenir.</td>
+                        <td><strong>Beslenme ve Su Kayıtları</strong></td>
+                        <td>Günlük eklenen öğünler, besin dağılımı, su tüketimi ve kilo geçmişi.</td>
+                        <td>Doğrudan cihazınızda yerel olarak saklanır; harici bir sunucuya otomatik olarak aktarılmaz.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Uygulama Tercihleri</strong></td>
+                        <td>Tema seçimi ve dil tercihi.</td>
+                        <td>Kullanıcı deneyimini kişiselleştirmek için cihaz içinde tutulur.</td>
                     </tr>
                     <tr>
                         <td><strong>Reklam Hizmetleri</strong></td>
                         <td>Cihaz reklam kimliği ve reklam etkileşim verileri.</td>
-                        <td>Ücretsiz sürümde reklam göstermek ve isteğe bağlı ödüllü reklam izlenerek 24 saatlik PRO analiz erişimi sunmak amacıyla <strong>Google AdMob</strong> kullanılır.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Uygulama Tercihleri</strong></td>
-                        <td>Dil seçimi ve bildirim ayarları.</td>
-                        <td>Kullanıcı deneyimini kişiselleştirmek için cihaz içinde tutulur.</td>
+                        <td>Ücretsiz sürümde reklam göstermek ve isteğe bağlı ödüllü reklamlar sunmak amacıyla <strong>Google AdMob</strong> kullanılır.</td>
                     </tr>
                 </tbody>
             </table>
 
             <h2>2. Cihaz İzinleri</h2>
             <p>
-                MyNutrio; kamera, mikrofon, rehber, fotoğraf galerisi veya konum (GPS) izinlerini <strong>talep etmez ve kullanmaz</strong>. Yalnızca bulut yedeklemesi ve reklam gösterimi için standart internet bağlantısı kullanır.
+                MyNutrio; kamera, mikrofon, rehber, konum (GPS) veya arka plan sensör izinlerini <strong>talep etmez ve kullanmaz</strong>.
             </p>
 
-            <h2 id="disclaimer">3. Tıbbi Sorumluluk Reddi</h2>
+            <h2>3. Tıbbi ve Beslenme Sorumluluk Reddi</h2>
             <div class="notice-box warn">
                 <h3>Önemli Tıbbi Uyarı</h3>
                 <p>
-                    MyNutrio bir tıbbi cihaz veya klinik teşhis aracı değildir. Uygulama içerisindeki günlük su hedefleri, İçecek Hidrasyon İndeksi (BHI) katsayıları, elektrolit (Sodyum, Potasyum, Magnezyum, Kalsiyum) ve kafein hesaplamaları uluslararası bilimsel kuruluşların (EFSA, IOM, ACSM, USDA) genel referans verilerine dayalı bilgilendirme amaçlıdır; <strong>kesinlikle profesyonel tıbbi teşhis, tedavi veya doktor tavsiyesi yerine geçmez.</strong> Böbrek rahatsızlığı, kalp yetmezliği, hipertansiyon, gebelik veya özel sıvı/mineral kısıtlaması gerektiren bir durumunuz varsa lütfen doktorunuza danışınız.
+                    MyNutrio bir tıbbi cihaz veya klinik diyetisyen hizmeti değildir. Uygulama içerisindeki kalori, BMI, makro ve vitamin/mineral hesaplamaları standart beslenme formüllerine dayalı genel bilgilendirme amaçlıdır; <strong>tıbbi teşhis, tedavi veya uzman diyetisyen tavsiyesi yerine geçmez.</strong> Özel bir sağlık durumunuz, alerjiniz, diyabetiniz veya gebelik durumunuz varsa herhangi bir diyet programına başlamadan önce mutlaka doktorunuza veya diyetisyeninize danışınız.
                 </p>
             </div>
 
             <h2>4. Verilerin Silinmesi</h2>
-            <div class="notice-box">
-                <h3>Verilerinizi Nasıl Silebilirsiniz?</h3>
-                <p>
-                    Uygulama içerisindeki <strong>Profil &rarr; Tüm Verileri Sıfırla</strong> seçeneğini kullanarak veya cihazınızın uygulama ayarlarından MyNutrio verilerini temizleyerek tüm kayıtlarınızı silebilirsiniz. Ayrıca bulut yedeklerinizin silinmesi için <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a> adresine e-posta gönderebilirsiniz.
-                </p>
-            </div>
+            <p>
+                Tüm beslenme, kilo ve profil verileriniz cihazınızda yerel olarak tutulduğundan, cihazınızın uygulama ayarlarından MyNutrio verilerini temizleyerek veya uygulamayı cihazınızdan kaldırarak tüm kayıtları anında ve kalıcı olarak silebilirsiniz.
+            </p>
 
             <h2>5. İletişim</h2>
             <p>
@@ -260,10 +264,17 @@
             <div class="updated">Last Updated: November 2, 2026</div>
 
             <p>
-                <strong>MyNutrio: Water, Hydration &amp; Electrolyte Tracker</strong>, developed by <strong>DayZen Studio</strong>, is designed to help users monitor their daily hydration, Beverage Hydration Index (BHI), electrolytes, and caffeine intake. This Privacy Policy explains what data is processed, which official services are used, and how you can delete your data.
+                <strong>MyNutrio: Calorie &amp; Diet Tracker</strong>, developed by <strong>DayZen Studio</strong>, is designed to help users track their daily calories, hydration, Body Mass Index (BMI), and essential macro/micronutrients with a strict privacy-first approach.
             </p>
 
-            <h2>1. Data We Process &amp; Services Used</h2>
+            <div class="notice-box">
+                <h3>Offline-First Architecture</h3>
+                <p>
+                    MyNutrio operates on an <strong>Offline-First</strong> local architecture. Your personal nutrition and physical profile metrics are never sold or shared with third-party data brokers.
+                </p>
+            </div>
+
+            <h2>1. Data We Process &amp; Storage</h2>
             <table class="data-table">
                 <thead>
                     <tr>
@@ -275,47 +286,44 @@
                 <tbody>
                     <tr>
                         <td><strong>Physical Profile &amp; Goal Metrics</strong></td>
-                        <td>Height, weight, age, gender, daily activity level, and optional display name.</td>
-                        <td>Processed to calculate your Body Mass Index (BMI) and daily water and electrolyte (Sodium, Potassium, Magnesium, Calcium) targets based on scientific reference formulas.</td>
+                        <td>Age, height, current weight, target weight, gender, and activity level.</td>
+                        <td>Processed strictly <strong>locally on your device</strong> to calculate your BMI and daily calorie/macro targets.</td>
                     </tr>
                     <tr>
-                        <td><strong>Hydration &amp; Beverage Logs</strong></td>
-                        <td>Daily logged beverages, net hydration (BHI) values, electrolyte and caffeine amounts, and historical logs.</td>
-                        <td>Stored <strong>locally on your device</strong> for offline access and securely backed up via <strong>Google Firebase (Cloud Firestore)</strong> to prevent data loss.</td>
+                        <td><strong>Nutrition &amp; Hydration Logs</strong></td>
+                        <td>Logged meals, macro/micronutrient breakdowns, water intake, and weight history.</td>
+                        <td>Stored locally on your device; never transmitted to external servers.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>App Preferences</strong></td>
+                        <td>Theme mode and language preference.</td>
+                        <td>Stored locally on your device.</td>
                     </tr>
                     <tr>
                         <td><strong>Advertising Services</strong></td>
                         <td>Device Advertising ID and ad interaction data.</td>
-                        <td>Processed via <strong>Google AdMob</strong> to display ads in the free version and offer optional rewarded video ads that unlock 24-hour PRO analytics access.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>App Preferences</strong></td>
-                        <td>Language selection and notification settings.</td>
-                        <td>Stored locally on your device.</td>
+                        <td>Processed via <strong>Google AdMob</strong> to display ads in the free version and offer optional rewarded video ads.</td>
                     </tr>
                 </tbody>
             </table>
 
             <h2>2. Device Permissions</h2>
             <p>
-                MyNutrio <strong>does not request or use</strong> camera, microphone, contacts, photo gallery, or GPS location permissions. It only uses standard network access for cloud backup and advertising services.
+                MyNutrio <strong>does not request or use</strong> camera, microphone, contacts, GPS location, or background sensor permissions.
             </p>
 
             <h2>3. Medical &amp; Nutritional Disclaimer</h2>
             <div class="notice-box warn">
                 <h3>Important Medical Notice</h3>
                 <p>
-                    MyNutrio is not a medical device or clinical diagnostic tool. All daily hydration goals, Beverage Hydration Index (BHI) coefficients, electrolyte (Sodium, Potassium, Magnesium, Calcium), and caffeine calculations are based on general scientific reference standards (EFSA, IOM, ACSM, USDA) for informational purposes only and <strong>do not constitute medical advice, clinical diagnosis, or treatment.</strong> Always consult a physician if you have kidney disease, heart conditions, hypertension, pregnancy, or require medically supervised fluid/electrolyte intake.
+                    MyNutrio is not a medical device or clinical nutrition service. All calorie, BMI, macro, and nutrient calculations are based on standard nutritional formulas for general informational purposes only and <strong>do not constitute medical advice, clinical diagnosis, or professional dietetic therapy.</strong> Always consult a physician or registered dietitian before starting any diet or nutrition plan.
                 </p>
             </div>
 
             <h2>4. Data Deletion</h2>
-            <div class="notice-box">
-                <h3>How to Delete Your Data</h3>
-                <p>
-                    You can delete your records at any time using the <strong>Profile &rarr; Reset All Data</strong> option inside the app, by clearing the app storage in your device settings, or by contacting us at <a href="mailto:info@dayzenstudio.com">info@dayzenstudio.com</a> to request complete erasure of your cloud backup.
-                </p>
-            </div>
+            <p>
+                Because all data is stored locally on your device, clearing the application storage or uninstalling MyNutrio immediately and permanently erases all local records.
+            </p>
 
             <h2>5. Contact Us</h2>
             <p>
